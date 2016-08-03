@@ -924,6 +924,26 @@ table thead {
   margin-left: 2rem;
   margin-bottom: 2rem;
 }
+.grid-5 {
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  /* avoid unwanted margin on last line */
+}
+.grid-5 > *:nth-child(n) {
+  width: calc(100% * 1 / 5 - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-6 {
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  /* avoid unwanted margin on last line */
+}
+.grid-6 > *:nth-child(n) {
+  width: calc(100% * 1 / 6 - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
 .grid-1-3 > *:nth-child(odd) {
   width: calc(25% - 1rem);
 }
@@ -1142,9 +1162,11 @@ body {
   margin-bottom: 30px;
 }
 .box__header,
-.box__actions,
-.box__content {
+.box__actions {
   padding: 1rem 2rem;
+}
+.box__content {
+  padding: 3rem 2rem;
 }
 .box__header {
   font-size: 2.2rem;
@@ -1152,6 +1174,27 @@ body {
 }
 .box__actions {
   border-bottom: 2px solid #f7f7f7;
+}
+/* ----------------------------------------------------------- */
+/* == card */
+/* ----------------------------------------------------------- */
+.card {
+  background: #fafafa;
+  border: 1px solid #edf1f4;
+}
+.card__content {
+  padding: 1em;
+}
+.card__content--pic {
+  padding: 0;
+}
+.card__content--pic img {
+  display: block;
+}
+.card__action {
+  display: block;
+  width: 100%;
+  padding: .5em;
 }
 /* ----------------------------------------------------------- */
 /* == rwd -> large */
