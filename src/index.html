@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Helium : admin boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar__logo">
+            <svg width="50" height="33" viewBox="0 0 50 33" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M24.425 24.132l-6.134 5.985c-.422.412-.996.644-1.594.644-.6 0-1.173-.23-1.596-.643L2.662 17.97c-.876-.857-.876-2.252 0-3.115L15.1 2.712c.882-.856 2.31-.856 3.19 0l12.44 12.14" stroke="#FFF" stroke-width="3.213"/>
+                    <path d="M25.285 8.7l6.133-5.986c.882-.857 2.31-.857 3.19 0l12.44 12.14c.878.857.878 2.25 0 3.115l-12.44 12.14c-.875.856-2.304.856-3.19 0L18.98 17.97" stroke="#FFF" stroke-width="3.213"/>
+                    <path fill="url(#a)" opacity=".3" d="M22.855 5.693l1.462 1.418.215-.21-1.463-1.417" transform="translate(2 2)"/>
+                    <path fill="url(#b)" opacity=".3" d="M21.177 21.92l1.454 1.43.225-.22-1.463-1.418" transform="translate(2 2)"/>
+                </g>
+            </svg>
+
+        </div>
+        <div class="sidebar__user">
+            Hello Richard
+        </div>
+        <div class="sidebar__logout">
+            <a href="#"><i class="fa fa-sign-out icon"></i> Se déconnecter</a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li class="navigation__header">Menu 1</li>
+                <li><a href="#">Menu 1.a</a></li>
+                <li><a href="#">Menu 1.b</a></li>
+                <li><a href="#">Menu 1.c</a></li>
+                <li class="navigation__header">Menu 2</li>
+                <li><a href="#">Menu 2.a</a></li>
+                <li><a href="#">Menu 2.b</a></li>
+                <li><a href="#">Menu 2.c</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+
+        <div class="menu mb3">
+            <span class="menu__label">Menu : </span>
+            <ul>
+                <li class="is-active"><a href="#">page 1</a></li>
+                <li><a href="#">page 2</a></li>
+                <li><a href="#">page 3</a></li>
+            </ul>
+        </div>
+
+        <!-- Module box -->
+        <ul class="boxTab">
+            <li class="is-active"><a href="#">Tab 1</a></li>
+            <li><a href="#">Tab 2</a></li>
+            <li><a href="#">Tab 3</a></li>
+        </ul>
+        <article class="box">
+            <header class="box__header">Box module with header and footer</header>
+            <div class="box__actions">
+                <a href="#" class="btn btn--primary">btn btn--primary</a>
+                <button class="btn btn--secondary">btn btn--secondary</button>
+                <button class="btn btn--danger">btn btn--danger</button>
+                <button class="btn btn--disabled" disabled>btn btn--disabled</button>
+            </div>
+            <div class="box__content">
+                <h1>Title 1</h1>
+                <h2>Title 2</h2>
+                <h3>Title 3</h3>
+
+                <div class="grid-3">
+                    <div>
+                        <p>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="box__footer txtcenter">Here's a footer</header>
+            </article>
+            <!-- /Module box -->
+
+            <h1 class="txtcenter">Grid example</h1>
+
+            <!-- Grid example -->
+            <div class="grid-2">
+                <article class="box">
+                    <header class="box__header">Content with no padding</header>
+                    <div class="box__content box__content--noPadding">
+                        <table class="txtcenter">
+                            <tr>
+                                <td>row 1 col 1</td>
+                                <td>row 1 col 2</td>
+                                <td>row 1 col 3</td>
+                            </tr>
+                            <tr>
+                                <td>row 2 col 1</td>
+                                <td>row 2 col 2</td>
+                                <td>row 2 col 3</td>
+                            </tr>
+                            <tr>
+                                <td>row 3 col 1</td>
+                                <td>row 3 col 2</td>
+                                <td>row 3 col 3</td>
+                            </tr>
+                            <tr>
+                                <td>row 4 col 1</td>
+                                <td>row 4 col 2</td>
+                                <td>row 4 col 3</td>
+                            </tr>
+                            <tr>
+                                <td>row 5 col 1</td>
+                                <td>row 5 col 2</td>
+                                <td>row 5 col 3</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+                <article class="box loader">
+                    <div class="loader__state"><i class="fa fa-spinner fa-spin loader__stateIcon"></i></div>
+                    <header class="box__header">Loading state</header>
+                    <div class="box__content loader">
+                    </div>
+                </article>
+            </div>
+            <!-- /Grid example -->
+
+            <h1 class="txtcenter">Forms</h1>
+            <article class="box">
+                <div class="box__content">
+
+                    <div class="f-group">
+                        <label for="firstname">Firstname <i class="f-required">*</i></label>
+                        <input type="text" id="firstname" placeholder="firstname">
+                    </div>
+
+                    <div class="f-group">
+                        <label for="lastname">Lastname <i class="f-required">*</i></label>
+                        <input type="text" id="lastname" placeholder="lastname">
+                    </div>
+                    <h2>Grid example</h2>
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="field1">Field 1 <i class="f-required">*</i></label>
+                            <input type="text" id="field1" placeholder="lastname">
+                        </div>
+
+                        <div class="f-group">
+                            <label for="field2">Field 2 <i class="f-required">*</i></label>
+                            <input type="text" id="field2" placeholder="lastname">
+                        </div>
+
+                        <div class="f-group">
+                            <label for="field3">Field 3 <i class="f-required">*</i></label>
+                            <input type="text" id="field3" placeholder="lastname">
+                        </div>
+                    </div>
+                    <h2>With errors</h2>
+
+                    <div class="f-group f-error">
+                        <label for="email">Email <i class="f-required">*</i></label>
+                        <input type="text" id="email" placeholder="user@example.com">
+                        <ul class="f-error-message">
+                            <li>Email is required</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <h1 class="txtcenter">Alert</h1>
+
+            <!-- Alerts -->
+            <div class="alert alert--success">
+                Everything's just fine!
+            </div>
+
+            <div class="alert alert--info">
+                Hey, this is an info!
+            </div>
+
+            <div class="alert alert--error">
+                You should panic!
+            </div>
+            <!-- /Alerts -->
+
+            <h1 class="txtcenter">Cards</h1>
+
+            <article class="box">
+                <header class="box__header">A simple box</header>
+                <div class="box__content">
+                    <div class="grid-5">
+
+                        <!-- Module card -->
+                        <div class="card">
+                            <div class="card__content card__content--pic">
+                                <img src="http://placehold.it/200x150/fafafa/686868" alt="">
+                            </div>
+                            <button class="card__action">
+                                <i class="fa fa-cog"></i> actions
+                            </button>
+                        </div>
+                        <!-- /module card -->
+
+                        <!-- Module card -->
+                        <div class="card">
+                            <div class="card__content card__content--pic">
+                                <img src="http://placehold.it/200x150/fafafa/686868" alt="">
+                            </div>
+                            <button class="card__action">
+                                <i class="fa fa-cog"></i> actions
+                            </button>
+                        </div>
+                        <!-- /module card -->
+
+                        <!-- Module card -->
+                        <div class="card">
+                            <div class="card__content card__content--pic">
+                                <img src="http://placehold.it/200x150/fafafa/686868" alt="">
+                            </div>
+                            <button class="card__action">
+                                <i class="fa fa-cog"></i> actions
+                            </button>
+                        </div>
+                        <!-- /module card -->
+
+                        <!-- Module card -->
+                        <div class="card">
+                            <div class="card__content card__content--pic">
+                                <img src="http://placehold.it/200x150/fafafa/686868" alt="">
+                            </div>
+                            <button class="card__action">
+                                <i class="fa fa-cog"></i> actions
+                            </button>
+                        </div>
+                        <!-- /module card -->
+
+                        <!-- Module card -->
+                        <div class="card">
+                            <div class="card__content card__content--pic">
+                                <img src="http://placehold.it/200x150/fafafa/686868" alt="">
+                            </div>
+                            <button class="card__action">
+                                <i class="fa fa-cog"></i> actions
+                            </button>
+                        </div>
+                        <!-- /module card -->
+                    </div>
+                </div>
+            </article>
+
+            <h1 class="txtcenter">Menu item</h1>
+
+            <article class="box">
+                <header class="box__header">Menu item</header>
+                <div class="box__content">
+                    <div class="menuItem" data-level="1">
+                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+
+                    <div class="menuItem" data-level="2">
+                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+
+                    <div class="menuItem" data-level="2">
+                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+
+
+                    <div class="menuItem" data-level="3">
+                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+
+                    <div class="menuItem" data-level="1">
+                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </body>
+    </html>

@@ -1,0 +1,1405 @@
+/* grids
+-------------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == reset */
+/* ----------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+video {
+  max-width: 100%;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+img:not([src$=".svg"]) {
+  height: auto;
+}
+/* fix for IE */
+img[src$=".svg"] {
+  width: 100%;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+/* ----------------------------------------------------------- */
+/* == typography */
+/* ----------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+  /* IE9-11 calculation fix */
+  font-size: calc(0.625em);
+}
+body {
+  font-size: 1.4em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption {
+  margin: 0 0 1.5em 0;
+}
+/* ----------------------------------------------------------- */
+/* == helpers */
+/* ----------------------------------------------------------- */
+/* screen readers
+-------------------------------------------------------------- */
+/* Hide only visually, but have it available for screen readers (from HTML5 Boilerplate) */
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static;
+  overflow: visible;
+  clip: auto;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+.hidden {
+  display: none;
+}
+/* states
+-------------------------------------------------------------- */
+.is-disabled {
+  cursor: not-allowed;
+}
+/* ----------------------------------------------------------- */
+/* == layout */
+/* ----------------------------------------------------------- */
+/* BFC to the rescue */
+.mod {
+  overflow: hidden;
+}
+.clear,
+.line,
+.row {
+  clear: both;
+}
+/* blocks that must contain floats */
+.clearfix:after,
+.line:after,
+.mod:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.inbl {
+  display: inline-block;
+}
+/* table layout
+-------------------------------------------------------------- */
+.row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.row > *,
+.col {
+  display: table-cell;
+}
+[class*="grid-"] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+[class*="grid-"] > * {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: block;
+  /* IE fix */
+}
+/* vertical align
+-------------------------------------------------------------- */
+[class*="grid-top"] {
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
+[class*="grid-bottom"] {
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+}
+[class*="grid-center"] {
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+/* helpers
+-------------------------------------------------------------- */
+[class*="grid-"].grid-noMargin > * {
+  margin-bottom: 0;
+}
+/* ----------------------------------------------------------- */
+/* == rwd */
+/* ----------------------------------------------------------- */
+/* responsive iframe http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/ */
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.responsive-iframe iframe,
+.responsive-iframe object,
+.responsive-iframe embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* large
+-------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .l-hidden {
+    display: none !important;
+  }
+}
+/* medium
+-------------------------------------------------------------- */
+@media (max-width: 960px) {
+  .m-hidden {
+    display: none !important;
+  }
+}
+/* small
+-------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .s-hidden {
+    display: none !important;
+  }
+}
+/* xsmall
+-------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .mod,
+  .col {
+    display: block !important;
+    float: none !important;
+    width: auto !important;
+  }
+  .xs-hidden {
+    display: none !important;
+  }
+}
+/* ----------------------------------------------------------- */
+/* == debug */
+/* ----------------------------------------------------------- */
+/*
+ * Generates a random color
+ *
+ */
+/*
+ * Easily debug an element
+ *
+ */
+/*
+ * Display grid for vertical rhythm
+ *
+ */
+.debug-rythm {
+  background: linear-gradient(to bottom, #ba9b9a 0.1em, transparent 0.1em) !important;
+  background-size: 100% 1.5em !important;
+}
+/* ----------------------------------------------------------- */
+/* == alignment */
+/* ----------------------------------------------------------- */
+/* block
+-------------------------------------------------------------- */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* text/inline
+-------------------------------------------------------------- */
+.txtright {
+  text-align: right;
+}
+.txtcenter {
+  text-align: center;
+}
+.txtleft {
+  text-align: left;
+}
+.vtop {
+  vertical-align: top;
+}
+.vbottom {
+  vertical-align: bottom;
+}
+.vmiddle {
+  vertical-align: middle;
+}
+/* ----------------------------------------------------------- */
+/* == colors */
+/* ----------------------------------------------------------- */
+.color-primary {
+  color: #3498db;
+}
+.color-secondary {
+  color: #1abc9c;
+}
+/* ----------------------------------------------------------- */
+/* == spacings */
+/* ----------------------------------------------------------- */
+.ma0 {
+  margin: 0;
+}
+.pa0 {
+  padding: 0;
+}
+.ma1 {
+  margin: 10px;
+}
+.ma2 {
+  margin: 20px;
+}
+.ma3 {
+  margin: 30px;
+}
+.pa1 {
+  padding: 10px;
+}
+.pa2 {
+  padding: 20px;
+}
+.pa3 {
+  padding: 30px;
+}
+.mt0 {
+  margin-top: 0;
+}
+.mt1 {
+  margin-top: 10px;
+}
+.mt2 {
+  margin-top: 20px;
+}
+.mt3 {
+  margin-top: 30px;
+}
+.mr0 {
+  margin-right: 0;
+}
+.mr1 {
+  margin-right: 10px;
+}
+.mr2 {
+  margin-right: 20px;
+}
+.mr3 {
+  margin-right: 30px;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mb1 {
+  margin-bottom: 10px;
+}
+.mb2 {
+  margin-bottom: 20px;
+}
+.mb3 {
+  margin-bottom: 30px;
+}
+.ml0 {
+  margin-left: 0;
+}
+.ml1 {
+  margin-left: 10px;
+}
+.ml2 {
+  margin-left: 20px;
+}
+.ml3 {
+  margin-left: 30px;
+}
+.pt0 {
+  padding-top: 0;
+}
+.pt1 {
+  padding-top: 10px;
+}
+.pt2 {
+  padding-top: 20px;
+}
+.pt3 {
+  padding-top: 30px;
+}
+.pr0 {
+  padding-right: 0;
+}
+.pr1 {
+  padding-right: 10px;
+}
+.pr2 {
+  padding-right: 20px;
+}
+.pr3 {
+  padding-right: 30px;
+}
+.pb0 {
+  padding-bottom: 0;
+}
+.pb1 {
+  padding-bottom: 10px;
+}
+.pb2 {
+  padding-bottom: 20px;
+}
+.pb3 {
+  padding-bottom: 30px;
+}
+.pl0 {
+  padding-left: 0;
+}
+.pl1 {
+  padding-left: 10px;
+}
+.pl2 {
+  padding-left: 20px;
+}
+.pl3 {
+  padding-left: 30px;
+}
+/* ----------------------------------------------------------- */
+/* == text */
+/* ----------------------------------------------------------- */
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+/* font size
+-------------------------------------------------------------- */
+.txtsmaller {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 1rem;
+  line-height: 2.1;
+  margin-bottom: 2.1em;
+}
+.txtsmall {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 1.2rem;
+  line-height: 1.75;
+  margin-bottom: 1.75em;
+}
+.txtbig {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 1.6rem;
+  line-height: 1.3125;
+  margin-bottom: 1.3125em;
+}
+.txtbigger {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 1.8rem;
+  line-height: 1.16666667;
+  margin-bottom: 1.16666667em;
+}
+/* transformations
+-------------------------------------------------------------- */
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+/* ----------------------------------------------------------- */
+/* == width */
+/* ----------------------------------------------------------- */
+.w10 {
+  width: 10%;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w30 {
+  width: 30%;
+}
+.w33 {
+  width: 33.3333%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w66 {
+  width: 66.6666%;
+}
+.w70 {
+  width: 70%;
+}
+.w75 {
+  width: 75%;
+}
+.w80 {
+  width: 80%;
+}
+.w90 {
+  width: 90%;
+}
+.w100 {
+  width: 100%;
+}
+/* ----------------------------------------------------------- */
+/* == state */
+/* ----------------------------------------------------------- */
+.is-draggable {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+/**
+* Form Module
+* Namespace : .form
+*/
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+/* placeholders
+-------------------------------------------------------------- */
+input::-webkit-input-placeholder {
+  color: #c4c1be;
+}
+input:-moz-placeholder {
+  color: #c4c1be;
+}
+textarea::-webkit-input-placeholder {
+  color: #c4c1be;
+}
+textarea:-moz-placeholder {
+  color: #c4c1be;
+}
+/* block form
+-------------------------------------------------------------- */
+label:not(.f-labelWrapper),
+.label {
+  display: block;
+  margin-bottom: .4em;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.f-group {
+  margin-bottom: 1.5em;
+}
+/* inline form
+-------------------------------------------------------------- */
+.f-inline label,
+.f-inline .label {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.f-inline {
+  display: inline-block;
+}
+.f-inline input,
+.f-inline .btn {
+  height: 40px;
+}
+.f-inline .btn {
+  vertical-align: middle;
+}
+/* basics style
+-------------------------------------------------------------- */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+input,
+select,
+label,
+.label {
+  vertical-align: middle;
+}
+select {
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+input,
+textarea {
+  border: 1px solid #edf1f4;
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: inset 0 1px 3px #f6f6f6;
+}
+textarea {
+  padding: .4em;
+  min-width: 320px;
+  vertical-align: top;
+  resize: vertical;
+}
+input {
+  margin: 0;
+  padding: .6em .6em;
+  width: 320px;
+  max-width: 100%;
+}
+label input[type="radio"],
+label input[type="checkbox"] {
+  margin-right: .5em;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  padding: 0;
+  width: inherit;
+}
+/* grid
+-------------------------------------------------------------- */
+[class^="f-grid"] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+[class^="f-grid"] > * {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+  margin-left: 3%;
+}
+[class^="f-grid"] > *:first-child {
+  margin-left: 0;
+}
+[class^="f-grid"] input {
+  width: 100%;
+}
+/* width
+-------------------------------------------------------------- */
+.f-10 {
+  min-width: 80px;
+  width: 10%;
+}
+.f-25 {
+  width: 25%;
+}
+.f-50 {
+  width: 50%;
+}
+.f-75 {
+  width: 75%;
+}
+.f-100 {
+  width: 100%;
+}
+/* state
+-------------------------------------------------------------- */
+.f-isDisabled {
+  opacity: .3;
+}
+/* errors
+-------------------------------------------------------------- */
+.f-required {
+  color: #e74c3c;
+  font-weight: bold;
+}
+.f-error {
+  color: #e74c3c;
+}
+.f-success {
+  color: #27ae60;
+  margin: 1em 0 .5em 0;
+}
+.f-error input {
+  border: 1px solid #e74c3c;
+}
+.f-error-message {
+  list-style-type: square;
+  padding-top: 4px;
+  color: #e74c3c;
+  margin: 0;
+}
+/**
+* Buttons Module
+* namespace : .btn
+*/
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+.btn,
+button {
+  vertical-align: middle;
+}
+.btn,
+button,
+input[type="submit"] {
+  display: inline-block;
+  margin: 0;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  background-color: #42cb6f;
+  box-shadow: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 1.3rem;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+/* colors
+-------------------------------------------------------------- */
+.btn--primary,
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: #42cb6f;
+  color: #fff;
+}
+.btn--primary:active,
+.btn--primary:focus,
+.btn--primary:hover {
+  background-color: #35bf62;
+}
+.btn--secondary,
+.btn--secondary:link,
+.btn--secondary:visited {
+  background-color: #fcce54;
+  color: #fff;
+}
+.btn--secondary:active,
+.btn--secondary:focus,
+.btn--secondary:hover {
+  background-color: #fcc73b;
+}
+.btn--danger,
+.btn--danger:link,
+.btn--danger:visited {
+  background-color: #ee5f51;
+  color: #fff;
+}
+.btn--danger:active,
+.btn--danger:focus,
+.btn--danger:hover {
+  background-color: #ec4a3a;
+}
+.btn--disabled,
+.btn--disabled:link,
+.btn--disabled:visited {
+  background-color: #f7f7f7;
+  color: #777;
+  cursor: not-allowed;
+}
+.btn--disabled:active,
+.btn--disabled:focus,
+.btn--disabled:hover {
+  background-color: #eaeaea;
+}
+/* size
+-------------------------------------------------------------- */
+.btn--big {
+  font-size: 18;
+}
+/**
+ * Pagination Module
+ * namespace : .pagination
+ */
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+.pagination {
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination,
+.pagination li {
+  margin: 0;
+  padding: 0;
+}
+.pagination li {
+  display: inline-block;
+  margin: 0 3px 1em;
+  list-style-type: none;
+}
+.pagination li a,
+.pagination li > span {
+  padding: .3em .6em;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+.pagination li a:hover {
+  color: #1abc9c;
+}
+.pagination li.current a {
+  background-color: #3498db;
+  color: #fff;
+}
+/**
+ * Table Module
+ * namespace : .table
+ */
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+table {
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse /* remove spacing between table cells */;
+  table-layout: fixed /* http://css-tricks.com/fixing-tables-long-strings */;
+}
+table caption {
+  padding: 1em 0;
+  color: #000;
+  text-align: center;
+  font: italic 85%/1 arial, sans-serif;
+}
+table tr:nth-child(odd) {
+  background-color: #f5f9fc;
+}
+table td,
+table th {
+  overflow: hidden;
+  margin: 0;
+  padding: .5em 1em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+  font-size: inherit;
+}
+table td:first-child,
+table th:first-child {
+  border-left-width: 0;
+}
+table thead {
+  background: #e0e0e0;
+  color: #000;
+  vertical-align: bottom;
+  text-align: left;
+}
+/**
+ * Tooltip Module
+ * namespace : .tooltip
+ */
+/* ----------------------------------------------------------- */
+/* == configuration */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+.tooltip:after {
+  font-family: helvetica, arial, sans-serif;
+}
+.tooltip:hover:after {
+  position: absolute;
+  bottom: 1.35em;
+  left: 1em;
+  padding: .5em 1em;
+  border-radius: 0.5em;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  content: attr(data-tooltip);
+  white-space: nowrap;
+}
+.tooltip:hover:before {
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+  display: block;
+  border: solid;
+  border-width: .4em .4em 0 .4em;
+  border-color: rgba(0, 0, 0, 0.8) transparent;
+  content: "";
+}
+/**
+* Alerts
+* namespace : .alert
+*/
+.alert {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  padding: .8em 1em;
+}
+.alert--success {
+  background: #dff0d8;
+  border-color: #67b746;
+  color: #67b746;
+}
+.alert--info {
+  background: #d9eefc;
+  border: 1px solid #1c99ec;
+  color: #1c99ec;
+}
+.alert--error {
+  background: #fbecec;
+  border-color: #d84444;
+  color: #d84444;
+}
+/* ----------------------------------------------------------- */
+/* == fonts */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == grids */
+/* ----------------------------------------------------------- */
+.grid-1 {
+  margin-left: 0;
+  margin-bottom: -2rem;
+}
+.grid-1 > *:nth-child(n) {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+.grid-2 {
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  /* avoid unwanted margin on last line */
+}
+.grid-2 > *:nth-child(n) {
+  width: calc(100% * 1 / 2 - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-2-noGutter {
+  margin-left: 0;
+  margin-bottom: 0;
+  /* avoid unwanted margin on last line */
+}
+.grid-2-noGutter > *:nth-child(n) {
+  width: calc(100% * 1 / 2 - 0);
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.grid-2-noGutter > *:nth-child(n) {
+  width: calc(100% * 1 / 2);
+}
+.grid-3 {
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  /* avoid unwanted margin on last line */
+}
+.grid-3 > *:nth-child(n) {
+  width: calc(100% * 1 / 3 - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-4 {
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  /* avoid unwanted margin on last line */
+}
+.grid-4 > *:nth-child(n) {
+  width: calc(100% * 1 / 4 - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-5 {
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  /* avoid unwanted margin on last line */
+}
+.grid-5 > *:nth-child(n) {
+  width: calc(100% * 1 / 5 - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-6 {
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  /* avoid unwanted margin on last line */
+}
+.grid-6 > *:nth-child(n) {
+  width: calc(100% * 1 / 6 - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-1-3 > *:nth-child(odd) {
+  width: calc(25% - 1rem);
+}
+.grid-1-3 > *:nth-child(even) {
+  width: calc(75% - 1rem );
+  margin-left: 2rem;
+}
+@media (max-width: 480px) {
+  .grid-1-xs {
+    margin-left: 0;
+    margin-bottom: -2rem;
+  }
+  .grid-1-xs > *:nth-child(n) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .grid-2-xs {
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+    /* avoid unwanted margin on last line */
+  }
+  .grid-2-xs > *:nth-child(n) {
+    width: calc(100% * 1 / 2 - 2rem);
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+/* ----------------------------------------------------------- */
+/* == main */
+/* ----------------------------------------------------------- */
+body {
+  background-color: #fff;
+  color: #686868;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+  max-width: 1024px;
+}
+/* titles
+-------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+h1 {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 2.6rem;
+  line-height: 1.61538462;
+  margin-bottom: 0.80769231em;
+}
+h2 {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 2.2rem;
+  line-height: 1.90909091;
+  margin-bottom: 0.95454545em;
+}
+h3 {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 1.8rem;
+  line-height: 1.16666667;
+  margin-bottom: 1.16666667em;
+}
+h4 {
+  /*font-size: unit(@font-size / @bf, em);*/
+  font-size: 1.6rem;
+  line-height: 1.3125;
+  margin-bottom: 1.3125em;
+}
+/* links
+-------------------------------------------------------------- */
+a {
+  color: #3498db;
+}
+a:hover,
+a:visited,
+a:focus {
+  color: #5faee3;
+}
+/* lists
+-------------------------------------------------------------- */
+ul {
+  padding-left: 2rem;
+  list-style-type: circle;
+}
+/* divers
+-------------------------------------------------------------- */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/* ----------------------------------------------------------- */
+/* == layout */
+/* ----------------------------------------------------------- */
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.sidebar {
+  max-width: 240px;
+  width: 25%;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  background-color: #4ec2e7;
+}
+.content {
+  background-color: #f7f7f7;
+  padding: 3rem;
+}
+/* sidebar
+-------------------------------------------------------------- */
+.sidebar {
+  color: #fff;
+}
+.sidebar a,
+.sidebar a:visited,
+.sidebar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar__logo {
+  text-align: center;
+  margin: 10px 10px;
+}
+.sidebar__user {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: .3em;
+}
+.sidebar__logout {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.sidebar__logout .icon {
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+/* ----------------------------------------------------------- */
+/* == header */
+/* ----------------------------------------------------------- */
+.header ul,
+.header li {
+  margin: 0;
+  padding: 0;
+}
+.header a,
+.header a:visited,
+.header a:hover {
+  color: #3498db;
+}
+/* ----------------------------------------------------------- */
+/* == content */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == footer */
+/* ----------------------------------------------------------- */
+.footer {
+  padding: 20px 0;
+}
+.footer ul,
+.footer li {
+  margin: 0;
+  padding: 0;
+}
+.footer a,
+.footer a:hover,
+.footer a:visited {
+  color: #3498db;
+}
+/* ----------------------------------------------------------- */
+/* == navigation */
+/* ----------------------------------------------------------- */
+.navigation {
+  color: #fff;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+.navigation li {
+  display: block;
+}
+.navigation__header {
+  background-color: #37b5dc;
+  padding: 1em;
+  display: block;
+}
+.navigation a {
+  display: block;
+  padding: 1em 1em 1em 2em;
+  border-bottom: 1px solid #37b5dc;
+  border-top: 1px solid #5fc9eb;
+}
+.navigation__header + li a {
+  border-top: none;
+}
+/* ----------------------------------------------------------- */
+/* == box */
+/* ----------------------------------------------------------- */
+.box {
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 #ebebeb;
+  margin-bottom: 30px;
+}
+.box__header,
+.box__actions,
+.box__footer {
+  padding: 1rem 2rem;
+}
+.box__content {
+  padding: 2rem 3rem 3rem 3rem;
+}
+.box__content--noPadding {
+  padding: 0;
+}
+.box__header {
+  font-size: 2.2rem;
+  border-bottom: 2px solid #f7f7f7;
+}
+.box__actions {
+  border-bottom: 2px solid #f7f7f7;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box__actions > * {
+  margin-right: 1rem;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+.box__footer {
+  border-top: 2px solid #f7f7f7;
+}
+/* ----------------------------------------------------------- */
+/* == boxTab */
+/* ----------------------------------------------------------- */
+.boxTab {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.boxTab li {
+  margin-right: 10px;
+  background-color: #edf1f4;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.boxTab a,
+.boxTab a:hover,
+.boxTab a:visited {
+  text-decoration: none;
+  display: block;
+  padding: .5em 2em;
+  color: #686868;
+}
+.boxTab .is-active {
+  background-color: #fff;
+}
+/* ----------------------------------------------------------- */
+/* == card */
+/* ----------------------------------------------------------- */
+.card {
+  background: #fafafa;
+  border: 1px solid #edf1f4;
+}
+.card__content {
+  padding: 1em;
+}
+.card__content--pic {
+  padding: 0;
+}
+.card__content--pic img {
+  display: block;
+}
+.card__action {
+  display: block;
+  width: 100%;
+  padding: .5em;
+  background-color: #47cec0;
+}
+/* ----------------------------------------------------------- */
+/* == menu item */
+/* ----------------------------------------------------------- */
+.menuItem {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fafafa;
+  border: 1px solid #edf1f4;
+  margin-bottom: 1rem;
+}
+.menuItem__label {
+  -ms-flex: 1;
+  flex: 1;
+  padding: .8em 1.3em;
+}
+.menuItem__icon {
+  text-align: center;
+  padding: .8em 0;
+  width: 5rem;
+}
+.menuItem__icon:before {
+  font-size: 1.8rem;
+}
+.menuItem__icon:first-of-type {
+  background-color: #f0f0f0;
+  color: #686868;
+}
+.menuItem__icon:last-of-type {
+  background-color: #47cec0;
+  color: #fff;
+}
+.menuItem[data-level="1"] {
+  margin-left: 0;
+}
+.menuItem[data-level="2"] {
+  margin-left: 5rem;
+}
+.menuItem[data-level="3"] {
+  margin-left: 10rem;
+}
+/* ----------------------------------------------------------- */
+/* == loader */
+/* ----------------------------------------------------------- */
+.loader {
+  position: relative;
+}
+.loader__state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fafafa;
+  opacity: .9;
+}
+.loader__stateIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #9b9b9b;
+}
+.loader__stateIcon:before {
+  text-align: center;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+}
+/* ----------------------------------------------------------- */
+/* == menu */
+/* ----------------------------------------------------------- */
+.menu {
+  background: #fff;
+  box-shadow: 0 1px 1px 0 #ebebeb;
+  display: inline-block;
+  padding: 1rem;
+}
+.menu a,
+.menu a:hover,
+.menu a:visited {
+  color: #686868;
+  text-decoration: none;
+  padding: 0 .5em;
+}
+.menu .is-active a {
+  color: #3bc2eb;
+  font-weight: 600;
+}
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li::after {
+  content: "|";
+}
+.menu ul li:last-of-type::after {
+  content: "";
+}
+/* ----------------------------------------------------------- */
+/* == rwd -> large */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == rwd -> meidum */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == rwd -> small */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == rwd -> xsmall */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* == rwd */
+/* ----------------------------------------------------------- */

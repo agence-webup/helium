@@ -1,0 +1,57 @@
+/* ----------------------------------------------------------- */
+/* == layout */
+/* ----------------------------------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.sidebar {
+  max-width: 240px;
+  width: 25%;
+  flex: 1 0 auto;
+  background-color: #4ec2e7;
+}
+
+.content {
+  background-color: #f7f7f7;
+  padding: 3rem;
+}
+
+/* sidebar
+-------------------------------------------------------------- */
+
+.sidebar {
+  color: #fff;
+}
+
+.sidebar a,
+.sidebar a:visited,
+.sidebar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar__logo {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.sidebar__user {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: .3em;
+}
+
+.sidebar__logout {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.sidebar__logout .icon {
+  font-size: 1.4em;
+  vertical-align: middle;
+}

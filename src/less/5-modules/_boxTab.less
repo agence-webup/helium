@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------- */
+/* == boxTab */
+/* ----------------------------------------------------------- */
+
+.boxTab {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.boxTab li {
+  margin-right: 10px;
+  background-color: #edf1f4;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.boxTab a,
+.boxTab a:hover,
+.boxTab a:visited {
+  text-decoration: none;
+  display: block;
+  padding: .5em 2em;
+  color: @color-dark-text;
+}
+
+.boxTab .is-active {
+  background-color: #fff;
+}

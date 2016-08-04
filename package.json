@@ -1,0 +1,30 @@
+{
+  "name": "helium",
+  "version": "1.0.0",
+  "description": "A lightweight admin boilerplate",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-less": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agence-webup/helium.git"
+  },
+  "keywords": [
+    "admin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agence-webup/helium/issues"
+  },
+  "homepage": "https://github.com/agence-webup/helium#readme"
+}
