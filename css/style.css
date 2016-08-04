@@ -752,11 +752,12 @@ input[type="submit"] {
 .btn--disabled:visited {
   background-color: #f7f7f7;
   color: #777;
+  cursor: not-allowed;
 }
 .btn--disabled:active,
 .btn--disabled:focus,
 .btn--disabled:hover {
-  background-color: #ec4a3a;
+  background-color: #eaeaea;
 }
 /* size
 -------------------------------------------------------------- */
