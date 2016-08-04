@@ -1197,6 +1197,46 @@ body {
   padding: .5em;
 }
 /* ----------------------------------------------------------- */
+/* == menu item */
+/* ----------------------------------------------------------- */
+.menuItem {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fafafa;
+  border: 1px solid #edf1f4;
+  margin-bottom: 1rem;
+}
+.menuItem__label {
+  -ms-flex: 1;
+  flex: 1;
+  padding: .8em 1.3em;
+}
+.menuItem__icon {
+  text-align: center;
+  padding: .8em 0;
+  width: 5rem;
+}
+.menuItem__icon:before {
+  font-size: 1.8rem;
+}
+.menuItem__icon:first-of-type {
+  background-color: #f0f0f0;
+  color: #686868;
+}
+.menuItem__icon:last-of-type {
+  background-color: #47cec0;
+  color: #fff;
+}
+.menuItem[data-level="1"] {
+  margin-left: 0;
+}
+.menuItem[data-level="2"] {
+  margin-left: 5rem;
+}
+.menuItem[data-level="3"] {
+  margin-left: 10rem;
+}
+/* ----------------------------------------------------------- */
 /* == rwd -> large */
 /* ----------------------------------------------------------- */
 /* ----------------------------------------------------------- */
