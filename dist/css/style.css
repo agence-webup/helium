@@ -1185,17 +1185,29 @@ body {
 }
 .navigation li {
   display: block;
+  position: relative;
 }
 .navigation__header {
   background-color: #37b5dc;
   padding: 1em;
   display: block;
 }
-.navigation a {
+.navigation li a {
   display: block;
   padding: 1em 1em 1em 2em;
   border-bottom: 1px solid #37b5dc;
   border-top: 1px solid #5fc9eb;
+}
+.navigation .isActive::after {
+  content: "";
+  display: block;
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -12px;
+  top: 15px;
+  transform: rotate(45deg);
 }
 .navigation__header + li a {
   border-top: none;
