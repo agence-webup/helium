@@ -933,6 +933,37 @@ table thead {
   color: #d84444;
 }
 /* ----------------------------------------------------------- */
+/* == tag */
+/* ----------------------------------------------------------- */
+.tag {
+  background-color: grey;
+  border-radius: 8px;
+  display: inline-block;
+  padding: .2em .7em;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.tag--green {
+  background-color: #71e096;
+}
+.tag--red {
+  background-color: #ed6d79;
+}
+.tag--blue {
+  background-color: #90d4f7;
+}
+.tag--orange {
+  background-color: #f5a26f;
+}
+.tag--yellow {
+  background-color: #ffdc89;
+}
+.tag--grey {
+  background-color: #ebebeb;
+  color: #000;
+}
+/* ----------------------------------------------------------- */
 /* == fonts */
 /* ----------------------------------------------------------- */
 /* ----------------------------------------------------------- */
