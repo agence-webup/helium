@@ -511,6 +511,15 @@ caption {
   cursor: -webkit-grab;
   cursor: grab;
 }
+/* ----------------------------------------------------------- */
+/* == flex */
+/* ----------------------------------------------------------- */
+.pullRight {
+  margin-left: auto;
+}
+.pullLeft {
+  margin-right: auto;
+}
 /**
 * Form Module
 * Namespace : .form
@@ -698,7 +707,6 @@ button {
 button,
 input[type="submit"] {
   display: inline-block;
-  margin: 0;
   padding: .5rem 1rem;
   border: none;
   border-radius: 2px;
@@ -1257,6 +1265,10 @@ body {
   margin-right: 1rem;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
+}
+.box__actions .pullRight > * {
+  margin-right: 0;
+  margin-left: 1rem;
 }
 .box__footer {
   border-top: 2px solid #f7f7f7;
