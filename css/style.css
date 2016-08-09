@@ -759,6 +759,17 @@ input[type="submit"] {
 .btn--disabled:hover {
   background-color: #eaeaea;
 }
+.btn--action,
+.btn--action:link,
+.btn--action:visited {
+  background-color: #47cec0;
+  color: #fff;
+}
+.btn--action:active,
+.btn--action:focus,
+.btn--action:hover {
+  background-color: #35c7b7;
+}
 /* size
 -------------------------------------------------------------- */
 .btn--big {
@@ -1100,6 +1111,7 @@ body {
   -ms-flex-direction: row;
   flex-direction: row;
   min-height: 100vh;
+  background-color: #f7f7f7;
 }
 .sidebar {
   max-width: 240px;
@@ -1109,7 +1121,6 @@ body {
   background-color: #4ec2e7;
 }
 .content {
-  background-color: #f7f7f7;
   padding: 3rem;
   -ms-flex: 1;
   flex: 1;
@@ -1401,6 +1412,29 @@ body {
 }
 .menu ul li:last-of-type::after {
   content: "";
+}
+/* ----------------------------------------------------------- */
+/* == login */
+/* ----------------------------------------------------------- */
+.login {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.login-box {
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 #ebebeb;
+  padding: 4rem;
+}
+.login-box__btn {
+  width: 100%;
+  display: block;
+  padding: 1em;
+  text-transform: uppercase;
 }
 /* ----------------------------------------------------------- */
 /* == rwd -> large */
