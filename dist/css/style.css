@@ -759,6 +759,17 @@ input[type="submit"] {
 .btn--disabled:hover {
   background-color: #eaeaea;
 }
+.btn--action,
+.btn--action:link,
+.btn--action:visited {
+  background-color: #47cec0;
+  color: #fff;
+}
+.btn--action:active,
+.btn--action:focus,
+.btn--action:hover {
+  background-color: #35c7b7;
+}
 /* size
 -------------------------------------------------------------- */
 .btn--big {

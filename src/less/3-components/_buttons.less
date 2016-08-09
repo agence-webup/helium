@@ -11,6 +11,7 @@
 @btn-secondary: #fcce54;
 @btn-danger: #ee5f51;
 @btn-disabled: #f7f7f7;
+@btn-action: #47cec0;
 
 @btn-hover: 5%;
 @btn-radius: 2px;
@@ -97,6 +98,19 @@ input[type="submit"] {
 .btn--disabled:focus,
 .btn--disabled:hover {
   background-color: darken(@btn-disabled, @btn-hover);
+}
+
+.btn--action,
+.btn--action:link,
+.btn--action:visited {
+  background-color: @btn-action;
+  color: #fff;
+}
+
+.btn--action:active,
+.btn--action:focus,
+.btn--action:hover {
+  background-color: darken(@btn-action, @btn-hover);
 }
 
 /* size
