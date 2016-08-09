@@ -1111,6 +1111,8 @@ body {
 .content {
   background-color: #f7f7f7;
   padding: 3rem;
+  -ms-flex: 1;
+  flex: 1;
 }
 /* sidebar
 -------------------------------------------------------------- */
