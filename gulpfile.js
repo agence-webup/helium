@@ -34,11 +34,11 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('copy', [
-    'copy:index.html',
+    'copy:html',
 ]);
 
-gulp.task('copy:index.html', function() {
-    gulp.src('./src/index.html')
+gulp.task('copy:html', function() {
+    gulp.src('./src/*.html')
         .pipe(gulp.dest('./dist'));
 });
 
@@ -56,8 +56,8 @@ gulp.task('deploy', function() {
 
 gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('./src/less/**/*', ['less']);
-    gulp.watch('./src/index.html', ['copy', 'bs-reload']);
+    gulp.watch('./src/**/*.html', ['copy', 'bs-reload']);
 
 });
 
-gulp.task('default', ['less']);
+gulp.task('default', ['less', 'copy']);
