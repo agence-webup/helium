@@ -19,7 +19,6 @@
                     <path fill="url(#b)" opacity=".3" d="M21.177 21.92l1.454 1.43.225-.22-1.463-1.418" transform="translate(2 2)"/>
                 </g>
             </svg>
-
         </div>
         <div class="sidebar__user">
             Hello Richard
@@ -30,7 +29,7 @@
         <nav class="navigation">
             <ul>
                 <li class="navigation__header">Menu 1</li>
-                <li><a href="#">Menu 1.a</a></li>
+                <li class="isActive"><a href="#">Menu 1.a</a></li>
                 <li><a href="#">Menu 1.b</a></li>
                 <li><a href="#">Menu 1.c</a></li>
                 <li class="navigation__header">Menu 2</li>
@@ -140,36 +139,36 @@
                 <div class="box__content">
 
                     <div class="f-group">
-                        <label for="name">Firstname <i class="f-required">*</i></label>
-                        <input type="text" id="name" name="name" placeholder="firstname">
+                        <label for="firstname">Firstname <i class="f-required">*</i></label>
+                        <input type="text" id="firstname" placeholder="firstname">
                     </div>
 
                     <div class="f-group">
-                        <label for="name">Lastname <i class="f-required">*</i></label>
-                        <input type="text" id="name" name="name" placeholder="lastname">
+                        <label for="lastname">Lastname <i class="f-required">*</i></label>
+                        <input type="text" id="lastname" placeholder="lastname">
                     </div>
                     <h2>Grid example</h2>
                     <div class="f-grid">
                         <div class="f-group">
-                            <label for="name">Field 1 <i class="f-required">*</i></label>
-                            <input type="text" id="name" name="name" placeholder="lastname">
+                            <label for="field1">Field 1 <i class="f-required">*</i></label>
+                            <input type="text" id="field1" placeholder="lastname">
                         </div>
 
                         <div class="f-group">
-                            <label for="name">Field 2 <i class="f-required">*</i></label>
-                            <input type="text" id="name" name="name" placeholder="lastname">
+                            <label for="field2">Field 2 <i class="f-required">*</i></label>
+                            <input type="text" id="field2" placeholder="lastname">
                         </div>
 
                         <div class="f-group">
-                            <label for="name">Field 3 <i class="f-required">*</i></label>
-                            <input type="text" id="name" name="name" placeholder="lastname">
+                            <label for="field3">Field 3 <i class="f-required">*</i></label>
+                            <input type="text" id="field3" placeholder="lastname">
                         </div>
                     </div>
                     <h2>With errors</h2>
 
                     <div class="f-group f-error">
-                        <label for="name">Email <i class="f-required">*</i></label>
-                        <input type="text" id="name" name="name" placeholder="user@example.com">
+                        <label for="email">Email <i class="f-required">*</i></label>
+                        <input type="text" id="email" placeholder="user@example.com">
                         <ul class="f-error-message">
                             <li>Email is required</li>
                         </ul>
@@ -264,34 +263,40 @@
                 <header class="box__header">Menu item</header>
                 <div class="box__content">
                     <div class="menuItem" data-level="1">
-                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
                         <div class="menuItem__label">Here some content</div>
                         <i class="fa fa-cog menuItem__icon"></i>
                     </div>
 
                     <div class="menuItem" data-level="2">
-                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
                         <div class="menuItem__label">Here some content</div>
                         <i class="fa fa-cog menuItem__icon"></i>
                     </div>
 
                     <div class="menuItem" data-level="2">
-                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
                         <div class="menuItem__label">Here some content</div>
                         <i class="fa fa-cog menuItem__icon"></i>
                     </div>
 
 
                     <div class="menuItem" data-level="3">
-                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
                         <div class="menuItem__label">Here some content</div>
                         <i class="fa fa-cog menuItem__icon"></i>
                     </div>
 
                     <div class="menuItem" data-level="1">
-                        <i class="fa fa-arrows menuItem__icon is-draggable"></i>
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
                         <div class="menuItem__label">Here some content</div>
                         <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+
+
+                    <div class="menuItem" data-level="1">
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
+                        <div class="menuItem__label">Here some content</div>
                     </div>
                 </div>
             </article>
