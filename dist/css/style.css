@@ -507,7 +507,7 @@ caption {
 /* ----------------------------------------------------------- */
 /* == state */
 /* ----------------------------------------------------------- */
-.is-draggable {
+.isDraggable {
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -1324,11 +1324,11 @@ body {
 .menuItem__icon:before {
   font-size: 1.8rem;
 }
-.menuItem__icon:first-of-type {
+.menuItem__icon {
   background-color: #f0f0f0;
   color: #686868;
 }
-.menuItem__icon:last-of-type {
+.menuItem__icon:not(:only-of-type):last-of-type {
   background-color: #47cec0;
   color: #fff;
 }
