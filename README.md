@@ -19,5 +19,4 @@ You can use directly style.css (compiled file) or integrate the less folder in y
 
 ## License
 
-© 2016 Agence Webup  
-Released under the [MIT LICENSE](http://opensource.org/licenses/MIT)
+© 2016 Agence Webup - Released under the [MIT LICENSE](http://opensource.org/licenses/MIT)
