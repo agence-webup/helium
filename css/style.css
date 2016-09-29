@@ -850,7 +850,6 @@ table tr:nth-child(odd) {
 }
 table td,
 table th {
-  overflow: hidden;
   margin: 0;
   padding: .5em 1em;
   text-overflow: ellipsis;
@@ -1271,6 +1270,14 @@ body {
   background-color: #fff;
   box-shadow: 0 1px 1px 0 #ebebeb;
   margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.box__content {
+  -ms-flex: 1;
+  flex: 1;
 }
 .box__header,
 .box__actions,
