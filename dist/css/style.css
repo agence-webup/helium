@@ -859,7 +859,7 @@ table th:first-child {
   border-left-width: 0;
 }
 table thead {
-  background: #e0e0e0;
+  background: #fff;
   color: #000;
   vertical-align: bottom;
   text-align: left;
