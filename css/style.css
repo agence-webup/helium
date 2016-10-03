@@ -845,7 +845,7 @@ table caption {
   text-align: center;
   font: italic 85%/1 arial, sans-serif;
 }
-table tr:nth-child(odd) {
+table tbody tr:nth-child(odd) {
   background-color: #f5f9fc;
 }
 table td,
@@ -862,7 +862,7 @@ table th:first-child {
   border-left-width: 0;
 }
 table thead {
-  background: #e0e0e0;
+  background: #fff;
   color: #000;
   vertical-align: bottom;
   text-align: left;
@@ -1462,6 +1462,26 @@ body {
 }
 .menu ul li:last-of-type::after {
   content: "";
+}
+/* ----------------------------------------------------------- */
+/* == thumbnail */
+/* ----------------------------------------------------------- */
+.thumbnail {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+.thumbnail--small {
+  width: 100px;
+}
+.thumbnail--medium {
+  width: 150px;
+}
+.thumbnail--large {
+  width: 200px;
 }
 /* ----------------------------------------------------------- */
 /* == login */
