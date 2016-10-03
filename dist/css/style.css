@@ -96,11 +96,6 @@ caption {
 .hidden {
   display: none;
 }
-/* states
--------------------------------------------------------------- */
-.is-disabled {
-  cursor: not-allowed;
-}
 /* ----------------------------------------------------------- */
 /* == layout */
 /* ----------------------------------------------------------- */
@@ -511,8 +506,11 @@ caption {
   cursor: -webkit-grab;
   cursor: grab;
 }
-.isclickable {
+.isClickable {
   cursor: pointer;
+}
+.isDisabled {
+  cursor: not-allowed;
 }
 /* ----------------------------------------------------------- */
 /* == flex */
