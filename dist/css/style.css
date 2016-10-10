@@ -1184,14 +1184,15 @@ body {
   font-size: 1.7rem;
   margin-bottom: .3em;
 }
-.sidebar__logout {
+.sidebar__link {
   text-align: center;
-  font-size: 1.3rem;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.8;
 }
-.sidebar__logout .icon {
-  font-size: 1.4em;
-  vertical-align: middle;
+.sidebar__link a {
+  display: inline-block;
 }
 /* ----------------------------------------------------------- */
 /* == header */
