@@ -1,0 +1,21 @@
+{
+  "name": "helium",
+  "description": "A lightweight admin boilerplate",
+  "main": "gulpfile.js",
+  "authors": [
+    "Robin Parisi <parisi.robin@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "admin"
+  ],
+  "homepage": "https://github.com/agence-webup/helium",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "1.0.0"
+}
