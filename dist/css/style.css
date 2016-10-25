@@ -857,6 +857,7 @@ table th {
   white-space: nowrap;
   word-wrap: break-word;
   font-size: inherit;
+  overflow: hidden;
 }
 table td:first-child,
 table th:first-child {
@@ -870,19 +871,17 @@ table thead {
 }
 /* helpers
 -------------------------------------------------------------- */
-.tableCell {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  display: inline-block;
+.table-actions {
+  overflow: visible;
+  text-align: center;
 }
-.table100p {
+.table-100p {
   width: 100px;
 }
-.table150p {
+.table-150p {
   width: 150px;
 }
-.table200p {
+.table-200p {
   width: 200px;
 }
 /**
