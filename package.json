@@ -1,5 +1,5 @@
 {
-  "name": "helium",
+  "name": "helium-admin",
   "version": "1.0.0",
   "description": "A lightweight admin boilerplate",
   "main": "gulpfile.js",
@@ -21,7 +21,7 @@
   "keywords": [
     "admin"
   ],
-  "author": "",
+  "author": "agence-webup",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/agence-webup/helium/issues"
