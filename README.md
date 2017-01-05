@@ -20,6 +20,10 @@ You can use directly style.css (compiled file) or integrate the less folder in y
 
 * [Helium 2.0](doc/version-2.0.md)
 
+## Old versions
+
+* [Helium 1.0 documentation](https://agence-webup.github.io/helium/v1/)
+
 ## License
 
 © 2017 Agence Webup - Released under the [MIT LICENSE](http://opensource.org/licenses/MIT)
