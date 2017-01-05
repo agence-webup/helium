@@ -2,47 +2,48 @@
 /* == menu item */
 /* ----------------------------------------------------------- */
 
-.menuItem {
+.tree > [data-level] {
   display: flex;
   background-color: #fafafa;
   border: 1px solid #edf1f4;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
-.menuItem__label {
+.tree--draggable .menuItem__label {
+  cursor: grab;
+}
+
+.treeItem__label {
   flex: 1;
-  padding: .8em 1.3em;
+  margin-left: 1.5rem;
 }
 
-.menuItem__icon {
+.treeItem__action {
   text-align: center;
-  padding: .8em 0;
   width: 5rem;
-}
-
-.menuItem__icon:before {
+  background-color: #47cec0;
+  color: #fff;
+  padding: 1.2rem .5rem;
   font-size: 1.8rem;
 }
 
-.menuItem__icon {
-  background-color: #f0f0f0;
-  color: @color-dark-text;
-}
 
-.menuItem__icon:not(:only-of-type):last-of-type {
-  background-color: #47cec0;
-  color: #fff;
-}
+/* level
+-------------------------------------------------------------- */
 
-.menuItem[data-level="1"] {
+[data-level="1"] {
   margin-left: 0;
 }
 
-
-.menuItem[data-level="2"] {
+[data-level="2"] {
   margin-left: 5rem;
 }
 
-.menuItem[data-level="3"] {
+[data-level="3"] {
   margin-left: 10rem;
+}
+
+[data-level="4"] {
+  margin-left: 15rem;
 }

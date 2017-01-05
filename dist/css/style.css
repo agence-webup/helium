@@ -150,17 +150,14 @@ caption {
 -------------------------------------------------------------- */
 [class*="grid-top"] {
   -ms-flex-align: start;
-  -ms-grid-row-align: flex-start;
   align-items: flex-start;
 }
 [class*="grid-bottom"] {
   -ms-flex-align: end;
-  -ms-grid-row-align: flex-end;
   align-items: flex-end;
 }
 [class*="grid-center"] {
   -ms-flex-align: center;
-  -ms-grid-row-align: center;
   align-items: center;
 }
 /* helpers
@@ -635,7 +632,7 @@ input[type="checkbox"] {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex: 1 0 0;
+  -ms-flex: 1 0 0px;
   flex: 1 0 0;
   margin-left: 3%;
 }
@@ -1383,42 +1380,45 @@ body {
 /* ----------------------------------------------------------- */
 /* == menu item */
 /* ----------------------------------------------------------- */
-.menuItem {
+.tree > [data-level] {
   display: -ms-flexbox;
   display: flex;
   background-color: #fafafa;
   border: 1px solid #edf1f4;
   margin-bottom: 1rem;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.menuItem__label {
+.tree--draggable .menuItem__label {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.treeItem__label {
   -ms-flex: 1;
   flex: 1;
-  padding: .8em 1.3em;
+  margin-left: 1.5rem;
 }
-.menuItem__icon {
+.treeItem__action {
   text-align: center;
-  padding: .8em 0;
   width: 5rem;
-}
-.menuItem__icon:before {
-  font-size: 1.8rem;
-}
-.menuItem__icon {
-  background-color: #f0f0f0;
-  color: #686868;
-}
-.menuItem__icon:not(:only-of-type):last-of-type {
   background-color: #47cec0;
   color: #fff;
+  padding: 1.2rem .5rem;
+  font-size: 1.8rem;
 }
-.menuItem[data-level="1"] {
+/* level
+-------------------------------------------------------------- */
+[data-level="1"] {
   margin-left: 0;
 }
-.menuItem[data-level="2"] {
+[data-level="2"] {
   margin-left: 5rem;
 }
-.menuItem[data-level="3"] {
+[data-level="3"] {
   margin-left: 10rem;
+}
+[data-level="4"] {
+  margin-left: 15rem;
 }
 /* ----------------------------------------------------------- */
 /* == loader */
