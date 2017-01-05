@@ -6,11 +6,12 @@ const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const ghPages = require('gulp-gh-pages');
-
+const cleanCss = require('gulp-clean-css');
 
 gulp.task('less', function() {
     gulp.src('./src/less/style.less')
         .pipe(less())
+        .pipe(cleanCss())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
