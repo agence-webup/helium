@@ -3,40 +3,26 @@
 /* ----------------------------------------------------------- */
 
 .menu {
-  background: #fff;
-  box-shadow: 0 1px 1px 0 #ebebeb;
   display: inline-block;
-  padding: 1rem;
+  margin-bottom: 4rem;
 }
 
 .menu a,
 .menu a:hover,
 .menu a:visited {
   color: @color-dark-text;
+}
+
+.menu a {
   text-decoration: none;
-  padding: 0 .5em;
-}
-
-.menu .is-active a {
-  color: #3bc2eb;
-  font-weight: 600;
-}
-
-.menu ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 #ebebeb;
   display: inline-block;
 }
 
-.menu ul li {
-  display: inline-block;
-}
-
-.menu ul li::after {
-  content: "|";
-}
-
-.menu ul li:last-of-type::after {
-  content: "";
+.menu a.is-active {
+  background-color: @color-webup;
+  color: #fff;
 }

@@ -3,17 +3,34 @@
 /* ----------------------------------------------------------- */
 
 .header {
-
+  background-color: @color-webup;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-right: 2rem;
 }
 
-.header ul,
-.header li {
-  margin: 0;
-  padding: 0;
+.header__logo {
+  background-color: darken(@color-webup, 4%);
+  padding: 1.5rem 0;
+  width: 100px;
+  text-align: center;
+}
+
+.header__infos {
+  margin-left: auto;
+  flex: 1 1 auto;
+  text-align: right;
 }
 
 .header a,
 .header a:visited,
 .header a:hover {
-  color: @color-link;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__infos > a,
+.header__infos > span {
+  margin-left: 3rem;
 }

@@ -4,20 +4,29 @@
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background-color: @background-color;
 }
 
-.sidebar {
-  max-width: 240px;
+.header {
+  flex: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation {
+  max-width: 100px;
   width: 25%;
   flex: 1 0 auto;
-  background-color: #4ec2e7;
+  background-color: #3b4557;
 }
 
 .content {
-  padding: 3rem;
+  padding: 5rem;
   flex: 1;
 }
 

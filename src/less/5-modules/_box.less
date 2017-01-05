@@ -4,10 +4,10 @@
 
 .box {
   background-color: #fff;
-  box-shadow: 0 1px 1px 0 #ebebeb;
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
+  border: 1px solid darken(@background-color, 5%);
 }
 
 .box__content {
@@ -17,24 +17,40 @@
 .box__header,
 .box__actions,
 .box__footer {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
 }
+
+/* content
+-------------------------------------------------------------- */
 
 .box__content {
   padding: 2rem 3rem 3rem 3rem;
+}
+
+.box__content h1:first-child,
+.box__content h2:first-child,
+.box__content h3:first-child,
+.box__content h4:first-child {
+  margin-top: 0;
 }
 
 .box__content--noPadding {
   padding: 0;
 }
 
+/* header
+-------------------------------------------------------------- */
+
 .box__header {
   font-size: 2.2rem;
-  border-bottom: 2px solid #f7f7f7;
+  border-bottom: 1px solid darken(@background-color, 8%);
 }
 
+/* actions
+-------------------------------------------------------------- */
+
 .box__actions {
-  border-bottom: 2px solid #f7f7f7;
+  border-bottom: 1px solid darken(@background-color, 8%);
   display: flex;
 }
 
@@ -48,6 +64,10 @@
   margin-left: 1rem;
 }
 
+/* footer
+-------------------------------------------------------------- */
+
+
 .box__footer {
-  border-top: 2px solid #f7f7f7;
+  border-top: 1px solid darken(@background-color, 8%);
 }

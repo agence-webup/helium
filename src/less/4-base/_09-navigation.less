@@ -2,45 +2,25 @@
 /* == navigation */
 /* ----------------------------------------------------------- */
 
-.navigation {
-  color: #fff;
+.navigation a,
+.navigation a:hover,
+.navigation a:visited {
+  color: #ececec;
+  text-decoration: none;
 }
 
-.navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
-.navigation li {
+.navigation a {
+  text-align: center;
   display: block;
-  position: relative;
+  margin-top: 3rem;
+  font-size: 1.2rem;
 }
 
-.navigation__header {
-  background-color: #37b5dc;
-  padding: 1em;
+.navigation a .icon {
   display: block;
+  margin-bottom: .5rem;
 }
 
-.navigation li a {
-  display: block;
-  padding: 1em 1em 1em 2em;
-  border-bottom: 1px solid #37b5dc;
-  border-top: 1px solid #5fc9eb;
-}
-
-.navigation .isActive::after {
-  content: "";
-  display: block;
-  background-color: #f7f7f7;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: -12px;
-  top: 15px;
-  transform: rotate(45deg);
-}
-
-.navigation__header + li a {
-  border-top: none;
+.navigation a .icon:before {
+  font-size: 3rem;
 }

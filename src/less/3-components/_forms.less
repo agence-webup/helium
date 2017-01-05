@@ -10,8 +10,8 @@
 
 
 @input-border-radius     : 4px;
-@input-border            : 1px solid #edf1f4;
-@input-backgroud-color   : lighten(#f7f7f7, 2%);
+@input-border            : 1px solid #cbd7dd;
+@input-backgroud-color   : #fcfcfd;
 @input-hover             : 5%;
 @input-error-color       : #efd8d7;
 @input-placeholder-color : #c4c1be;
@@ -192,12 +192,12 @@ input[type="checkbox"] {
 -------------------------------------------------------------- */
 
 .f-required {
-  color: #e74c3c;
+  color: @color-red;
   font-weight: bold;
 }
 
 .f-error {
-  color: #e74c3c;
+  color: @color-red;
 }
 
 .f-success {
@@ -206,12 +206,12 @@ input[type="checkbox"] {
 }
 
 .f-error input {
-  border: 1px solid #e74c3c;
+  border: 1px solid @color-red;
 }
 
 .f-error-message {
-  list-style-type: square;
-  padding-top: 4px;
-  color: #e74c3c;
-  margin: 0;
+  list-style-type: none;
+  margin-top: .5rem;
+  color: @color-red;
+  padding: 0;
 }

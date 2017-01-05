@@ -7,14 +7,8 @@
 /* == configuration */
 /* ----------------------------------------------------------- */
 
-@btn-primary: #42cb6f;
-@btn-secondary: #fcce54;
-@btn-danger: #ee5f51;
-@btn-disabled: #f7f7f7;
-@btn-action: #47cec0;
-
 @btn-hover: 5%;
-@btn-radius: 2px;
+@btn-radius: 0;
 
 /* ----------------------------------------------------------- */
 /* == module */
@@ -29,7 +23,7 @@ button {
 button,
 input[type="submit"] {
   display: inline-block;
-  padding: .5rem 1rem;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: @btn-radius;
   background-color: @btn-primary;
@@ -37,7 +31,7 @@ input[type="submit"] {
   color: #fff;
   text-align: center;
   text-decoration: none !important;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: normal;
   cursor: pointer;
   transition: background-color .4s;
@@ -110,6 +104,7 @@ input[type="submit"] {
 .btn--action:focus,
 .btn--action:hover {
   background-color: darken(@btn-action, @btn-hover);
+  color: #fff;
 }
 
 /* size
