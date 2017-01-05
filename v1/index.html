@@ -5,12 +5,12 @@
     <title>Helium : admin boilerplate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <header class="header">
-        <div class="header__logo">
+    <aside class="sidebar">
+        <div class="sidebar__logo">
             <svg width="50" height="33" viewBox="0 0 50 33" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
                     <path d="M24.425 24.132l-6.134 5.985c-.422.412-.996.644-1.594.644-.6 0-1.173-.23-1.596-.643L2.662 17.97c-.876-.857-.876-2.252 0-3.115L15.1 2.712c.882-.856 2.31-.856 3.19 0l12.44 12.14" stroke="#FFF" stroke-width="3.213"/>
@@ -20,72 +20,76 @@
                 </g>
             </svg>
         </div>
-        <div class="header__infos">
-            <a href="#">Go to website</a>
-            <a href="#">Get some help</a>
-            <span>Richard | <a href="#">Logout</a></span>
+        <div class="sidebar__user">
+            Hello Richard
         </div>
-    </header>
-
-    <div class="layout">
+        <div class="sidebar__links">
+            <li><a href="#"><i class="fa fa-external-link icon"></i> Go to website</a></li>
+            <li><a href="login.html"><i class="fa fa-sign-out icon"></i> Se déconnecter</a></li>
+        </div>
         <nav class="navigation">
-            <a href="#"><i class="fa fa-dashboard icon"></i> Dashboard</a>
-            <a href="#"><i class="fa fa-pencil icon"></i> Blog</a>
-            <a href="#"><i class="fa fa-users icon"></i> Users</a>
-            <a href="#"><i class="fa fa-pie-chart icon"></i> Stats</a>
-            <a href="#"><i class="fa fa-envelope icon"></i> Contact</a>
-        </nav>
-
-        <main class="content">
-
-            <div class="menu">
-                <a href="#" class="is-active">Menu 1</a>
-                <a href="#">Menu 2</a>
-                <a href="#">Menu 3</a>
-                <a href="#">Menu 4</a>
-            </div>
-
-            <!-- Module box -->
-            <ul class="boxTab">
-                <li class="is-active"><a href="#">Tab 1</a></li>
-                <li><a href="#">Tab 2</a></li>
-                <li><a href="#">Tab 3</a></li>
+            <ul>
+                <li class="navigation__header">Menu 1</li>
+                <li class="isActive"><a href="#">Menu 1.a</a></li>
+                <li><a href="#">Menu 1.b</a></li>
+                <li><a href="#">Menu 1.c</a></li>
+                <li class="navigation__header">Menu 2</li>
+                <li><a href="#">Menu 2.a</a></li>
+                <li><a href="#">Menu 2.b</a></li>
+                <li><a href="#">Menu 2.c</a></li>
             </ul>
-            <article class="box">
-                <header class="box__header">Box module with header and footer</header>
-                <div class="box__actions">
-                    <a href="#" class="btn btn--primary">btn btn--primary</a>
-                    <button class="btn btn--secondary">btn btn--secondary</button>
-                    <button class="btn btn--danger">btn btn--danger</button>
-                    <div class="pullRight">
-                        <button class="btn btn--disabled" disabled>btn btn--disabled</button>
-                        <button class="btn btn--action pullLeft" disabled><i class="fa fa-cog"></i> btn btn--action</button>
+        </nav>
+    </aside>
+    <main class="content">
+
+        <div class="menu mb3">
+            <span class="menu__label">Menu : </span>
+            <ul>
+                <li class="is-active"><a href="#">page 1</a></li>
+                <li><a href="#">page 2</a></li>
+                <li><a href="#">page 3</a></li>
+            </ul>
+        </div>
+
+        <!-- Module box -->
+        <ul class="boxTab">
+            <li class="is-active"><a href="#">Tab 1</a></li>
+            <li><a href="#">Tab 2</a></li>
+            <li><a href="#">Tab 3</a></li>
+        </ul>
+        <article class="box">
+            <header class="box__header">Box module with header and footer</header>
+            <div class="box__actions">
+                <a href="#" class="btn btn--primary">btn btn--primary</a>
+                <button class="btn btn--secondary">btn btn--secondary</button>
+                <button class="btn btn--danger">btn btn--danger</button>
+                <div class="pullRight">
+                    <button class="btn btn--disabled" disabled>btn btn--disabled</button>
+                    <button class="btn btn--action pullLeft" disabled><i class="fa fa-cog"></i> btn btn--action</button>
+                </div>
+            </div>
+            <div class="box__content">
+                <h1>Title 1</h1>
+                <h2>Title 2</h2>
+                <h3>Title 3</h3>
+
+                <div class="grid-3">
+                    <div>
+                        <p>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="box__content">
-                    <h1>Title 1</h1>
-                    <h2>Title 2</h2>
-                    <h3>Title 3</h3>
 
-                    <p>Grid example</p>
-
-                    <div class="grid-3">
-                        <div>
-                            <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                            </p>
-                        </div>
-                        <div>
-                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
-                        </div>
-                        <div>
-                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                        </div>
-                    </div>
-
-                </div>
-                <footer class="box__footer txtcenter">Here's a footer</footer>
+            </div>
+            <footer class="box__footer txtcenter">Here's a footer</header>
             </article>
             <!-- /Module box -->
 
@@ -148,7 +152,7 @@
                                 <th>Header content 1</th>
                                 <th>Header content 2</th>
                                 <th>Header content 3</th>
-                                <th class="table-150p txtcenter">Actions</th>
+                                <th class="table-100p">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -160,13 +164,13 @@
                             </tr>
                             <tr>
                                 <td>Body content 1</td>
-                                <td>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</td>
+                                <td>enean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</td>
                                 <td>Body content 3</td>
                                 <td class="table-actions"><a href="#" class="btn btn--action">actions</a></td>
                             </tr>
                             <tr>
                                 <td>Body content 1</td>
-                                <td>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</td>
+                                <td>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus</td>
                                 <td>Body content 3</td>
                                 <td class="table-actions"><a href="#" class="btn btn--action">actions</a></td>
                             </tr>
@@ -181,31 +185,30 @@
 
                     <div class="f-group">
                         <label for="firstname">Firstname <i class="f-required">*</i></label>
-                        <input type="text" id="firstname">
+                        <input type="text" id="firstname" placeholder="firstname">
                     </div>
 
                     <div class="f-group">
                         <label for="lastname">Lastname <i class="f-required">*</i></label>
-                        <input type="text" id="lastname">
+                        <input type="text" id="lastname" placeholder="lastname">
                     </div>
-                    <h2>Grid example (autogrid)</h2>
+                    <h2>Grid example</h2>
                     <div class="f-grid">
                         <div class="f-group">
                             <label for="field1">Field 1 <i class="f-required">*</i></label>
-                            <input type="text" id="field1">
+                            <input type="text" id="field1" placeholder="lastname">
                         </div>
 
                         <div class="f-group">
                             <label for="field2">Field 2 <i class="f-required">*</i></label>
-                            <input type="text" id="field2">
+                            <input type="text" id="field2" placeholder="lastname">
                         </div>
 
                         <div class="f-group">
                             <label for="field3">Field 3 <i class="f-required">*</i></label>
-                            <input type="text" id="field3">
+                            <input type="text" id="field3" placeholder="lastname">
                         </div>
                     </div>
-                    
                     <h2>With errors</h2>
 
                     <div class="f-group f-error">
@@ -235,7 +238,6 @@
             <!-- /Alerts -->
 
             <h1 class="txtcenter">Helpers</h1>
-
             <article class="box">
                 <header class="box__header">Thumbnail</header>
                 <div class="box__content">
@@ -251,9 +253,10 @@
                 </div>
             </article>
 
+            <h1 class="txtcenter">Cards</h1>
 
             <article class="box">
-                <header class="box__header">Cards</header>
+                <header class="box__header">A simple box</header>
                 <div class="box__content">
                     <div class="grid-5">
 
@@ -268,6 +271,7 @@
                         </div>
                         <!-- /module card -->
 
+                        <!-- Module card -->
                         <div class="card">
                             <div class="card__content card__content--pic">
                                 <img src="http://placehold.it/200x150/fafafa/686868" alt="">
@@ -276,7 +280,9 @@
                                 <i class="fa fa-cog"></i> actions
                             </button>
                         </div>
+                        <!-- /module card -->
 
+                        <!-- Module card -->
                         <div class="card">
                             <div class="card__content card__content--pic">
                                 <img src="http://placehold.it/200x150/fafafa/686868" alt="">
@@ -285,7 +291,9 @@
                                 <i class="fa fa-cog"></i> actions
                             </button>
                         </div>
+                        <!-- /module card -->
 
+                        <!-- Module card -->
                         <div class="card">
                             <div class="card__content card__content--pic">
                                 <img src="http://placehold.it/200x150/fafafa/686868" alt="">
@@ -294,7 +302,9 @@
                                 <i class="fa fa-cog"></i> actions
                             </button>
                         </div>
+                        <!-- /module card -->
 
+                        <!-- Module card -->
                         <div class="card">
                             <div class="card__content card__content--pic">
                                 <img src="http://placehold.it/200x150/fafafa/686868" alt="">
@@ -303,39 +313,55 @@
                                 <i class="fa fa-cog"></i> actions
                             </button>
                         </div>
+                        <!-- /module card -->
                     </div>
                 </div>
             </article>
 
+            <h1 class="txtcenter">Menu item</h1>
 
             <article class="box">
                 <header class="box__header">Menu item</header>
                 <div class="box__content">
-                    <div class="tree tree--draggable">
-                        <div data-level="1">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 1</div>
-                        </div>
+                    <div class="menuItem" data-level="1">
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
 
-                        <div data-level="2">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 2</div>
-                        </div>
+                    <div class="menuItem" data-level="2">
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
 
-                        <div data-level="3">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 3</div>
-                        </div>
+                    <div class="menuItem" data-level="2">
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
 
-                        <div data-level="4">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 4</div>
-                        </div>
+
+                    <div class="menuItem" data-level="3">
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+
+                    <div class="menuItem" data-level="1">
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
+                        <div class="menuItem__label">Here some content</div>
+                        <i class="fa fa-cog menuItem__icon"></i>
+                    </div>
+
+
+                    <div class="menuItem" data-level="1">
+                        <i class="fa fa-arrows menuItem__icon isDraggable"></i>
+                        <div class="menuItem__label">Here some content</div>
                     </div>
                 </div>
             </article>
 
         </main>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
