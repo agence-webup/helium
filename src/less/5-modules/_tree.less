@@ -4,9 +4,10 @@
 
 .tree > [data-level] {
   display: flex;
-  background-color: #fafafa;
-  border: 1px solid #edf1f4;
   margin-bottom: 1rem;
+  border: 1px solid #edf1f4;
+  background-color: #fafafa;
+
   align-items: center;
 }
 
@@ -15,16 +16,17 @@
 }
 
 .treeItem__label {
-  flex: 1;
   margin-left: 1.5rem;
+
+  flex: 1 1 auto;
 }
 
 .treeItem__action {
-  text-align: center;
+  padding: 1.2rem .5rem;
   width: 5rem;
   background-color: @btn-action;
   color: #fff;
-  padding: 1.2rem .5rem;
+  text-align: center;
   font-size: 1.8rem;
 }
 
