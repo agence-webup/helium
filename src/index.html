@@ -215,6 +215,13 @@
                             <li>Email is required</li>
                         </ul>
                     </div>
+
+                    <h2>Group button</h2>
+                    <div class="f-group btn-group">
+                        <button class="btn btn--primary">Action 1</button>
+                        <input type="text" id="email" placeholder="user@example.com">
+                        <button class="btn btn--secondary">Action 2</button>
+                    </div>
                 </div>
             </article>
 
@@ -307,32 +314,69 @@
                 </div>
             </article>
 
-
             <article class="box">
-                <header class="box__header">Menu item</header>
+                <header class="box__header">List item</header>
                 <div class="box__content">
-                    <div class="tree tree--draggable">
-                        <div data-level="1">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 1</div>
-                        </div>
 
-                        <div data-level="2">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 2</div>
-                        </div>
-
-                        <div data-level="3">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 3</div>
-                        </div>
-
-                        <div data-level="4">
-                            <button class="treeItem__action"><i class="fa fa-cog menuItem__icon"></i></button>
-                            <div class="treeItem__label">Level 4</div>
-                        </div>
+                    <ul class="list">
+                        <li>
+                            <div class="list__action is-draggable">
+                                <i class="fa fa-arrows" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__action list__action--dropdown">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__thumb">
+                                <img src="http://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="list__content">
+                                Donec id elit non mi porta gravida at eget metus.
+                            </div>
+                        </li>
+                        <li data-level="2">
+                            <div class="list__action is-draggable">
+                                <i class="fa fa-arrows" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__action list__action--dropdown">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__thumb">
+                                <img src="http://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="list__content">
+                                Donec id elit non mi porta gravida at eget metus.
+                            </div>
+                        </li>
+                        <li data-level="2">
+                            <div class="list__action is-draggable">
+                                <i class="fa fa-arrows" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__action list__action--dropdown">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__thumb">
+                                <img src="http://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="list__content">
+                                Donec id elit non mi porta gravida at eget metus.
+                            </div>
+                        </li>
+                        <li data-level="3">
+                            <div class="list__action is-draggable">
+                                <i class="fa fa-arrows" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__action list__action--dropdown">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </div>
+                            <div class="list__thumb">
+                                <img src="http://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="list__content">
+                                Donec id elit non mi porta gravida at eget metus.
+                            </div>
+                        </li>
                     </div>
-                </div>
+                </ul>
             </article>
 
         </main>

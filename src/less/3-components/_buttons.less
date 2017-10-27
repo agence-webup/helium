@@ -113,3 +113,25 @@ input[type="submit"] {
 .btn--big {
   font-size: @base-font + 4;
 }
+
+/* btn group
+-------------------------------------------------------------- */
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group > *:first-child {
+  border-top-left-radius: .4rem;
+  border-bottom-left-radius: .4rem;
+}
+
+.btn-group > *:last-child {
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.btn-group input,
+.btn-group button {
+  border-radius: 0;
+}
