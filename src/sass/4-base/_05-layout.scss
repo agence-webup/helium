@@ -1,0 +1,63 @@
+/* ----------------------------------------------------------- */
+/* == layout */
+/* ----------------------------------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-color;
+}
+
+.layout {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.navigation {
+  width: 100px;
+  background-color: #3b4557;
+  flex-shrink: 0;
+}
+
+.content {
+  padding: 5rem;
+  flex: 1 0 0;
+}
+
+/* sidebar
+-------------------------------------------------------------- */
+
+.sidebar {
+  color: #fff;
+}
+
+.sidebar a,
+.sidebar a:visited,
+.sidebar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar__logo {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.sidebar__user {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: .3em;
+}
+
+.sidebar__links {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+.sidebar__link a {
+  display: inline-block;
+}

@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------- */
+/* == loader */
+/* ----------------------------------------------------------- */
+
+.loader {
+  position: relative;
+}
+
+.loader__state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: .9;
+}
+
+.loader__stateIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-dark-text;
+}
+
+.loader__stateIcon:before {
+  text-align: center;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+}

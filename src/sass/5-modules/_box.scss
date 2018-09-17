@@ -1,0 +1,74 @@
+/* ----------------------------------------------------------- */
+/* == box */
+/* ----------------------------------------------------------- */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  border: 1px solid darken($background-color, 5%);
+  background-color: #fff;
+}
+
+.box__content {
+  flex: 1 1 auto;
+}
+
+.box__header,
+.box__actions,
+.box__footer {
+  padding: 1.5rem 2rem;
+}
+
+/* content
+-------------------------------------------------------------- */
+
+.box__content {
+  padding: 2rem 3rem 3rem 3rem;
+}
+
+.box__content h1:first-child,
+.box__content h2:first-child,
+.box__content h3:first-child,
+.box__content h4:first-child {
+  margin-top: 0;
+}
+
+.box__content--noPadding {
+  padding: 0;
+}
+
+/* header
+-------------------------------------------------------------- */
+
+.box__header {
+  border-bottom: 1px solid darken($background-color, 8%);
+  font-size: 2rem;
+}
+
+/* actions
+-------------------------------------------------------------- */
+
+.box__actions {
+  display: flex;
+  border-bottom: 1px solid darken($background-color, 8%);
+}
+
+.box__actions > * {
+  margin-right: 1rem;
+
+  flex: 0 1 auto;
+}
+
+.box__actions .pullRight > * {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+/* footer
+-------------------------------------------------------------- */
+
+
+.box__footer {
+  border-top: 1px solid darken($background-color, 8%);
+}

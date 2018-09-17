@@ -1,0 +1,33 @@
+/* ----------------------------------------------------------- */
+/* == navigation */
+/* ----------------------------------------------------------- */
+
+.navigation a,
+.navigation a:hover,
+.navigation a:visited {
+  color: #ececec;
+  text-decoration: none;
+}
+
+.navigation a {
+  display: block;
+  margin-top: 3rem;
+  padding: 0 .2rem;
+  border-right: 3px solid transparent;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.navigation a .icon {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.navigation a .icon:before {
+  font-size: 3rem;
+}
+
+.navigation a.is-active {
+  border-color: $background-color;
+  color: #fff;
+}

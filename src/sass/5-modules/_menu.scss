@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------- */
+/* == menu */
+/* ----------------------------------------------------------- */
+
+.menu {
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.menu a,
+.menu a:hover,
+.menu a:visited {
+  color: $color-dark-text;
+}
+
+.menu a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 #ebebeb;
+  text-decoration: none;
+}
+
+.menu a.is-active {
+  background-color: $color-webup;
+  color: #fff;
+}

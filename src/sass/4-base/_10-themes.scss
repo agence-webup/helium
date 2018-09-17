@@ -1,0 +1,36 @@
+/* ----------------------------------------------------------- */
+/* == themes */
+/* ----------------------------------------------------------- */
+
+$color-theme-1: #44c1bd;
+$color-theme-2: #9c96d1;
+
+/* theme 1
+-------------------------------------------------------------- */
+
+.theme-1 .header {
+  background-color: $color-theme-1;
+}
+
+.theme-1 .header__logo {
+  background-color: darken($color-theme-1, 15%);
+}
+
+.theme-1 .menu a.is-active {
+  background-color: $color-theme-1;
+}
+
+/* theme 2
+-------------------------------------------------------------- */
+
+.theme-2 .header {
+  background-color: $color-theme-2;
+}
+
+.theme-2 .header__logo {
+  background-color: darken($color-theme-2, 15%);
+}
+
+.theme-2 .menu a.is-active {
+  background-color: $color-theme-2;
+}
