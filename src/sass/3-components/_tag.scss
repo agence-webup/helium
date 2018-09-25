@@ -1,0 +1,48 @@
+/* ----------------------------------------------------------- */
+/* == tag */
+/* ----------------------------------------------------------- */
+
+.tag {
+    display: inline-block;
+    padding: .1em .5em;
+    border-radius: 8px;
+    background-color: grey;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  
+  .tag:empty {
+    padding: 0;
+    width: 1.2em;
+    height: 1.2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+  
+  .tag--green {
+    background-color: $color-green;
+  }
+  
+  .tag--red {
+    background-color: $color-red;
+  }
+  
+  .tag--blue {
+    background-color: $color-blue;
+  }
+  
+  
+  .tag--orange {
+    background-color: $color-orange;
+  }
+  
+  .tag--yellow {
+    background-color: $color-yellow;
+  }
+  
+  .tag--grey {
+    background-color: $color-grey;
+    color: #000;
+  }
+  

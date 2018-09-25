@@ -5,32 +5,21 @@
 // palette
 // --------------------------------------------------------------
 
-$color-primary    : #3498db;
-$color-secondary  : #1abc9c;
+$color-red        : #ff3f4d;
+$color-yellow     : #fcd286;
+$color-green      : #00cbbd;
+$color-blue       : #00bce9;
+$color-purple     : #ac8ecb;
+$color-orange     : #fd8242;
+$color-grey       : #ebebeb;
+
+$color-primary    : $color-blue;
+$color-secondary  : $color-green;
 $color-tertiary   : #34495e;
 
-$color-info: #2185d0;
-
-$color-webup      : #00a0d1;
-
-$color-red        : #d7172a;
-$color-yellow     : #f4c259;
-$color-green      : #00cbbc;
-$color-blue       : #32ace8;
-$color-purple     : #af62db;
-
-$background-color : #f5f7fb;
+$color-focus: $color-blue;
+$background-color : #f8f9fc;
 $separator-color  : #d1d1d1;
-
-
-// buttons
-// --------------------------------------------------------------
-
-$btn-primary: $color-green;
-$btn-secondary: $color-yellow;
-$btn-danger: $color-red;
-$btn-disabled: #f7f7f7;
-$btn-action: $color-blue;
 
 
 // texts

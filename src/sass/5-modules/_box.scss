@@ -6,7 +6,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
-  border: 1px solid darken($background-color, 5%);
+  border: 1px solid rgba(0, 40, 100, .12);
+  border-radius: 3px;
   background-color: #fff;
 }
 
@@ -17,7 +18,7 @@
 .box__header,
 .box__actions,
 .box__footer {
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
 }
 
 /* content
@@ -43,7 +44,7 @@
 
 .box__header {
   border-bottom: 1px solid darken($background-color, 8%);
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 /* actions
@@ -55,9 +56,8 @@
 }
 
 .box__actions > * {
-  margin-right: 1rem;
-
   flex: 0 1 auto;
+  margin-right: 1rem;
 }
 
 .box__actions .pullRight > * {

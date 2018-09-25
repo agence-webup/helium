@@ -2,32 +2,39 @@
 /* == navigation */
 /* ----------------------------------------------------------- */
 
+.navigation {
+  border-bottom: 1px solid #e0e5eb;
+  background-color: #fff;
+}
+
 .navigation a,
 .navigation a:hover,
 .navigation a:visited {
-  color: #ececec;
+  color: #5e5e5e;
   text-decoration: none;
 }
 
 .navigation a {
-  display: block;
-  margin-top: 3rem;
-  padding: 0 .2rem;
-  border-right: 3px solid transparent;
-  text-align: center;
-  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid #e0e5eb;
+  border-bottom: 1px solid transparent;
+  font-size: 1.4rem;
 }
 
-.navigation a .icon {
-  display: block;
-  margin-bottom: .5rem;
+.navigation .is-active {
+  border-bottom-color: $color-primary;
+}
+
+.navigation .container a:first-child {
+  border-left: 1px solid #e0e5eb;
 }
 
 .navigation a .icon:before {
   font-size: 3rem;
 }
 
-.navigation a.is-active {
-  border-color: $background-color;
-  color: #fff;
+.navigation .feather {
+  height: 1.8rem;
+  vertical-align: sub;
 }

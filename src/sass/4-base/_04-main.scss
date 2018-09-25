@@ -3,7 +3,6 @@
 /* ----------------------------------------------------------- */
 
 body {
-  background-color: #fff;
   color: $color-dark-text;
   font-family: $fontstack1;
 }
@@ -12,7 +11,8 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 0 10px;
-  max-width: 1024px;
+  max-width: 130rem;
+  width: 95%;
 }
 
 /* titles
