@@ -1,16 +1,21 @@
 {
   "name": "helium-admin",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "A lightweight admin boilerplate",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "datatables.net-dt": "^1.10.19",
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "browser-sync": "^2.14.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-clean-css": "^2.3.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-less": "^3.1.0",
     "gulp-sass": "^4.0.1"
   },
   "scripts": {
