@@ -22,6 +22,12 @@ gulp.task('sass', () => {
         .pipe(bsync.stream());
 });
 
+gulp.task('js', function () {
+    return gulp.src('./src/js/*.js')
+        .pipe(concat('helium-base.js'))
+        .pipe(gulp.dest('./dist/js'));
+});
+
 gulp.task('copy:html', function () {
     return gulp.src('./src/*.html')
         .pipe(gulp.dest('./dist'));
@@ -38,7 +44,7 @@ gulp.task('css:vendors', function () {
 gulp.task('js:vendors', function () {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/datatables.net-dt/js/dataTables.dataTables.min.js'
+        'node_modules/datatables.net/js/jquery.dataTables.min.js'
         ])
         .pipe(concat('helium-vendors.js'))
         .pipe(gulp.dest('./dist/js'));
@@ -60,6 +66,7 @@ gulp.task('watch', () => {
     });
 
     gulp.watch('./src/sass/**/*', gulp.series('sass'));
+    gulp.watch('./src/js/**/*', gulp.series('js'));
     gulp.watch('./src/**/*.html', gulp.series('copy:html', reload));
 });
 

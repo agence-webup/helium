@@ -68,19 +68,25 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr data-link="#">
+                            <tr data-link="#line1">
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
                             </tr>
-                            <tr data-link="#">
+                            <tr data-link="#line2">
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
                             </tr>
-                            <tr data-link="#">
+                            <tr data-link="#line3">
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                            </tr>
+                            <tr data-link="#line3">
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
@@ -93,8 +99,6 @@
             </article>
             <!-- /Module box -->
             
-            
-            <!-- Grid example -->
             <div>
                 <article class="box">
                     <header class="box__header">Content with no padding</header>
@@ -140,42 +144,6 @@
                     </div>
                 </article>
             </div>
-            <!-- /Grid example -->
-            
-            <article class="box">
-                <div class="box__content">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Header content 1</th>
-                                <th>Header content 2</th>
-                                <th>Header content 3</th>
-                                <th class="table-150p txtcenter">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</td>
-                                <td>Body content 2</td>
-                                <td>Body content 3</td>
-                                <td class="table-actions"><a href="#" class="btn btn--action">actions</a></td>
-                            </tr>
-                            <tr>
-                                <td>Body content 1</td>
-                                <td>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</td>
-                                <td>Body content 3</td>
-                                <td class="table-actions"><a href="#" class="btn btn--action">actions</a></td>
-                            </tr>
-                            <tr>
-                                <td>Body content 1</td>
-                                <td>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</td>
-                                <td>Body content 3</td>
-                                <td class="table-actions"><a href="#" class="btn btn--action">actions</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
             
             <article class="box">
                 <div class="box__content">
@@ -234,7 +202,7 @@
             <div class="notif notif--warning mb1">
                 Hey, this is a warning !
             </div>
-
+            
             <div class="notif notif--info mb1">
                 Hey, this is an info!
             </div>
@@ -248,14 +216,24 @@
                 <header class="box__header">Thumbnail</header>
                 <div class="box__content">
                     <div class="thumbnail thumbnail--small mr2">
-                        <img src="http://placehold.it/300x300" alt="">
+                        <img src="https://picsum.photos/300/300?image=10" alt="">
                     </div>
                     <div class="thumbnail thumbnail--medium mr2">
-                        <img src="http://placehold.it/300x300" alt="">
+                        <img src="https://picsum.photos/300/300?image=11" alt="">
                     </div>
-                    <div class="thumbnail thumbnail--large">
-                        <img src="http://placehold.it/300x300" alt="">
+                    <div class="thumbnail thumbnail--large mr2">
+                        <img src="https://picsum.photos/300/300?image=12" alt="">
                     </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--small mr2">
+                        <img src="https://picsum.photos/300/300?image=13" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--medium mr2">
+                        <img src="https://picsum.photos/300/300?image=14" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--large">
+                        <img src="https://picsum.photos/300/300?image=15" alt="">
+                    </div>
+                    
                 </div>
             </article>
             
@@ -328,13 +306,11 @@
         </main>
     </div>
     <script src="js/helium-vendors.js"></script>
+    <script src="js/helium-base.js"></script>
     
     <script>
         feather.replace()
-        
-        $(document).ready( function () {
-            $('.dataTable').DataTable();
-        } );
+        $('.dataTable').DataTable();
     </script>
 </body>
 </html>
