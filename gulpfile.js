@@ -4,6 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const bsync = require('browser-sync').create();
 const ghPages = require('gulp-gh-pages');
 const cleanCss = require('gulp-clean-css');
+const concat = require('gulp-concat');
 
 function reload(done) {
     bsync.reload();
@@ -11,19 +12,36 @@ function reload(done) {
 }
 
 gulp.task('sass', () => {
-    return gulp.src('./src/sass/style.scss')
+    return gulp.src('./src/sass/helium-base.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(cleanCss())
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
         .pipe(gulp.dest('./dist/css'))
-        .pipe(browserSync.stream());
+        .pipe(bsync.stream());
 });
 
 gulp.task('copy:html', function () {
     return gulp.src('./src/*.html')
         .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('css:vendors', function () {
+    return gulp.src([
+        'node_modules/datatables.net-dt/css/jquery.dataTables.min.css'
+        ])
+        .pipe(concat('helium-vendors.css'))
+        .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('js:vendors', function () {
+    return gulp.src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/datatables.net-dt/js/dataTables.dataTables.min.js'
+        ])
+        .pipe(concat('helium-vendors.js'))
+        .pipe(gulp.dest('./dist/js'));
 });
 
 gulp.task('deploy', function () {
@@ -46,3 +64,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', gulp.series('sass', 'copy:html'));
+gulp.task('vendors', gulp.parallel('css:vendors', 'js:vendors'));
