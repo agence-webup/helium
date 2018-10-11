@@ -18,19 +18,29 @@ $notif-error: #ff3860;
 .notif {
   padding: 1em;
   border-radius: 4px;
+  border: 1px solid transparent;
 }
 
 .notif--success {
-  background-color: $notif-success;
-  color: #fff;
+  color: #316100;
+  background-color: #dff1cc;
+  border-color: #d2ecb8;
 }
 
 .notif--warning {
-  background-color: $notif-warning;
-  color: #fff;
+  color: #7d6608;
+  background-color: #fcf3cf;
+  border-color: #fbeebc;
+}
+
+.notif--info {
+  color: #24587e;
+  background-color: #daeefc;
+  border-color: #cbe7fb;
 }
 
 .notif--error {
-  background-color: $notif-error;
-  color: #fff;
+  color: #6b1110;
+  background-color: #f5d2d2;
+  border-color: #f1c1c0;
 }

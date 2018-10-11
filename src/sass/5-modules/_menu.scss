@@ -17,10 +17,9 @@
   display: inline-block;
   margin-right: 1rem;
   padding: 1rem 2rem;
-  border: 1px solid rgba(0, 40, 100, .12);
-  border-radius: 3px;
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
   background: #fff;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
   text-decoration: none;
 }
 

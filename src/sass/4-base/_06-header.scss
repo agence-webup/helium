@@ -3,9 +3,10 @@
 /* ----------------------------------------------------------- */
 
 .header {
-  border-bottom: 1px solid #e0e5eb;
+  border-bottom: $base-border-thin;
   background-color: #fff;
   color: #fff;
+  padding: .5rem 0;
 }
 
 .header > .container {
@@ -23,10 +24,11 @@
 }
 
 .header__logo > svg {
-  height: 3.5rem;
+  height: 3rem;
+  display: block;
 }
 
 .header__infos a {
   display: inline-block;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }

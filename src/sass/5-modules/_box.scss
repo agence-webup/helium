@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
-  border: 1px solid rgba(0, 40, 100, .12);
-  border-radius: 3px;
+  border-radius: $base-border-radius;
   background-color: #fff;
+  box-shadow: $base-box-shadow;
 }
 
 .box__content {
@@ -43,7 +43,7 @@
 -------------------------------------------------------------- */
 
 .box__header {
-  border-bottom: 1px solid darken($background-color, 8%);
+  border-bottom: $base-border-thin;
   font-size: 1.8rem;
 }
 
@@ -52,7 +52,7 @@
 
 .box__actions {
   display: flex;
-  border-bottom: 1px solid darken($background-color, 8%);
+  border-bottom: $base-border-thin;
 }
 
 .box__actions > * {
@@ -70,5 +70,5 @@
 
 
 .box__footer {
-  border-top: 1px solid darken($background-color, 8%);
+  border-top: $base-border-thin;
 }

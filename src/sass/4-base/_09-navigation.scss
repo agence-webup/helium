@@ -3,7 +3,7 @@
 /* ----------------------------------------------------------- */
 
 .navigation {
-  border-bottom: 1px solid #e0e5eb;
+  border-bottom: $base-border-thin;
   background-color: #fff;
 }
 
@@ -17,8 +17,8 @@
 .navigation a {
   display: inline-block;
   padding: 1rem 1.5rem;
-  border-right: 1px solid #e0e5eb;
-  border-bottom: 1px solid transparent;
+  border-right: $base-border-thin;
+  border-bottom: 2px solid transparent;
   font-size: 1.4rem;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .navigation .container a:first-child {
-  border-left: 1px solid #e0e5eb;
+  border-left: $base-border-thin;
 }
 
 .navigation a .icon:before {

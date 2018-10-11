@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Helium : admin boilerplate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/helium-vendors.css" media="all">
+    <link rel="stylesheet" href="css/helium-base.css" media="all">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
@@ -57,7 +58,7 @@
                     <button class="btn btn--disabled" disabled>btn btn--disabled</button>
                 </div>
                 <div class="box__content">
-                    <table id="users" class="dataTable stripe hover">
+                    <table class="dataTable stripe hover">
                         <thead>
                             <tr>
                                 <th>Col 1</th>
@@ -67,6 +68,18 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr data-link="#">
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                            </tr>
+                            <tr data-link="#">
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                                <td>Justo Etiam</td>
+                            </tr>
                             <tr data-link="#">
                                 <td>Justo Etiam</td>
                                 <td>Justo Etiam</td>
@@ -124,12 +137,6 @@
                                 <td><span class="tag tag--grey"></span></td>
                             </tr>
                         </table>
-                    </div>
-                </article>
-                <article class="box loader">
-                    <div class="loader__state"><i class="fa fa-spinner fa-spin loader__stateIcon"></i></div>
-                    <header class="box__header">Loading state</header>
-                    <div class="box__content loader">
                     </div>
                 </article>
             </div>
@@ -220,15 +227,19 @@
             </article>
             
             <!-- Alerts -->
-            <div class="alert alert--success">
+            <div class="notif notif--success mb1">
                 Everything's just fine!
             </div>
             
-            <div class="alert alert--info">
+            <div class="notif notif--warning mb1">
+                Hey, this is a warning !
+            </div>
+
+            <div class="notif notif--info mb1">
                 Hey, this is an info!
             </div>
             
-            <div class="alert alert--error">
+            <div class="notif notif--error mb5">
                 You should panic!
             </div>
             <!-- /Alerts -->
@@ -316,8 +327,14 @@
             </article>
         </main>
     </div>
+    <script src="js/helium-vendors.js"></script>
+    
     <script>
         feather.replace()
+        
+        $(document).ready( function () {
+            $('.dataTable').DataTable();
+        } );
     </script>
 </body>
 </html>
