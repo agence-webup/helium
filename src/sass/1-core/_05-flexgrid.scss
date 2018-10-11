@@ -81,10 +81,14 @@
   @else {
     $g : $gutter / 2;
 
-    &>* {
-      margin-bottom: $mb;
+    & {
+      margin-bottom: -$mb; /* avoid unwanted margin on last line */
     }
 
+    & > *:nth-child(n) {
+      margin-bottom: $mb;
+    }
+    
     & > *:nth-child(odd) {
       $size : ($column1 * 100%) / ($column1 + $column2);
 

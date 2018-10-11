@@ -5,7 +5,7 @@
 .box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   border-radius: $base-border-radius;
   background-color: #fff;
   box-shadow: $base-box-shadow;
@@ -55,12 +55,12 @@
   border-bottom: $base-border-thin;
 }
 
-.box__actions > * {
+.box__actions>* {
   flex: 0 1 auto;
   margin-right: 1rem;
 }
 
-.box__actions .pullRight > * {
+.box__actions .pullRight>* {
   margin-right: 0;
   margin-left: 1rem;
 }
