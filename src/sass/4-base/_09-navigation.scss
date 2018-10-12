@@ -2,9 +2,13 @@
 /* == navigation */
 /* ----------------------------------------------------------- */
 
-.navigation {
+.navigation-wrapper {
   border-bottom: $base-border-thin;
   background-color: #fff;
+}
+
+.navigation {
+  display: flex;
 }
 
 .navigation a,
@@ -14,7 +18,9 @@
   text-decoration: none;
 }
 
-.navigation a {
+.navigation > a,
+.navigation > span {
+  position: relative;
   display: inline-block;
   padding: 1rem 1.5rem;
   border-right: $base-border-thin;
@@ -22,11 +28,19 @@
   font-size: 1.4rem;
 }
 
+.navigation > a:hover {
+  border-bottom: 2px solid $color-secondary;
+}
+
+.navigation > span {
+  cursor: default;
+}
+
 .navigation .is-active {
   border-bottom-color: $color-primary;
 }
 
-.navigation .container a:first-child {
+.navigation > a:first-child {
   border-left: $base-border-thin;
 }
 
@@ -37,4 +51,35 @@
 .navigation .feather {
   height: 1.8rem;
   vertical-align: sub;
+}
+
+/* sub
+-------------------------------------------------------------- */
+
+.navigation > span:hover > .navigation__sub {
+  display: block;
+}
+
+.navigation__sub {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: -1px;
+  display: none;
+  min-width: 20rem;
+  border: $base-border-thin;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+}
+
+.navigation__sub > a,
+.navigation__sub > span {
+  display: block;
+  padding: 1rem 1.5rem;
+  border-bottom: $base-border-thin;
+  border-left: 2px solid transparent;
+}
+
+.navigation__sub > a:hover {
+  border-left: 2px solid $color-secondary;
 }

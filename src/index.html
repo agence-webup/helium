@@ -29,13 +29,23 @@
             </div>
         </div>
     </header>
-    <nav class="navigation">
+    <nav class="navigation-wrapper">
         <div class="container">
-            <a href="#" class="is-active"><i data-feather="home"></i> Dashboard</a>
-            <a href="#"><i data-feather="book-open"></i> Blog</a>
-            <a href="#"><i data-feather="user"></i> Users</a>
-            <a href="#"><i data-feather="pie-chart"></i> Stats</a>
-            <a href="#"><i data-feather="send"></i> Contact</a>
+            <div class="navigation">
+                <a href="#" class="is-active"><i data-feather="home"></i> Home</a>
+                <a href="#"><i data-feather="edit"></i> Forms</a>
+                <a href="#"><i data-feather="grid"></i> Grids</a>
+                <a href="#"><i data-feather="box"></i> Components</a>
+                <span href="#">
+                    <i data-feather="book"></i> Documentation
+                    <span class="navigation__sub">
+                        <a href=="#">Link 1</a>
+                        <a href=="#">Link 2</a>
+                        <a href=="#">Link 3</a>
+                        <a href=="#">Link 4</a>
+                    </span>
+                </span>
+            </div>
         </div>
     </nav>
     
@@ -98,101 +108,6 @@
                 <footer class="box__footer txtcenter">Here's a footer</footer>
             </article>
             
-            <div class="mb1">
-                <div class="grid grid-2 mb3">
-                    <div class="box pa2">grid 2</div>
-                    <div class="box pa2">grid 2</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-3 mb3">
-                    <div class="box pa2">grid 3</div>
-                    <div class="box pa2">grid 3</div>
-                    <div class="box pa2">grid 3</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-4 mb3">
-                    <div class="box pa2">grid 4</div>
-                    <div class="box pa2">grid 4</div>
-                    <div class="box pa2">grid 4</div>
-                    <div class="box pa2">grid 4</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-5">
-                    <div class="box pa2">grid 5</div>
-                    <div class="box pa2">grid 5</div>
-                    <div class="box pa2">grid 5</div>
-                    <div class="box pa2">grid 5</div>
-                    <div class="box pa2">grid 5</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-6">
-                    <div class="box pa2">grid 6</div>
-                    <div class="box pa2">grid 6</div>
-                    <div class="box pa2">grid 6</div>
-                    <div class="box pa2">grid 6</div>
-                    <div class="box pa2">grid 6</div>
-                    <div class="box pa2">grid 6</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-4-1">
-                    <div class="box pa2">grid 4-1</div>
-                    <div class="box pa2">grid 4-1</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-3-1">
-                    <div class="box pa2">grid 3-1</div>
-                    <div class="box pa2">grid 3-1</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-2-1">
-                    <div class="box pa2">grid 2-1</div>
-                    <div class="box pa2">grid 2-1</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-3-2">
-                    <div class="box pa2">grid 3-2</div>
-                    <div class="box pa2">grid 3-2</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-2">
-                    <div class="box pa2">grid 2</div>
-                    <div class="box pa2">grid 2</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-2-3">
-                    <div class="box pa2">grid 2-3</div>
-                    <div class="box pa2">grid 2-3</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-1-2">
-                    <div class="box pa2">grid 1-2</div>
-                    <div class="box pa2">grid 1-2</div>
-                </div>
-            </div>
-            <div class="mb1">
-                <div class="grid grid-1-3">
-                    <div class="box pa2">grid 1-3</div>
-                    <div class="box pa2">grid 1-3</div>
-                </div>
-            </div>
-            <div class="mb3">
-                <div class="grid grid-1-4">
-                    <div class="box pa2">grid 1-4</div>
-                    <div class="box pa2">grid 1-4</div>
-                </div>
-            </div>
-            
             <div>
                 <article class="box">
                     <header class="box__header">Content with no padding</header>
@@ -238,55 +153,6 @@
                     </div>
                 </article>
             </div>
-            
-            <article class="box">
-                <div class="box__content">
-                    
-                    <div class="f-group">
-                        <label for="firstname">Firstname <i class="f-required">*</i></label>
-                        <input type="text" id="firstname">
-                    </div>
-                    
-                    <div class="f-group">
-                        <label for="lastname">Lastname <i class="f-required">*</i></label>
-                        <input type="text" id="lastname">
-                    </div>
-                    <h2>Grid example (autogrid)</h2>
-                    <div class="f-grid">
-                        <div class="f-group">
-                            <label for="field1">Field 1 <i class="f-required">*</i></label>
-                            <input type="text" id="field1">
-                        </div>
-                        
-                        <div class="f-group">
-                            <label for="field2">Field 2 <i class="f-required">*</i></label>
-                            <input type="text" id="field2">
-                        </div>
-                        
-                        <div class="f-group">
-                            <label for="field3">Field 3 <i class="f-required">*</i></label>
-                            <input type="text" id="field3">
-                        </div>
-                    </div>
-                    
-                    <h2>With errors</h2>
-                    
-                    <div class="f-group f-error">
-                        <label for="email">Email <i class="f-required">*</i></label>
-                        <input type="text" id="email" placeholder="user@example.com">
-                        <ul class="f-error-message">
-                            <li>Email is required</li>
-                        </ul>
-                    </div>
-                    
-                    <h2>Group button</h2>
-                    <div class="f-group btn-group">
-                        <button class="btn btn--primary">Action 1</button>
-                        <input type="text" id="email" placeholder="user@example.com">
-                        <button class="btn btn--secondary">Action 2</button>
-                    </div>
-                </div>
-            </article>
             
             <!-- Alerts -->
             <div class="notif notif--success mb1">
