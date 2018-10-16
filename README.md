@@ -12,23 +12,24 @@ Get started with the [index file](https://github.com/agence-webup/helium/blob/ma
 
 You need to import two CSS files:
 
-```css
+```html
 <link rel="stylesheet" href="css/helium-vendors.css" media="all">
 <link rel="stylesheet" href="css/helium-base.css" media="all">
 ```
 
 And two js files:
 
-```js
+```html
 <script src="js/helium-vendors.js"></script>
 <script src="js/helium-base.js"></script>
 ```
 
 helium-vendors.css and helium-vendors.js contain the following plugins:
 
-* jQuery
-* datatables
-* dropmic
+* [jQuery](https://jquery.com/)
+* [datatables](https://datatables.net/)
+* [dropmic](https://github.com/agence-webup/dropmic)
+* [feather](https://feathericons.com/)
 
 ## Old versions
 
