@@ -18,7 +18,7 @@
 .box__header,
 .box__actions,
 .box__footer {
-  padding: 1.3rem 2rem;
+  padding: 1.6rem 2rem;
 }
 
 /* content
@@ -50,7 +50,10 @@
 }
 
 .box__header h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: normal;
+  margin: 0;
+  font-weight: normal;
 }
 
 /* actions

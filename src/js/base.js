@@ -32,6 +32,9 @@ $('.dataTable tbody').on('click', 'tr', function () {
 });
 
 (function () {
+    // init globar config object
+    window.Helium = {};
+
     // form helpers
     [].forEach.call(document.querySelectorAll('[data-submit]'), function (el) {
         el.addEventListener('click', (e) => {
@@ -39,20 +42,27 @@ $('.dataTable tbody').on('click', 'tr', function () {
             if (e.target.dataset.confirm && !confirm(e.target.dataset.confirm)) {
                 e.preventDefault();
             }
-
+            
             let form = document.getElementById(e.target.dataset.submit);
-
+            
             // submit form
             if (form) {
                 form.submit();
             }
         })
     });
-
+    
     // flash helpers
     [].forEach.call(document.querySelectorAll('.notif'), function (el) {
         el.addEventListener('click', (e) => {
             e.target.style.display = "none";
         });
+    });
+    
+    // dropmic
+    window.Helium.dropmics = [];
+    [].forEach.call(document.querySelectorAll('[data-dropmic]'), function (el) {
+        console.log(el);
+        window.Helium.dropmics.push(new Dropmic(el));
     });
 }());

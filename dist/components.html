@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Helium : admin boilerplate</title>
@@ -9,7 +9,6 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -33,9 +32,9 @@
         <div class="container">
             <div class="navigation">
                 <a href="index.html"><i data-feather="home"></i> Home</a>
-                <a href="form.html" class="is-active"><i data-feather="edit"></i> Forms</a>
+                <a href="form.html"><i data-feather="edit"></i> Forms</a>
                 <a href="grid.html"><i data-feather="grid"></i> Grids</a>
-                <a href="components.html"><i data-feather="box"></i> Components</a>
+                <a href="components.html" class="is-active"><i data-feather="box"></i> Components</a>
                 <span href="#">
                     <i data-feather="book"></i> Documentation
                     <span class="navigation__sub">
@@ -48,78 +47,197 @@
             </div>
         </div>
     </nav>
+    
     <div class="container">
         <main class="content">
-            <h1 class="title">Forms</h1>
+            <header class="title-wrapper">
+                <h1 class="title">Components</h1>
+            </header>
+            
+            <nav class="menu mb3">
+                <a href="#" class="is-active">Menu 1</a>
+                <a href="#">Menu 2</a>
+                <a href="#">Menu 3</a>
+                <a href="#">Menu 4</a>
+            </nav>
+            
+            <!-- Alerts -->
+            <div class="notif notif--success mb2">
+                Everything's just fine!
+            </div>
+            
+            <div class="notif notif--warning mb2">
+                Hey, this is a warning !
+            </div>
+            
+            <div class="notif notif--info mb2">
+                Hey, this is an info!
+            </div>
+            
+            <div class="notif notif--error mb3">
+                You should panic!
+            </div>
+            <!-- /Alerts -->
+            
             <article class="box">
+                <header class="box__header"><h2>Cards (picture)</h2></header>
                 <div class="box__content">
-                    <div class="f-grid">
-                        <div class="f-group">
-                            <label for="firstname">Firstname <i class="f-required">*</i></label>
-                            <input type="text" id="firstname">
+                    <div class="grid grid-5">
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=10" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="f-group">
-                            <label for="lastname">Lastname <i class="f-required">*</i></label>
-                            <input type="text" id="lastname">
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=20" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div></div>
-                    </div>
-                    <div class="f-grid">
-                        <div class="f-group">
-                            <label for="field1">Field 1 <i class="f-required">*</i></label>
-                            <input type="text" id="field1">
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=30" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="f-group">
-                            <label for="field2">Field 2 <i class="f-required">*</i></label>
-                            <input type="text" id="field2">
-                        </div>
-                        
-                        <div class="f-group">
-                            <label for="field3">Field 3 <i class="f-required">*</i></label>
-                            <input type="text" id="field3">
-                        </div>
-                    </div>
-                    
-                    <div class="f-group f-error">
-                        <label for="email">Email <i class="f-required">*</i></label>
-                        <input type="text" id="email" placeholder="user@example.com">
-                        <ul class="f-error-message">
-                            <li>Email is required</li>
-                        </ul>
-                    </div>
-                    <div class="f-group">
-                        <div class="f-inputGroup">
-                            <input type="text" id="email" placeholder="user@example.com">
-                            <button class="btn btn--primary">Action 2</button>
-                        </div>
-                    </div>
-                    <div class="f-group">
-                        <div>
-                            <input class="f-switch" type="checkbox" name="ketchup" id="ketchup" checked/>
-                            <label for="ketchup">Switch 1</label>
-                        </div>
-                        <div>
-                            <input class="f-switch" type="checkbox" name="frite_sup" id="frite_sup" />
-                            <label for="frite_sup">Switch 2</label>
-                        </div>
-                    </div>
-                    <div class="f-group">                        
-                        <div class="f-radiobox">
-                            <input name="hero" type="radio" id="thor">
-                            <label for="thor">Thor</label>
-                            <input name="hero" type="radio" id="spiderman" checked>
-                            <label for="spiderman">Spiderman</label>
-                            <input name="hero" type="radio" id="ironman" >
-                            <label for="ironman">Ironman</label>
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=40" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
+            
+            <article class="box">
+                <header class="box__header"><h2>Texts (autoflow)</h2></header>
+                <div class="box__content">
+                    <h1>Title 1</h1>
+                    <h2>Title 2</h2>
+                    <h3>Title 2</h3>
+                    <p>Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p>
+                        Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec sed odio dui. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </p>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header"><h2>Tags</h2></header>
+                <div class="box__content">
+                    <div class="mb1">
+                        <span class="tag tag--green">tag tag--green</span>
+                        <span class="tag tag--red">tag tag--red</span>
+                        <span class="tag tag--blue">tag tag--blue</span>
+                        <span class="tag tag--orange">tag tag--orange</span>
+                        <span class="tag tag--yellow">tag tag--yellow</span>
+                        <span class="tag tag--grey">tag tag--grey</span>
+                    </div>
+                    <div class="mb1">
+                        <span class="tag tag--medium tag--green">tag tag--green</span>
+                        <span class="tag tag--medium tag--red">tag tag--red</span>
+                        <span class="tag tag--medium tag--blue">tag tag--blue</span>
+                        <span class="tag tag--medium tag--orange">tag tag--orange</span>
+                        <span class="tag tag--medium tag--yellow">tag tag--yellow</span>
+                        <span class="tag tag--medium tag--grey">tag tag--grey</span>
+                    </div>
+                    <div class="mb1">
+                        <span class="tag tag--green"></span>
+                        <span class="tag tag--red"></span>
+                        <span class="tag tag--blue"></span>
+                        <span class="tag tag--orange"></span>
+                        <span class="tag tag--yellow"></span>
+                        <span class="tag tag--grey"></span>
+                    </div>
+                    <div>
+                        <span class="tag tag--medium tag--green"></span>
+                        <span class="tag tag--medium tag--red"></span>
+                        <span class="tag tag--medium tag--blue"></span>
+                        <span class="tag tag--medium tag--orange"></span>
+                        <span class="tag tag--medium tag--yellow"></span>
+                        <span class="tag tag--medium tag--grey"></span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header"><h2>Thumbnails</h2></header>
+                <div class="box__content">
+                    <div class="thumbnail thumbnail--small mr2">
+                        <img src="https://picsum.photos/300/300?image=10" alt="">
+                    </div>
+                    <div class="thumbnail thumbnail--medium mr2">
+                        <img src="https://picsum.photos/300/300?image=11" alt="">
+                    </div>
+                    <div class="thumbnail thumbnail--large mr2">
+                        <img src="https://picsum.photos/300/300?image=12" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--small mr2">
+                        <img src="https://picsum.photos/300/300?image=13" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--medium mr2">
+                        <img src="https://picsum.photos/300/300?image=14" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--large">
+                        <img src="https://picsum.photos/300/300?image=15" alt="">
+                    </div>
+                </div>
+            </article>
+            
+            
+            <article class="box">
+                <header class="box__header"><h2>Helpers</h2></header>
+                <div class="box__content">
+                    <p class="txtleft">Text with class .txtleft</p>
+                    <p class="txtcenter">Text with class .txtcenter</p>
+                    <p class="txtright">Text with class .txtright</p>
+                </div>
+            </article>
         </main>
     </div>
-    
     <script src="js/helium-vendors.js"></script>
     <script src="js/helium-base.js"></script>
     

@@ -4,7 +4,7 @@
 
 .tag {
     display: inline-block;
-    padding: .1em .5em;
+    padding: .2em .6em;
     border-radius: 8px;
     background-color: grey;
     color: #fff;
@@ -19,7 +19,16 @@
     border-radius: 50%;
     font-size: 1rem;
   }
+
+  .tag--medium:empty {
+    width: 2.4em;
+    height: 2.4rem;
+  }
   
+  .tag--medium {
+    font-size: 1.5rem;
+  }
+
   .tag--green {
     background-color: $color-green;
   }
@@ -31,7 +40,6 @@
   .tag--blue {
     background-color: $color-blue;
   }
-  
   
   .tag--orange {
     background-color: $color-orange;
