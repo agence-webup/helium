@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Helium : admin boilerplate</title>
@@ -32,8 +32,8 @@
     <nav class="navigation-wrapper">
         <div class="container">
             <div class="navigation">
-                <a href="index.html" class="is-active"><i data-feather="home"></i> Home</a>
-                <a href="form.html"><i data-feather="edit"></i> Forms</a>
+                <a href="index.html"><i data-feather="home"></i> Home</a>
+                <a href="form.html" class="is-active"><i data-feather="edit"></i> Forms</a>
                 <a href="grid.html"><i data-feather="grid"></i> Grids</a>
                 <a href="components.html"><i data-feather="box"></i> Components</a>
                 <span href="#">
@@ -48,181 +48,78 @@
             </div>
         </div>
     </nav>
-    
     <div class="container">
         <main class="content">
-            <header class="title-wrapper">
-                <h1 class="title">Main title</h1>
-                <a href="#" class="btn btn--primary">Primary action</a>
-            </header>
-            
+            <h1 class="title">Forms</h1>
             <article class="box">
-                <header class="box__header"><h2>Box module with header and footer</h2></header>
-                <div class="box__actions">
-                    <a href="#" class="btn btn--primary">btn btn--primary</a>
-                    <button class="btn btn--secondary">btn btn--secondary</button>
-                    <button class="btn btn--danger">btn btn--danger</button>
-                    <button class="btn btn--disabled" disabled>btn btn--disabled</button>
-                </div>
                 <div class="box__content">
-                    <table class="dataTable stripe hover">
-                        <thead>
-                            <tr>
-                                <th>Col 1</th>
-                                <th>Col 2</th>
-                                <th>Col 3</th>
-                                <th>Col 4</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-link="#line1">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line2">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line3">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line3">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <footer class="box__footer txtcenter">Here's a footer</footer>
-            </article>
-            
-            <div>
-                <article class="box">
-                    <header class="box__header">
-                        <h2>Content with no padding</h2>
-                        <div>
-                            <a href="#" class="btn btn--secondary">Primary action</a>
-                            <a href="#" class="btn btn--danger">Danger action</a>
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="firstname">Firstname <i class="f-required">*</i></label>
+                            <input type="text" id="firstname">
                         </div>
-                    </header>
-                    <div class="box__content box__content--noPadding">
-                        <table class="txtcenter">
-                            <tr>
-                                <td>row 1 col 1</td>
-                                <td>row 1 col 2</td>
-                                <td><span class="tag tag--green">green</span></td>
-                                <td><span class="tag tag--green"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 2 col 1</td>
-                                <td>row 2 col 2</td>
-                                <td><span class="tag tag--red">red</span></td>
-                                <td><span class="tag tag--red"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 3 col 1</td>
-                                <td>row 3 col 2</td>
-                                <td><span class="tag tag--blue">blue</span></td>
-                                <td><span class="tag tag--blue"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 4 col 1</td>
-                                <td>row 4 col 2</td>
-                                <td><span class="tag tag--orange">orange</span></td>
-                                <td><span class="tag tag--orange"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 5 col 1</td>
-                                <td>row 5 col 2</td>
-                                <td><span class="tag tag--yellow">yellow</span></td>
-                                <td><span class="tag tag--yellow"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 5 col 1</td>
-                                <td>row 5 col 2</td>
-                                <td><span class="tag tag--grey">grey</span></td>
-                                <td><span class="tag tag--grey"></span></td>
-                            </tr>
-                        </table>
+                        
+                        <div class="f-group">
+                            <label for="lastname">Lastname <i class="f-required">*</i></label>
+                            <input type="text" id="lastname">
+                        </div>
+                        <div></div>
                     </div>
-                </article>
-            </div>
-
-            <article class="box">
-                <header class="box__header"><h2>List item</h2></header>
-                <div class="box__content">
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="field1">Field 1 <i class="f-required">*</i></label>
+                            <input type="text" id="field1">
+                        </div>
+                        
+                        <div class="f-group">
+                            <label for="field2">Field 2 <i class="f-required">*</i></label>
+                            <input type="text" id="field2">
+                        </div>
+                        
+                        <div class="f-group">
+                            <label for="field3">Field 3 <i class="f-required">*</i></label>
+                            <input type="text" id="field3">
+                        </div>
+                    </div>
                     
-                    <ul class="list">
-                        <li>
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="2">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="2">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="3">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
+                    <div class="f-group f-error">
+                        <label for="email">Email <i class="f-required">*</i></label>
+                        <input type="text" id="email" placeholder="user@example.com">
+                        <ul class="f-error-message">
+                            <li>Email is required</li>
+                        </ul>
                     </div>
-                </ul>
+                    <div class="f-group">
+                        <div class="f-inputGroup">
+                            <input type="text" id="email" placeholder="user@example.com">
+                            <button class="btn btn--primary">Action 2</button>
+                        </div>
+                    </div>
+                    <div class="f-group">
+                        <div>
+                            <input class="f-switch" type="checkbox" name="ketchup" id="ketchup" checked/>
+                            <label for="ketchup">Switch 1</label>
+                        </div>
+                        <div>
+                            <input class="f-switch" type="checkbox" name="frite_sup" id="frite_sup" />
+                            <label for="frite_sup">Switch 2</label>
+                        </div>
+                    </div>
+                    <div class="f-group">                        
+                        <div class="f-radiobox">
+                            <input name="hero" type="radio" id="thor">
+                            <label for="thor">Thor</label>
+                            <input name="hero" type="radio" id="spiderman" checked>
+                            <label for="spiderman">Spiderman</label>
+                            <input name="hero" type="radio" id="ironman" >
+                            <label for="ironman">Ironman</label>
+                        </div>
+                    </div>
+                </div>
             </article>
         </main>
     </div>
+    
     <script src="js/helium-vendors.js"></script>
     <script src="js/helium-base.js"></script>
     

@@ -9,7 +9,6 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -32,10 +31,10 @@
     <nav class="navigation-wrapper">
         <div class="container">
             <div class="navigation">
-                <a href="index.html" class="is-active"><i data-feather="home"></i> Home</a>
+                <a href="index.html"><i data-feather="home"></i> Home</a>
                 <a href="form.html"><i data-feather="edit"></i> Forms</a>
                 <a href="grid.html"><i data-feather="grid"></i> Grids</a>
-                <a href="components.html"><i data-feather="box"></i> Components</a>
+                <a href="components.html" class="is-active"><i data-feather="box"></i> Components</a>
                 <span href="#">
                     <i data-feather="book"></i> Documentation
                     <span class="navigation__sub">
@@ -52,174 +51,198 @@
     <div class="container">
         <main class="content">
             <header class="title-wrapper">
-                <h1 class="title">Main title</h1>
-                <a href="#" class="btn btn--primary">Primary action</a>
+                <h1 class="title">Components</h1>
             </header>
             
+            <nav class="menu mb3">
+                <a href="#" class="is-active">Menu 1</a>
+                <a href="#">Menu 2</a>
+                <a href="#">Menu 3</a>
+                <a href="#">Menu 4</a>
+            </nav>
+            
+            <!-- Alerts -->
+            <div class="notif notif--success mb2">
+                Everything's just fine!
+            </div>
+            
+            <div class="notif notif--warning mb2">
+                Hey, this is a warning !
+            </div>
+            
+            <div class="notif notif--info mb2">
+                Hey, this is an info!
+            </div>
+            
+            <div class="notif notif--error mb3">
+                You should panic!
+            </div>
+            <!-- /Alerts -->
+            
             <article class="box">
-                <header class="box__header"><h2>Box module with header and footer</h2></header>
-                <div class="box__actions">
-                    <a href="#" class="btn btn--primary">btn btn--primary</a>
-                    <button class="btn btn--secondary">btn btn--secondary</button>
-                    <button class="btn btn--danger">btn btn--danger</button>
-                    <button class="btn btn--disabled" disabled>btn btn--disabled</button>
-                </div>
+                <header class="box__header">
+                    <h2>Cards (picture)</h2>
+                    <a href="#" class="btn btn--primary">Add new card</a>
+                </header>
                 <div class="box__content">
-                    <table class="dataTable stripe hover">
-                        <thead>
-                            <tr>
-                                <th>Col 1</th>
-                                <th>Col 2</th>
-                                <th>Col 3</th>
-                                <th>Col 4</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-link="#line1">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line2">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line3">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line3">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="grid grid-5">
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=10" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=20" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=30" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card is-draggable">
+                            <div class="card__content"><img src="https://picsum.photos/300/200?image=40" alt="">                            </div>
+                            <div class="card__action">
+                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                    <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
+                                    <div class="dropmic-menu" aria-hidden="true">
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                        </li>
+                                        <li class="dropmic-menu__listItem" role="menuitem">
+                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <footer class="box__footer txtcenter">Here's a footer</footer>
             </article>
             
-            <div>
-                <article class="box">
-                    <header class="box__header">
-                        <h2>Content with no padding</h2>
-                        <div>
-                            <a href="#" class="btn btn--secondary">Primary action</a>
-                            <a href="#" class="btn btn--danger">Danger action</a>
-                        </div>
-                    </header>
-                    <div class="box__content box__content--noPadding">
-                        <table class="txtcenter">
-                            <tr>
-                                <td>row 1 col 1</td>
-                                <td>row 1 col 2</td>
-                                <td><span class="tag tag--green">green</span></td>
-                                <td><span class="tag tag--green"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 2 col 1</td>
-                                <td>row 2 col 2</td>
-                                <td><span class="tag tag--red">red</span></td>
-                                <td><span class="tag tag--red"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 3 col 1</td>
-                                <td>row 3 col 2</td>
-                                <td><span class="tag tag--blue">blue</span></td>
-                                <td><span class="tag tag--blue"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 4 col 1</td>
-                                <td>row 4 col 2</td>
-                                <td><span class="tag tag--orange">orange</span></td>
-                                <td><span class="tag tag--orange"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 5 col 1</td>
-                                <td>row 5 col 2</td>
-                                <td><span class="tag tag--yellow">yellow</span></td>
-                                <td><span class="tag tag--yellow"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 5 col 1</td>
-                                <td>row 5 col 2</td>
-                                <td><span class="tag tag--grey">grey</span></td>
-                                <td><span class="tag tag--grey"></span></td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
-            </div>
-
             <article class="box">
-                <header class="box__header"><h2>List item</h2></header>
+                <header class="box__header"><h2>Text (autoflow)</h2></header>
                 <div class="box__content">
-                    
-                    <ul class="list">
-                        <li>
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="2">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="2">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="3">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
+                    <h1>Title 1</h1>
+                    <h2>Title 2</h2>
+                    <h3>Title 2</h3>
+                    <p>Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p>
+                        Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec sed odio dui. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </p>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header"><h2>Tags</h2></header>
+                <div class="box__content">
+                    <div class="mb1">
+                        <span class="tag tag--green">tag tag--green</span>
+                        <span class="tag tag--red">tag tag--red</span>
+                        <span class="tag tag--blue">tag tag--blue</span>
+                        <span class="tag tag--orange">tag tag--orange</span>
+                        <span class="tag tag--yellow">tag tag--yellow</span>
+                        <span class="tag tag--grey">tag tag--grey</span>
                     </div>
-                </ul>
+                    <div class="mb1">
+                        <span class="tag tag--medium tag--green">tag tag--green</span>
+                        <span class="tag tag--medium tag--red">tag tag--red</span>
+                        <span class="tag tag--medium tag--blue">tag tag--blue</span>
+                        <span class="tag tag--medium tag--orange">tag tag--orange</span>
+                        <span class="tag tag--medium tag--yellow">tag tag--yellow</span>
+                        <span class="tag tag--medium tag--grey">tag tag--grey</span>
+                    </div>
+                    <div class="mb1">
+                        <span class="tag tag--green"></span>
+                        <span class="tag tag--red"></span>
+                        <span class="tag tag--blue"></span>
+                        <span class="tag tag--orange"></span>
+                        <span class="tag tag--yellow"></span>
+                        <span class="tag tag--grey"></span>
+                    </div>
+                    <div>
+                        <span class="tag tag--medium tag--green"></span>
+                        <span class="tag tag--medium tag--red"></span>
+                        <span class="tag tag--medium tag--blue"></span>
+                        <span class="tag tag--medium tag--orange"></span>
+                        <span class="tag tag--medium tag--yellow"></span>
+                        <span class="tag tag--medium tag--grey"></span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header"><h2>Thumbnails</h2></header>
+                <div class="box__content">
+                    <div class="thumbnail thumbnail--small mr2">
+                        <img src="https://picsum.photos/300/300?image=10" alt="">
+                    </div>
+                    <div class="thumbnail thumbnail--medium mr2">
+                        <img src="https://picsum.photos/300/300?image=11" alt="">
+                    </div>
+                    <div class="thumbnail thumbnail--large mr2">
+                        <img src="https://picsum.photos/300/300?image=12" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--small mr2">
+                        <img src="https://picsum.photos/300/300?image=13" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--medium mr2">
+                        <img src="https://picsum.photos/300/300?image=14" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--large">
+                        <img src="https://picsum.photos/300/300?image=15" alt="">
+                    </div>
+                </div>
+            </article>
+            
+            
+            <article class="box">
+                <header class="box__header"><h2>Helpers</h2></header>
+                <div class="box__content">
+                    <p class="txtleft">Text with class .txtleft</p>
+                    <p class="txtcenter">Text with class .txtcenter</p>
+                    <p class="txtright">Text with class .txtright</p>
+                    <p class="uppercase">Text to uppercase</p>
+                    <p class="lowercase">TEXT TO LOWERCASE</p>
+                    <p class="capitalize">Text to capitalize</p>
+                    <p class="italic">Text to italic</p>
+                    <p class="bold">Text to bold</p>
+                </div>
             </article>
         </main>
     </div>

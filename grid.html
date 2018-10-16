@@ -30,199 +30,125 @@
         </div>
     </header>
     <nav class="navigation-wrapper">
-        <div class="container">
-            <div class="navigation">
-                <a href="index.html" class="is-active"><i data-feather="home"></i> Home</a>
-                <a href="form.html"><i data-feather="edit"></i> Forms</a>
-                <a href="grid.html"><i data-feather="grid"></i> Grids</a>
-                <a href="components.html"><i data-feather="box"></i> Components</a>
-                <span href="#">
-                    <i data-feather="book"></i> Documentation
-                    <span class="navigation__sub">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        <a href="#">Link 4</a>
+            <div class="container">
+                <div class="navigation">
+                    <a href="index.html"><i data-feather="home"></i> Home</a>
+                    <a href="form.html"><i data-feather="edit"></i> Forms</a>
+                    <a href="grid.html" class="is-active"><i data-feather="grid"></i> Grids</a>
+                    <a href="components.html"><i data-feather="box"></i> Components</a>
+                    <span href="#">
+                        <i data-feather="book"></i> Documentation
+                        <span class="navigation__sub">
+                            <a href=="#">Link 1</a>
+                            <a href=="#">Link 2</a>
+                            <a href=="#">Link 3</a>
+                            <a href=="#">Link 4</a>
+                        </span>
                     </span>
-                </span>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     
     <div class="container">
         <main class="content">
-            <header class="title-wrapper">
-                <h1 class="title">Main title</h1>
-                <a href="#" class="btn btn--primary">Primary action</a>
-            </header>
-            
-            <article class="box">
-                <header class="box__header"><h2>Box module with header and footer</h2></header>
-                <div class="box__actions">
-                    <a href="#" class="btn btn--primary">btn btn--primary</a>
-                    <button class="btn btn--secondary">btn btn--secondary</button>
-                    <button class="btn btn--danger">btn btn--danger</button>
-                    <button class="btn btn--disabled" disabled>btn btn--disabled</button>
+            <h1 class="title">Grids</h1>
+            <div class="mb1">
+                <div class="grid grid-2 mb3">
+                    <div class="box pa2">grid 2</div>
+                    <div class="box pa2">grid 2</div>
                 </div>
-                <div class="box__content">
-                    <table class="dataTable stripe hover">
-                        <thead>
-                            <tr>
-                                <th>Col 1</th>
-                                <th>Col 2</th>
-                                <th>Col 3</th>
-                                <th>Col 4</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-link="#line1">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line2">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line3">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                            <tr data-link="#line3">
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                                <td>Justo Etiam</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <footer class="box__footer txtcenter">Here's a footer</footer>
-            </article>
-            
-            <div>
-                <article class="box">
-                    <header class="box__header">
-                        <h2>Content with no padding</h2>
-                        <div>
-                            <a href="#" class="btn btn--secondary">Primary action</a>
-                            <a href="#" class="btn btn--danger">Danger action</a>
-                        </div>
-                    </header>
-                    <div class="box__content box__content--noPadding">
-                        <table class="txtcenter">
-                            <tr>
-                                <td>row 1 col 1</td>
-                                <td>row 1 col 2</td>
-                                <td><span class="tag tag--green">green</span></td>
-                                <td><span class="tag tag--green"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 2 col 1</td>
-                                <td>row 2 col 2</td>
-                                <td><span class="tag tag--red">red</span></td>
-                                <td><span class="tag tag--red"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 3 col 1</td>
-                                <td>row 3 col 2</td>
-                                <td><span class="tag tag--blue">blue</span></td>
-                                <td><span class="tag tag--blue"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 4 col 1</td>
-                                <td>row 4 col 2</td>
-                                <td><span class="tag tag--orange">orange</span></td>
-                                <td><span class="tag tag--orange"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 5 col 1</td>
-                                <td>row 5 col 2</td>
-                                <td><span class="tag tag--yellow">yellow</span></td>
-                                <td><span class="tag tag--yellow"></span></td>
-                            </tr>
-                            <tr>
-                                <td>row 5 col 1</td>
-                                <td>row 5 col 2</td>
-                                <td><span class="tag tag--grey">grey</span></td>
-                                <td><span class="tag tag--grey"></span></td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
             </div>
-
-            <article class="box">
-                <header class="box__header"><h2>List item</h2></header>
-                <div class="box__content">
-                    
-                    <ul class="list">
-                        <li>
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="2">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="2">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                        <li data-level="3">
-                            <div class="list__action is-draggable">
-                                <i class="fa fa-arrows" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__action list__action--dropdown">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <div class="list__thumb">
-                                <img src="http://via.placeholder.com/50x50" alt="">
-                            </div>
-                            <div class="list__content">
-                                Donec id elit non mi porta gravida at eget metus.
-                            </div>
-                        </li>
-                    </div>
-                </ul>
-            </article>
+            <div class="mb1">
+                <div class="grid grid-3 mb3">
+                    <div class="box pa2">grid 3</div>
+                    <div class="box pa2">grid 3</div>
+                    <div class="box pa2">grid 3</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-4 mb3">
+                    <div class="box pa2">grid 4</div>
+                    <div class="box pa2">grid 4</div>
+                    <div class="box pa2">grid 4</div>
+                    <div class="box pa2">grid 4</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-5">
+                    <div class="box pa2">grid 5</div>
+                    <div class="box pa2">grid 5</div>
+                    <div class="box pa2">grid 5</div>
+                    <div class="box pa2">grid 5</div>
+                    <div class="box pa2">grid 5</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-6">
+                    <div class="box pa2">grid 6</div>
+                    <div class="box pa2">grid 6</div>
+                    <div class="box pa2">grid 6</div>
+                    <div class="box pa2">grid 6</div>
+                    <div class="box pa2">grid 6</div>
+                    <div class="box pa2">grid 6</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-4-1">
+                    <div class="box pa2">grid 4-1</div>
+                    <div class="box pa2">grid 4-1</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-3-1">
+                    <div class="box pa2">grid 3-1</div>
+                    <div class="box pa2">grid 3-1</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-2-1">
+                    <div class="box pa2">grid 2-1</div>
+                    <div class="box pa2">grid 2-1</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-3-2">
+                    <div class="box pa2">grid 3-2</div>
+                    <div class="box pa2">grid 3-2</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-2">
+                    <div class="box pa2">grid 2</div>
+                    <div class="box pa2">grid 2</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-2-3">
+                    <div class="box pa2">grid 2-3</div>
+                    <div class="box pa2">grid 2-3</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-1-2">
+                    <div class="box pa2">grid 1-2</div>
+                    <div class="box pa2">grid 1-2</div>
+                </div>
+            </div>
+            <div class="mb1">
+                <div class="grid grid-1-3">
+                    <div class="box pa2">grid 1-3</div>
+                    <div class="box pa2">grid 1-3</div>
+                </div>
+            </div>
+            <div class="mb3">
+                <div class="grid grid-1-4">
+                    <div class="box pa2">grid 1-4</div>
+                    <div class="box pa2">grid 1-4</div>
+                </div>
+            </div>
         </main>
     </div>
+    
     <script src="js/helium-vendors.js"></script>
     <script src="js/helium-base.js"></script>
     
