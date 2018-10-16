@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "datatables.net-dt": "^1.10.19",
+    "dropmic": "^0.3.0",
     "jquery": "^3.3.1"
   },
   "devDependencies": {
