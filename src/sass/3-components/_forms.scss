@@ -9,8 +9,6 @@
 /* ----------------------------------------------------------- */
 
 
-$input-border-radius: .4rem;
-$input-border: .1rem solid #d8d8d8;
 $input-background-color: #fff;
 $input-hover: 5%;
 $input-placeholder-color: #c4c1be;
@@ -38,16 +36,27 @@ textarea:-moz-placeholder {
   color: $input-placeholder-color;
 }
 
+/* f-group
+-------------------------------------------------------------- */
+
+.f-group {
+  margin-bottom: 2.5rem;
+}
+
 /* block form
 -------------------------------------------------------------- */
 
 label,
 .label {
   display: block;
-  margin-top: 1.3em;
   margin-bottom: .8em;
   vertical-align: middle;
   cursor: pointer;
+}
+
+input + label {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* inline form
@@ -72,6 +81,19 @@ label,
   vertical-align: middle;
 }
 
+/* input group
+-------------------------------------------------------------- */
+
+.f-inputGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.f-inputGroup .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 /* basics style
 -------------------------------------------------------------- */
@@ -104,13 +126,13 @@ textarea {
 }
 
 input {
-  padding: .8em;
+  padding: .6em;
   max-width: 32rem;
   width: 100%;
   border: $input-border;
   border-radius: $input-border-radius;
   background: $input-background-color;
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, .08);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
 }
 
 textarea:active,

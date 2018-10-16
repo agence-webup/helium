@@ -1,13 +1,13 @@
 /**
   * Radiobox Module
-  * Namespace: .radiobox
+  * Namespace: .f-switch
   */
 
 /* ----------------------------------------------------------- */
 /* == module */
 /* ----------------------------------------------------------- */
 
-.switch[type="checkbox"] {
+.f-switch[type="checkbox"] {
   position: relative;
   margin-top: -.05em;
   width: 4rem;
@@ -22,28 +22,27 @@
   appearance: none;
 }
 
-.switch[type="checkbox"]::-ms-check {
+.f-switch[type="checkbox"]::-ms-check {
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; // IE 8
 }
 
 /* Checked state
 -------------------------------------------------------------- */
 
-.switch[type="checkbox"]:checked {
-  border-color: $color-primary;
-  box-shadow: inset 2rem 0 0 .1rem rgba($color-primary, .7);
+.f-switch[type="checkbox"]:checked {
+  border-color: $color-secondary;
+  box-shadow: inset 2rem 0 0 .1rem rgba($color-secondary, .7);
 }
 
 /* Focus state
 -------------------------------------------------------------- */
 
-.switch[type="checkbox"]:active,
-.switch[type="checkbox"]:focus {
+.f-switch[type="checkbox"]:active,
+.f-switch[type="checkbox"]:focus {
   box-shadow: inset -2rem 0 0 .1rem rgba(192, 192, 192, .5), $focus-ring;
 }
 
-.switch[type="checkbox"]:checked:active,
-.switch[type="checkbox"]:checked:focus {
-  box-shadow: inset 2rem 0 0 .1rem rgba($color-primary, .7), $focus-ring;
+.f-switch[type="checkbox"]:checked:active,
+.f-switch[type="checkbox"]:checked:focus {
+  box-shadow: inset 2rem 0 0 .1rem rgba($color-secondary, .7), $focus-ring;
 }

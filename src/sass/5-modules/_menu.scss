@@ -23,7 +23,11 @@
   text-decoration: none;
 }
 
+.menu a:hover {
+  transform: scale(1.07);
+}
+
 .menu a.is-active {
-  color: $color-primary;
+  color: $color-secondary;
   font-weight: bold;
 }

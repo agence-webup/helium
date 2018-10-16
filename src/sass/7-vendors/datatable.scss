@@ -44,3 +44,11 @@ table.dataTable thead .sorting_desc {
 table.dataTable thead .sorting {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAAkElEQVQoz7XQMQ5AQBCF4dWQSJxC5wwax1Cq1e7BAdxD5SL+Tq/QCM1oNiJidwox0355mXnG/DrEtIQ6azioNZQxI0ykPhTQIwhCR+BmBYtlK7kLJYwWCcJA9M4qdrZrd8pPjZWPtOqdRQy320YSV17OatFC4euts6z39GYMKRPCTKY9UnPQ6P+GtMRfGtPnBCiqhAeJPmkqAAAAAElFTkSuQmCC);
 }
+
+table.dataTable.stripe tbody tr.odd {
+  background-color: $background-color;
+}
+
+table.dataTable.stripe tbody tr:hover {
+  background-color: darken($background-color, 2%);
+}

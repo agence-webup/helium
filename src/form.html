@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Helium : admin boilerplate</title>
@@ -29,32 +29,42 @@
             </div>
         </div>
     </header>
-    <nav class="navigation">
+    <nav class="navigation-wrapper">
         <div class="container">
-            <a href="#"><i data-feather="home"></i> Home</a>
-            <a href="form.html" class="is-active"><i data-feather="edit"></i> Forms</a>
-            <a href="#"><i data-feather="grid"></i> Grids</a>
-            <a href="#"><i data-feather="box"></i> Components</a>
-            <a href="#"><i data-feather="menu"></i> Submenu</a>
+            <div class="navigation">
+                <a href="index.html"><i data-feather="home"></i> Home</a>
+                <a href="form.html" class="is-active"><i data-feather="edit"></i> Forms</a>
+                <a href="grid.html"><i data-feather="grid"></i> Grids</a>
+                <a href="#"><i data-feather="box"></i> Components</a>
+                <span href="#">
+                    <i data-feather="book"></i> Documentation
+                    <span class="navigation__sub">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 4</a>
+                    </span>
+                </span>
+            </div>
         </div>
     </nav>
-    
     <div class="container">
         <main class="content">
             <h1 class="title">Forms</h1>
             <article class="box">
                 <div class="box__content">
-                    
-                    <div class="f-group">
-                        <label for="firstname">Firstname <i class="f-required">*</i></label>
-                        <input type="text" id="firstname">
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="firstname">Firstname <i class="f-required">*</i></label>
+                            <input type="text" id="firstname">
+                        </div>
+                        
+                        <div class="f-group">
+                            <label for="lastname">Lastname <i class="f-required">*</i></label>
+                            <input type="text" id="lastname">
+                        </div>
+                        <div></div>
                     </div>
-                    
-                    <div class="f-group">
-                        <label for="lastname">Lastname <i class="f-required">*</i></label>
-                        <input type="text" id="lastname">
-                    </div>
-                    <h2>Grid example (autogrid)</h2>
                     <div class="f-grid">
                         <div class="f-group">
                             <label for="field1">Field 1 <i class="f-required">*</i></label>
@@ -72,8 +82,6 @@
                         </div>
                     </div>
                     
-                    <h2>With errors</h2>
-                    
                     <div class="f-group f-error">
                         <label for="email">Email <i class="f-required">*</i></label>
                         <input type="text" id="email" placeholder="user@example.com">
@@ -81,12 +89,31 @@
                             <li>Email is required</li>
                         </ul>
                     </div>
-                    
-                    <h2>Group button</h2>
-                    <div class="f-group btn-group">
-                        <button class="btn btn--primary">Action 1</button>
-                        <input type="text" id="email" placeholder="user@example.com">
-                        <button class="btn btn--secondary">Action 2</button>
+                    <div class="f-group">
+                        <div class="f-inputGroup">
+                            <input type="text" id="email" placeholder="user@example.com">
+                            <button class="btn btn--primary">Action 2</button>
+                        </div>
+                    </div>
+                    <div class="f-group">
+                        <div>
+                            <input class="f-switch" type="checkbox" name="ketchup" id="ketchup" checked/>
+                            <label for="ketchup">Switch 1</label>
+                        </div>
+                        <div>
+                            <input class="f-switch" type="checkbox" name="frite_sup" id="frite_sup" />
+                            <label for="frite_sup">Switch 2</label>
+                        </div>
+                    </div>
+                    <div class="f-group">                        
+                        <div class="f-radiobox">
+                            <input name="hero" type="radio" id="thor">
+                            <label for="thor">Thor</label>
+                            <input name="hero" type="radio" id="spiderman" checked>
+                            <label for="spiderman">Spiderman</label>
+                            <input name="hero" type="radio" id="ironman" >
+                            <label for="ironman">Ironman</label>
+                        </div>
                     </div>
                 </div>
             </article>

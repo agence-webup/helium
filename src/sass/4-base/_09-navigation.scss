@@ -80,6 +80,11 @@
   border-left: 2px solid transparent;
 }
 
+.navigation__sub > a:last-of-type,
+.navigation__sub > span:last-of-type {
+  border-bottom: none;
+}
+
 .navigation__sub > a:hover {
   border-left: 2px solid $color-secondary;
 }
