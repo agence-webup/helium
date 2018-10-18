@@ -137,16 +137,46 @@
                         </div>
                     </div>
                 </div>
+                
+            </article>
+            <article class="box">
+                <header class="box__header">
+                    <h2>Submit helper</h2>
+                </header>
+                <div class="box__content">
+                    <form action="" method="get" id="form1">
+                        <input type="hidden" name="form" value="1" /> 
+                    </form>
+                    <form action="" method="get" id="form2">
+                        <input type="hidden" name="form" value="2" /> 
+                    </form>
+                    <button class="btn btn--primary" data-submit="form1">Submit form 1</button>
+                    <button class="btn btn--secondary" data-submit="form2" data-confirm="Are you sure ?">Submit form 2</button>
+                </div>
+            </article>
+            <div class="box">
+                <header class="box__header">
+                    <h2>Quill</h2>
+                </header>
+                <div class="box__content">
+                    <div id="editor">
+                        <p>Hello World!</p>
+                        <p>Some initial <strong>bold</strong> text</p>
+                        <p><br></p>
+                    </div>
+                </div>
             </div>
-        </main>
-    </div>
-    
-    <script src="js/helium-vendors.js"></script>
-    <script src="js/helium-base.js"></script>
-    
-    <script>
-        feather.replace()
-        $('.dataTable').DataTable();
-    </script>
+        </div>
+    </main>
+</div>
+
+<script src="js/helium-vendors.js"></script>
+<script src="js/helium-base.js"></script>
+
+<script>
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+</script>
 </body>
 </html>
