@@ -6,7 +6,8 @@
   "dependencies": {
     "datatables.net-dt": "^1.10.19",
     "dropmic": "^0.3.0",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "tingle.js": "^0.13.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",

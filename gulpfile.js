@@ -37,6 +37,7 @@ gulp.task('css:vendors', function () {
     return gulp.src([
         'node_modules/datatables.net-dt/css/jquery.dataTables.min.css',
         'node_modules/dropmic/dist/dropmic.css',
+        'node_modules/tingle.js/dist/tingle.min.css',
         'src/vendors/slim/slim.min.css'
         ])
         .pipe(concat('helium-vendors.css'))
@@ -48,7 +49,8 @@ gulp.task('js:vendors', function () {
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/datatables.net/js/jquery.dataTables.min.js',
         'node_modules/dropmic/dist/dropmic.js',
-        'src/vendors/slim/slim.kickstart.min.js'
+        'src/vendors/slim/slim.kickstart.min.js',
+        'node_modules/tingle.js/dist/tingle.js'
         ])
         .pipe(concat('helium-vendors.js'))
         .pipe(gulp.dest('./dist/js'));
