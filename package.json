@@ -10,7 +10,7 @@
     "tingle.js": "^0.13.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
+    "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "browser-sync": "^2.14.0",
     "gulp": "^4.0.0",

@@ -5,6 +5,7 @@ const bsync = require('browser-sync').create();
 const ghPages = require('gulp-gh-pages');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const babel = require('gulp-babel');
 
 function reload(done) {
     bsync.reload();
@@ -24,6 +25,9 @@ gulp.task('sass', () => {
 
 gulp.task('js', function () {
     return gulp.src('./src/js/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(concat('helium-base.js'))
         .pipe(gulp.dest('./dist/js'));
 });
@@ -35,10 +39,10 @@ gulp.task('copy:html', function () {
 
 gulp.task('css:vendors', function () {
     return gulp.src([
-        'node_modules/datatables.net-dt/css/jquery.dataTables.min.css',
-        'node_modules/dropmic/dist/dropmic.css',
-        'node_modules/tingle.js/dist/tingle.min.css',
-        'src/vendors/slim/slim.min.css'
+            'node_modules/datatables.net-dt/css/jquery.dataTables.min.css',
+            'node_modules/dropmic/dist/dropmic.css',
+            'node_modules/tingle.js/dist/tingle.min.css',
+            'src/vendors/slim/slim.min.css'
         ])
         .pipe(concat('helium-vendors.css'))
         .pipe(gulp.dest('./dist/css'));
@@ -46,11 +50,11 @@ gulp.task('css:vendors', function () {
 
 gulp.task('js:vendors', function () {
     return gulp.src([
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/datatables.net/js/jquery.dataTables.min.js',
-        'node_modules/dropmic/dist/dropmic.js',
-        'src/vendors/slim/slim.kickstart.min.js',
-        'node_modules/tingle.js/dist/tingle.js'
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/datatables.net/js/jquery.dataTables.min.js',
+            'node_modules/dropmic/dist/dropmic.js',
+            'src/vendors/slim/slim.kickstart.min.js',
+            'node_modules/tingle.js/dist/tingle.js'
         ])
         .pipe(concat('helium-vendors.js'))
         .pipe(gulp.dest('./dist/js'));
