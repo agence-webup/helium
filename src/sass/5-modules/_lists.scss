@@ -3,65 +3,31 @@
 /* ----------------------------------------------------------- */
 
 .list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.list > li {
-  margin-bottom: 1rem;
-}
-
-.list > li {
   display: flex;
-
   align-items: stretch;
+  margin-bottom: 1rem;
+  border: $base-border-thin;
+  background-color: #fff;
 }
-
-.list > li .fa {
-  font-size: 2rem;
-}
-
-.list > li {
-  border: 1px solid #edf1f4;
-  background-color: #fafafa;
-}
-
 
 .list__action {
-  display: flex;
-  overflow: visible;
-  padding: 1.5rem;
-  width: 5rem;
-  text-align: center;
-  line-height: 5.5rem;
+  background-color: $background-color;
+  border-right: $base-border-thin;
+}
 
-  justify-content: center;
-  align-items: center;
+.list__action button {
+  border: none;
+  background-color: $background-color;
+  box-shadow: none;
+  vertical-align: middle;
+  padding: 1rem;
+  line-height: 1;
 }
 
 .list__content {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.list__action--dropdown {
-  background-color: $color-blue;
-  color: #fff;
-  cursor: pointer;
-}
-
-.list__content {
-  margin-left: 1rem;
-
   align-self: center;
+  margin-left: 1rem;
 }
-
-.list__thumb > img {
-}
-
 
 /* level
 -------------------------------------------------------------- */
