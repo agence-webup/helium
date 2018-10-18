@@ -154,6 +154,18 @@
                     <button class="btn btn--secondary" data-submit="form2" data-confirm="Are you sure ?">Submit form 2</button>
                 </div>
             </article>
+            <div class="box">
+                <header class="box__header">
+                    <h2>Quill</h2>
+                </header>
+                <div class="box__content">
+                    <div id="editor">
+                        <p>Hello World!</p>
+                        <p>Some initial <strong>bold</strong> text</p>
+                        <p><br></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </div>
@@ -162,8 +174,9 @@
 <script src="js/helium-base.js"></script>
 
 <script>
-    feather.replace()
-    $('.dataTable').DataTable();
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
 </script>
 </body>
 </html>
