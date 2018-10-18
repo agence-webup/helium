@@ -68,13 +68,13 @@ function () {
     value: function _forms() {
       // form helpers
       [].forEach.call(document.querySelectorAll('[data-submit]'), function (el) {
-        el.addEventListener('click', function (e) {
-          // handle confirm
-          if (e.target.dataset.confirm && !confirm(e.target.dataset.confirm)) {
-            e.preventDefault();
-          }
+        el.addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation(); // if no confirmation
 
-          var form = document.getElementById(e.target.dataset.submit); // submit form
+          if (event.target.dataset.confirm && !confirm(event.target.dataset.confirm)) return; // let's submit the form
+
+          var form = document.getElementById(event.target.dataset.submit);
 
           if (form) {
             form.submit();
@@ -87,8 +87,8 @@ function () {
     value: function _flash() {
       // flash helpers
       [].forEach.call(document.querySelectorAll('.notif'), function (el) {
-        el.addEventListener('click', function (e) {
-          e.target.style.display = "none";
+        el.addEventListener('click', function (event) {
+          event.target.style.display = "none";
         });
       });
     }

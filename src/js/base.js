@@ -50,16 +50,16 @@ class Helium {
     _forms() {
 
         // form helpers
-        [].forEach.call(document.querySelectorAll('[data-submit]'), function (el) {
-            el.addEventListener('click', (e) => {
-                // handle confirm
-                if (e.target.dataset.confirm && !confirm(e.target.dataset.confirm)) {
-                    e.preventDefault();
-                }
+        [].forEach.call(document.querySelectorAll('[data-submit]'), (el) => {
+            el.addEventListener('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation()
 
-                let form = document.getElementById(e.target.dataset.submit);
+                // if no confirmation
+                if (event.target.dataset.confirm && !confirm(event.target.dataset.confirm)) return;
 
-                // submit form
+                // let's submit the form
+                let form = document.getElementById(event.target.dataset.submit);
                 if (form) {
                     form.submit();
                 }
@@ -70,8 +70,8 @@ class Helium {
     _flash() {
         // flash helpers
         [].forEach.call(document.querySelectorAll('.notif'), function (el) {
-            el.addEventListener('click', (e) => {
-                e.target.style.display = "none";
+            el.addEventListener('click', (event) => {
+                event.target.style.display = "none";
             });
         });
     }
