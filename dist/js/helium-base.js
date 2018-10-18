@@ -27,7 +27,14 @@ function () {
 
       this._dropmic();
 
+      this._feather();
+
       console.info('🎈 Helium ' + this.version);
+    }
+  }, {
+    key: "_feather",
+    value: function _feather() {
+      feather.replace();
     }
   }, {
     key: "_datatable",

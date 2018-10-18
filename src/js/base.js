@@ -10,7 +10,12 @@ class Helium {
         this._forms();
         this._flash();
         this._dropmic();
+        this._feather();
         console.info('🎈 Helium ' + this.version);
+    }
+
+    _feather() {
+        feather.replace()
     }
 
     _datatable() {
