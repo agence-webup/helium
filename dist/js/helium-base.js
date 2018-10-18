@@ -102,8 +102,10 @@ function () {
   }, {
     key: "_dropmic",
     value: function _dropmic() {
+      var _this = this;
+
       [].forEach.call(document.querySelectorAll('[data-dropmic]'), function (el) {
-        this.dropmics.push(new Dropmic(el));
+        _this.dropmics.push(new Dropmic(el));
       });
     }
   }]);

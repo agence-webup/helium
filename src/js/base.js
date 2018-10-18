@@ -82,7 +82,7 @@ class Helium {
     }
 
     _dropmic() {
-        [].forEach.call(document.querySelectorAll('[data-dropmic]'), function (el) {
+        [].forEach.call(document.querySelectorAll('[data-dropmic]'), (el) => {
             this.dropmics.push(new Dropmic(el));
         });
     }
