@@ -4,6 +4,7 @@
   "description": "A lightweight admin boilerplate",
   "main": "gulpfile.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "choices.js": "^3.0.4",
     "datatables.net-dt": "^1.10.19",
     "dropmic": "^0.3.0",
