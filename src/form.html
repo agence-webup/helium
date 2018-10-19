@@ -154,7 +154,8 @@
                     <button class="btn btn--secondary" data-submit="form2" data-confirm="Are you sure ?">Submit form 2</button>
                 </div>
             </article>
-            <div class="box">
+            
+            <article class="box">
                 <header class="box__header">
                     <h2>Quill</h2>
                 </header>
@@ -165,7 +166,16 @@
                         <p><br></p>
                     </div>
                 </div>
-            </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header">
+                    <h2>Choices</h2>
+                </header>
+                <div class="box__content">
+                    <input type="text" class="choices">
+                </div>
+            </article>
         </div>
     </main>
 </div>
@@ -174,9 +184,12 @@
 <script src="js/helium-base.js"></script>
 
 <script>
+    // quill
     var quill = new Quill('#editor', {
         theme: 'snow'
     });
+    // choices
+    var choices = new Choices('.choices');
 </script>
 </body>
 </html>

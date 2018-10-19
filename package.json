@@ -4,6 +4,7 @@
   "description": "A lightweight admin boilerplate",
   "main": "gulpfile.js",
   "dependencies": {
+    "choices.js": "^3.0.4",
     "datatables.net-dt": "^1.10.19",
     "dropmic": "^0.3.0",
     "jquery": "^3.3.1",
@@ -20,7 +21,8 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "gulp-size": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
