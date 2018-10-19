@@ -63,16 +63,21 @@ table thead {
 .table-actions {
   overflow: visible;
   text-align: center;
+  width: 8rem;
+}
+
+.table-50p {
+  width: 5rem;
 }
 
 .table-100p {
-  width: 100px;
+  width: 10rem;
 }
 
 .table-150p {
-  width: 150px;
+  width: 15rem;
 }
 
 .table-200p {
-  width: 200px;
+  width: 20rem;
 }
