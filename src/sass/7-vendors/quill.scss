@@ -1,0 +1,21 @@
+/* ----------------------------------------------------------- */
+/* == quill */
+/* ----------------------------------------------------------- */
+
+.ql-container.ql-snow,
+.ql-toolbar.ql-snow {
+  border: none;
+}
+
+.ql-toolbar.ql-snow {
+  border-bottom: $base-border-thin;
+}
+
+.ql-editor {
+  padding: 3rem;
+  line-height: 1.5;
+}
+
+.ql-container {
+  font-size: 1.4rem;
+}
