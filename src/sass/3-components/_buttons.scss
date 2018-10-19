@@ -5,10 +5,9 @@
 
 $btn-primary: $color-primary;
 $btn-secondary: $color-secondary;
-$btn-success: #1cb841;
-$btn-danger: #d7172a;
+$btn-danger: $color-red;
 $btn-hover: 5%;
-$btn-radius: .4rem;
+$btn-radius: .3rem;
 
 
 /* ----------------------------------------------------------- */
@@ -30,7 +29,7 @@ $btn-radius: .4rem;
   line-height: normal;
   line-height: 2rem;
   cursor: pointer;
-  transition: background-color .4s;
+  transition: background-color .3s;
 }
 
 .btn:active,
@@ -73,9 +72,9 @@ $btn-radius: .4rem;
 .btn--danger,
 .btn--danger:link,
 .btn--danger:visited {
-  border: 1px solid darken($btn-danger, 10%);
-  background-color: $btn-danger;
-  color: #fff;
+  border: 1px solid $btn-danger;
+  background-color: #fff;
+  color: $btn-danger;
 }
 
 
@@ -83,6 +82,7 @@ $btn-radius: .4rem;
 .btn--danger:active,
 .btn--danger:focus {
   background-color: darken($btn-danger, $btn-hover);
+  color: #fff;
 }
 
 .btn--disabled,
@@ -90,7 +90,7 @@ $btn-radius: .4rem;
 .btn--disabled:visited {
   border: 1px solid darken($color-grey, 10%);
   background-color: $color-grey;
-  color: #000;
+  color: $color-dark-text;
   cursor: not-allowed;
 }
 
