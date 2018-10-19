@@ -45,7 +45,8 @@ gulp.task('css:vendors', function () {
             'node_modules/tingle.js/dist/tingle.min.css',
             'node_modules/choices.js/assets/styles/css/choices.min.css',
             'node_modules/quill/dist/quill.snow.css',
-            'src/vendors/slim/slim.min.css',
+            'node_modules/noty/lib/noty.css',
+            'src/vendors/slim/slim.min.css'
         ])
         .pipe(size({
             showFiles: true
@@ -62,7 +63,8 @@ gulp.task('js:vendors', function () {
             'src/vendors/slim/slim.kickstart.min.js',
             'node_modules/tingle.js/dist/tingle.js',
             'node_modules/quill/dist/quill.min.js',
-            'node_modules/choices.js/assets/scripts/dist/choices.min.js'
+            'node_modules/choices.js/assets/scripts/dist/choices.min.js',
+            'node_modules/noty/lib/noty.min.js'
         ])
         .pipe(size({
             showFiles: true
