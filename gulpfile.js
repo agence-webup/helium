@@ -6,6 +6,7 @@ const ghPages = require('gulp-gh-pages');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
+const size = require('gulp-size');
 
 function reload(done) {
     bsync.reload();
@@ -42,9 +43,13 @@ gulp.task('css:vendors', function () {
             'node_modules/datatables.net-dt/css/jquery.dataTables.min.css',
             'node_modules/dropmic/dist/dropmic.css',
             'node_modules/tingle.js/dist/tingle.min.css',
+            'node_modules/choices.js/assets/styles/css/choices.min.css',
             'node_modules/quill/dist/quill.snow.css',
-            'src/vendors/slim/slim.min.css'
+            'src/vendors/slim/slim.min.css',
         ])
+        .pipe(size({
+            showFiles: true
+        }))
         .pipe(concat('helium-vendors.css'))
         .pipe(gulp.dest('./dist/css'));
 });
@@ -56,8 +61,12 @@ gulp.task('js:vendors', function () {
             'node_modules/dropmic/dist/dropmic.js',
             'src/vendors/slim/slim.kickstart.min.js',
             'node_modules/tingle.js/dist/tingle.js',
-            'node_modules/quill/dist/quill.min.js'
+            'node_modules/quill/dist/quill.min.js',
+            'node_modules/choices.js/assets/scripts/dist/choices.min.js'
         ])
+        .pipe(size({
+            showFiles: true
+        }))
         .pipe(concat('helium-vendors.js'))
         .pipe(gulp.dest('./dist/js'));
 });
@@ -83,4 +92,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', gulp.series('sass', 'copy:html'));
-gulp.task('vendors', gulp.parallel('css:vendors', 'js:vendors'));
+gulp.task('vendors', gulp.series('css:vendors', 'js:vendors'));
