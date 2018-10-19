@@ -3,10 +3,11 @@
 /* ----------------------------------------------------------- */
 
 .header {
+  padding: .5rem 0;
+  border-top: 2px solid $color-primary;
   border-bottom: $base-border-thin;
   background-color: #fff;
   color: #fff;
-  padding: .5rem 0;
 }
 
 .header > .container {
@@ -23,9 +24,15 @@
   text-decoration: none;
 }
 
+.header__logo {
+  color: $color-dark-text;
+  font-size: 2.2rem;
+}
+
 .header__logo > svg {
+  display: inline-block;
   height: 3rem;
-  display: block;
+  vertical-align: middle;
 }
 
 .header__infos a {
