@@ -64,7 +64,8 @@ gulp.task('js:vendors', function () {
             'node_modules/tingle.js/dist/tingle.js',
             'node_modules/quill/dist/quill.min.js',
             'node_modules/choices.js/assets/scripts/dist/choices.min.js',
-            'node_modules/noty/lib/noty.min.js'
+            'node_modules/noty/lib/noty.min.js',
+            'node_modules/feather-icons/dist/feather.min.js'
         ])
         .pipe(size({
             showFiles: true
