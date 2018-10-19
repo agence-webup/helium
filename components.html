@@ -61,6 +61,18 @@
                 <a href="#">Menu 4</a>
             </nav>
             
+            <article class="box">
+                <header class="box__header">
+                    <h2>Notifications</h2>
+                </header>
+                <div class="box__content">
+                    <button class="btn btn--secondary" data-test-notif="success">Success</button>
+                    <button class="btn btn--secondary" data-test-notif="warning">Warning</button>
+                    <button class="btn btn--secondary" data-test-notif="error">Error</button>
+                    <button class="btn btn--secondary" data-test-notif="info">Info</button>
+                </div>
+            </article>
+            
             <!-- Alerts -->
             <div class="notif notif--success mb2">
                 Everything's just fine!
@@ -78,10 +90,6 @@
                 You should panic!
             </div>
             <!-- /Alerts -->
-            
-            <article class="box">
-                
-            </article>
             
             <article class="box">
                 <header class="box__header">
@@ -308,5 +316,12 @@
     </div>
     <script src="js/helium-vendors.js"></script>
     <script src="js/helium-base.js"></script>
+    <script>
+        [].forEach.call(document.querySelectorAll('[data-test-notif]'), function (el) {
+            el.addEventListener('click', (event) => {
+                Helium.notif(el.dataset.testNotif,  'wubalubadubdub').show();
+            });
+        });
+    </script>
 </body>
 </html>

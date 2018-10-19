@@ -29,7 +29,10 @@ function () {
 
       this._feather();
 
+      this._notif();
+
       console.info('🎈 Helium ' + this.version);
+      return this;
     }
   }, {
     key: "_feather",
@@ -107,6 +110,30 @@ function () {
       [].forEach.call(document.querySelectorAll('[data-dropmic]'), function (el) {
         _this.dropmics.push(new Dropmic(el));
       });
+    }
+  }, {
+    key: "_notif",
+    value: function _notif() {
+      var _this2 = this;
+
+      [].forEach.call(document.querySelectorAll('[data-notif]'), function (el) {
+        _this2.notif(el.dataset.notif, el.innerHTML).show();
+
+        el.style.display = 'none';
+      });
+    }
+  }, {
+    key: "notif",
+    value: function notif() {
+      var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'success';
+      var text = arguments.length > 1 ? arguments[1] : undefined;
+      var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      config.layout = 'topRight';
+      config.theme = 'helium';
+      config.type = type;
+      config.text = text;
+      config.timeout = 5000;
+      return new Noty(config);
     }
   }]);
 
