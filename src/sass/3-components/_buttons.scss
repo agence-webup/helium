@@ -7,7 +7,7 @@ $btn-primary: $color-primary;
 $btn-secondary: $color-secondary;
 $btn-danger: $color-red;
 $btn-hover: 5%;
-$btn-radius: .3rem;
+$btn-radius: .6rem;
 
 
 /* ----------------------------------------------------------- */
@@ -18,11 +18,11 @@ $btn-radius: .3rem;
   position: relative;
   display: inline-block;
   padding: .6em 1.2em;
-  border: none;
+  border: 1px solid $color-dark-text;
   border-radius: $btn-radius;
-  background-color: $btn-primary;
+  background-color: transparent;
   box-shadow: none;
-  color: #fff;
+  color: $color-dark-text;
   vertical-align: middle;
   text-align: center;
   text-decoration: none !important;
