@@ -16,6 +16,7 @@ $btn-radius: .4rem;
 /* ----------------------------------------------------------- */
 
 .btn {
+  position: relative;
   display: inline-block;
   padding: .6em 1.2em;
   border: none;
@@ -27,6 +28,7 @@ $btn-radius: .4rem;
   text-align: center;
   text-decoration: none !important;
   line-height: normal;
+  line-height: 2rem;
   cursor: pointer;
   transition: background-color .4s;
 }
@@ -90,6 +92,16 @@ $btn-radius: .4rem;
   background-color: $color-grey;
   color: #000;
   cursor: not-allowed;
+}
+
+/* icons
+-------------------------------------------------------------- */
+
+.btn .feather {
+  margin: 0 .1rem;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: bottom;
 }
 
 /* size
