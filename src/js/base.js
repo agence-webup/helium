@@ -50,7 +50,7 @@ class Helium {
             }
         });
         
-        $('.dataTable tbody').on('click', 'tr', function () {
+        $('.dataTable tbody').on('click', 'tr[data-link]', function () {
             window.location.href = $(this).data('link');
         });
     }
