@@ -1,0 +1,76 @@
+/**
+ * Radiobox Module
+ * Namespace : .f-radiobox
+ */
+
+/* ----------------------------------------------------------- */
+/* == module */
+/* ----------------------------------------------------------- */
+
+.f-radiobox {
+  display: inline-flex;
+  max-width: 32rem;
+  width: 100%;
+  border: $input-border;
+  border-radius: $input-border-radius;
+}
+
+.f-radiobox--full {
+  max-width: 100%;
+  width: 100%;
+}
+
+.f-radiobox input {
+  position: absolute;
+  left: -9999px;
+}
+
+.f-radiobox input + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 1rem 1.8rem;
+  min-height: 4rem;
+  width: 50%;
+  text-align: center;
+  font-weight: normal;
+  border-left: $input-border;
+}
+
+.f-radiobox label:first-of-type {
+  border-left: none;
+}
+
+.f-radiobox input:first-child + label {
+  border-radius: ($input-border-radius - .2rem) 0 0 ($input-border-radius - .2rem);
+}
+
+.f-radiobox label:last-child {
+  border-radius: 0 ($input-border-radius - .2rem) ($input-border-radius - .2rem) 0;
+}
+
+/* checked state
+-------------------------------------------------------------- */
+
+.f-radiobox input:checked + label {
+  background-color: $color-secondary;
+  color: #fff;
+}
+
+/* focus state
+-------------------------------------------------------------- */
+
+.f-radiobox input:focus + label {
+  box-shadow: $focus-ring;
+}
+
+.radiobox:active,
+.radiobox:focus-within {
+  box-shadow: $focus-ring;
+}
+
+.radiobox:focus-within input:focus + label {
+  box-shadow: none;
+}

@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------- */
+/* == login */
+/* ----------------------------------------------------------- */
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  padding: 4rem;
+  border-radius: $base-border-radius;
+  background-color: #fff;
+  box-shadow: $base-box-shadow;
+  width: 42rem;
+  max-width: 100%;
+}
+
+.login-box__btn {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  text-transform: uppercase;
+}

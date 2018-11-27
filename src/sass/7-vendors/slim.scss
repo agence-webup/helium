@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------- */
+/* == slim */
+/* ----------------------------------------------------------- */
+
+.slim {
+  max-width: 24rem;
+  border: 2px dotted #e7ebee;
+  border-radius: 4px;
+  background-color: $background-color;
+  cursor: pointer;
+}
+
+.slim[data-state*=empty]:hover {
+  background-color: darken($background-color, 2%);
+}
+
+/* grid specifics
+-------------------------------------------------------------- */
+
+.grid > .slim {
+  max-width: 100%;
+}

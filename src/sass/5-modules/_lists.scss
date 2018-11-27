@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------- */
+/* == lists */
+/* ----------------------------------------------------------- */
+
+.list {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 1rem;
+  border: $base-border-thin;
+  background-color: #fff;
+}
+
+.list__action {
+  background-color: $background-color;
+  border-right: $base-border-thin;
+}
+
+.list__action button {
+  border: none;
+  background-color: $background-color;
+  box-shadow: none;
+  vertical-align: middle;
+  padding: 1rem;
+  line-height: 1;
+}
+
+.list__content {
+  align-self: center;
+  margin-left: 1rem;
+}
+
+/* level
+-------------------------------------------------------------- */
+
+[data-level="1"] {
+  margin-left: 0;
+}
+
+[data-level="2"] {
+  margin-left: 5rem;
+}
+
+[data-level="3"] {
+  margin-left: 10rem;
+}
+
+[data-level="4"] {
+  margin-left: 15rem;
+}

@@ -1,0 +1,91 @@
+/* ----------------------------------------------------------- */
+/* == navigation */
+/* ----------------------------------------------------------- */
+
+.navigation-wrapper {
+  border-bottom: $base-border-thin;
+  background-color: #fff;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a,
+.navigation a:hover,
+.navigation a:visited {
+  color: $color-dark-text;
+  text-decoration: none;
+}
+
+.navigation > a,
+.navigation > span {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-right: $base-border-thin;
+  border-bottom: 2px solid transparent;
+  font-size: 1.4rem;
+}
+
+.navigation > a:hover {
+  border-bottom: 2px solid $color-secondary;
+}
+
+.navigation > span {
+  cursor: default;
+}
+
+.navigation .is-active {
+  border-bottom-color: $color-primary;
+}
+
+.navigation > a:first-child {
+  border-left: $base-border-thin;
+}
+
+.navigation a .icon:before {
+  font-size: 3rem;
+}
+
+.navigation .feather {
+  height: 1.8rem;
+  vertical-align: sub;
+}
+
+/* sub
+-------------------------------------------------------------- */
+
+.navigation > span:hover > .navigation__sub {
+  display: block;
+}
+
+.navigation__sub {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: -1px;
+  z-index: $z-index-menu;
+  display: none;
+  min-width: 20rem;
+  border: $base-border-thin;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+}
+
+.navigation__sub > a,
+.navigation__sub > span {
+  display: block;
+  padding: 1rem 1.5rem;
+  border-bottom: $base-border-thin;
+  border-left: 2px solid transparent;
+}
+
+.navigation__sub > a:last-of-type,
+.navigation__sub > span:last-of-type {
+  border-bottom: none;
+}
+
+.navigation__sub > a:hover {
+  border-left: 2px solid $color-secondary;
+}

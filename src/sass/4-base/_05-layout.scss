@@ -1,0 +1,14 @@
+/* ----------------------------------------------------------- */
+/* == layout */
+/* ----------------------------------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-color;
+}
+
+.content {
+  padding: 1rem 0;
+}

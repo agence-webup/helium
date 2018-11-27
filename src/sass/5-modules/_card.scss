@@ -1,0 +1,44 @@
+/* ----------------------------------------------------------- */
+/* == card */
+/* ----------------------------------------------------------- */
+
+.card {
+  border: $base-border-thin;
+  background: $background-color;
+}
+
+.card__content {
+  padding: 0;
+}
+
+.card__content--pic {
+  padding: 0;
+}
+
+.card__content--pic img {
+  display: block;
+}
+
+.card__action {
+  background-color: $background-color;
+}
+
+.card__action > * {
+  width: 100%;
+}
+
+.card__action svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  vertical-align: middle;
+}
+
+.card__action button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  padding: .5rem 0;
+}

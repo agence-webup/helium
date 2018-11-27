@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------- */
+/* == menu */
+/* ----------------------------------------------------------- */
+
+.menu {
+  display: inline-block;
+}
+
+.menu a,
+.menu a:hover,
+.menu a:visited {
+  color: $color-dark-text;
+}
+
+.menu a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  background: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  transform: scale(1.07);
+}
+
+.menu a.is-active {
+  color: $color-secondary;
+  font-weight: bold;
+}

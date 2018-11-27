@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------- */
+/* == thumbnail */
+/* ----------------------------------------------------------- */
+
+.thumbnail {
+  border: $base-border-thin;
+  padding: .5rem;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.tumbnail--rounded,
+.tumbnail--rounded img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.thumbnail--small {
+  width: 10rem;
+}
+
+.thumbnail--medium {
+  width: 15rem;
+}
+
+.thumbnail--large {
+  width: 20rem;
+}
