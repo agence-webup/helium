@@ -64,6 +64,7 @@
   position: absolute;
   top: calc(100% + 2px);
   left: -1px;
+  z-index: $z-index-menu;
   display: none;
   min-width: 20rem;
   border: $base-border-thin;
