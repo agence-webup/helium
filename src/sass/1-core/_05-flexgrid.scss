@@ -104,25 +104,3 @@
     }
   }
 }
-
-/* vertical align
--------------------------------------------------------------- */
-
-[class*="grid-top"] {
-  align-items: flex-start;
-}
-
-[class*="grid-bottom"] {
-  align-items: flex-end;
-}
-
-[class*="grid-center"] {
-  align-items: center;
-}
-
-/* helpers
--------------------------------------------------------------- */
-
-[class*="grid-"].grid-noMargin > * {
-  margin-bottom: 0;
-}
