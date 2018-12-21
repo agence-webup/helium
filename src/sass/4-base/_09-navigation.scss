@@ -40,7 +40,8 @@
   border-bottom-color: $color-primary;
 }
 
-.navigation > a:first-child {
+.navigation > a:first-child,
+.navigation > span:first-child {
   border-left: $base-border-thin;
 }
 
