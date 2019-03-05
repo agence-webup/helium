@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/helium-base.css" media="all">
 </head>
 <body>
-    
+
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -54,7 +54,7 @@
                             <label for="firstname">Firstname <i class="f-required">*</i></label>
                             <input type="text" id="firstname">
                         </div>
-                        
+
                         <div class="f-group">
                             <label for="lastname">Lastname <i class="f-required">*</i></label>
                             <input type="text" id="lastname">
@@ -66,18 +66,18 @@
                             <label for="field1">Field 1 <i class="f-required">*</i></label>
                             <input type="text" id="field1">
                         </div>
-                        
+
                         <div class="f-group">
                             <label for="field2">Field 2 <i class="f-required">*</i></label>
                             <input type="text" id="field2">
                         </div>
-                        
+
                         <div class="f-group">
                             <label for="field3">Field 3 <i class="f-required">*</i></label>
                             <input type="text" id="field3">
                         </div>
                     </div>
-                    
+
                     <div class="f-group f-error">
                         <label for="email">Email <i class="f-required">*</i></label>
                         <input type="text" id="email" placeholder="user@example.com">
@@ -101,7 +101,7 @@
                             <label for="frite_sup">Switch 2</label>
                         </div>
                     </div>
-                    <div class="f-group">                        
+                    <div class="f-group">
                         <div class="f-radiobox">
                             <input name="hero" type="radio" id="thor">
                             <label for="thor">Thor</label>
@@ -113,7 +113,16 @@
                     </div>
                 </div>
             </article>
-            
+
+            <article class="box">
+                <header class="box__header">
+                    <h2>Input mask</h2>
+                </header>
+                <div class="box__content">
+                    plop
+                </div>
+            </article>
+
             <article class="box">
                 <header class="box__header">
                     <h2>Upload with slim</h2>
@@ -126,7 +135,7 @@
                     <button class="btn btn--disabled" disabled>btn btn--disabled</button>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header">
                     <h2>Upload with slim</h2>
@@ -148,23 +157,23 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header">
                     <h2>Submit helper</h2>
                 </header>
                 <div class="box__content">
                     <form action="" method="get" id="form1">
-                        <input type="hidden" name="form" value="1" /> 
+                        <input type="hidden" name="form" value="1" />
                     </form>
                     <form action="" method="get" id="form2">
-                        <input type="hidden" name="form" value="2" /> 
+                        <input type="hidden" name="form" value="2" />
                     </form>
                     <button class="btn btn--primary" data-submit="form1">Submit form 1</button>
                     <button class="btn btn--secondary" data-submit="form2" data-confirm="Are you sure ?">Submit form 2</button>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header">
                     <h2>Quill</h2>
@@ -175,7 +184,7 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header">
                     <h2>Choices</h2>
@@ -198,8 +207,15 @@
     })
     // choices
     var choices = new Choices('.choices', {
-      removeItemButton : true
+        removeItemButton : true
     })
+    // cleave
+    var cleave = new Cleave('#credit-card', {
+        creditCard: true,
+        onCreditCardTypeChanged: function (type) {
+            // update UI ...
+        }
+    });
 </script>
 </body>
 </html>

@@ -68,7 +68,9 @@ gulp.task('js:vendors', function () {
     'node_modules/choices.js/public/assets/scripts/choices.min.js',
     'node_modules/noty/lib/noty.min.js',
     'node_modules/feather-icons/dist/feather.min.js',
-    'node_modules/axios/dist/axios.min.js'
+    'node_modules/axios/dist/axios.min.js',
+    'node_modules/cleave.js/dist/cleave.min.js',
+    'node_modules/cleave.js/dist/addons/cleave-phone.fr.js'
   ])
     .pipe(size({
       showFiles: true
