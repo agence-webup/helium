@@ -28,14 +28,14 @@ helium-vendors.css and helium-vendors.js contain the following plugins:
 
 * [jQuery](https://jquery.com/)
 * [datatables](https://datatables.net/)
-* [dropmic](https://github.com/agence-webup/dropmic)
-* [slim](https://pqina.nl/slim/)
-* [feather](https://feathericons.com/)
-* [tingle.js](http://robinparisi.github.io/tingle/)
-* [Quill](https://quilljs.com/docs/quickstart/)
-* [Choices](https://github.com/jshjohnson/Choices)
-* [noty](https://ned.im/noty)
-* [Axios](https://github.com/axios/axios)
+* [dropmic (dropdown)](https://github.com/agence-webup/dropmic)
+* [slim (upload)](https://pqina.nl/slim/)
+* [feather (icons)](https://feathericons.com/)
+* [tingle.js (modal)](http://robinparisi.github.io/tingle/)
+* [Quill (WYSYING)](https://quilljs.com/docs/quickstart/)
+* [Choices (select box)](https://github.com/jshjohnson/Choices)
+* [noty (notifications)](https://ned.im/noty)
+* [Axios (HTTP client )](https://github.com/axios/axios)
 
 ## Old versions
 
