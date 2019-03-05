@@ -14,6 +14,7 @@
 .ql-editor {
   padding: 3rem;
   line-height: 1.5;
+  height: auto; /* fix bug with height 100% */
 }
 
 .ql-container {
