@@ -35,7 +35,9 @@ helium-vendors.css and helium-vendors.js contain the following plugins:
 * [Quill (WYSYING)](https://quilljs.com/docs/quickstart/)
 * [Choices (select box)](https://github.com/jshjohnson/Choices)
 * [noty (notifications)](https://ned.im/noty)
-* [Axios (HTTP client )](https://github.com/axios/axios)
+* [Axios (HTTP client)](https://github.com/axios/axios)
+* [Cleave.js (input mask)](https://nosir.github.io/cleave.js)
+
 
 ## Old versions
 
@@ -44,4 +46,4 @@ helium-vendors.css and helium-vendors.js contain the following plugins:
 
 ## License
 
-© 2018 Agence Webup - Released under the [MIT LICENSE](http://opensource.org/licenses/MIT)
+© 2019 Agence Webup - Released under the [MIT LICENSE](http://opensource.org/licenses/MIT)
