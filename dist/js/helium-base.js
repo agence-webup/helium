@@ -14,7 +14,7 @@ function () {
     _classCallCheck(this, Helium);
 
     this.dropmics = [];
-    this.version = '3.0';
+    this.version = '3.2.0';
   }
 
   _createClass(Helium, [{
