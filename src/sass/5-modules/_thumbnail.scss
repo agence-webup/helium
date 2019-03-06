@@ -3,28 +3,47 @@
 /* ----------------------------------------------------------- */
 
 .thumbnail {
-  border: $base-border-thin;
+  display: inline-flex;
   padding: .5rem;
+  border: $base-border-thin;
   border-radius: 4px;
-  display: inline-block;
-  max-width: 100%;
   vertical-align: top;
 }
 
-.tumbnail--rounded,
-.tumbnail--rounded img {
-  border-radius: 50%;
-  overflow: hidden;
+.thumbnail img {
+  object-fit: cover;
 }
+
+/* size
+-------------------------------------------------------------- */
 
 .thumbnail--small {
   width: 10rem;
+  height: 10rem;
 }
 
 .thumbnail--medium {
   width: 15rem;
+  height: 15rem;
 }
 
 .thumbnail--large {
   width: 20rem;
+  height: 20rem;
+}
+
+/* keep ratio
+-------------------------------------------------------------- */
+
+.thumbnail--keepRatio img {
+  object-fit: contain;
+}
+
+/* rounded
+-------------------------------------------------------------- */
+
+.thumbnail--rounded,
+.thumbnail--rounded img {
+  overflow: hidden;
+  border-radius: 50%;
 }
