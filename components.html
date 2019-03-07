@@ -40,20 +40,20 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="container">
         <main class="content">
             <header class="title-wrapper">
                 <h1 class="title">Components</h1>
             </header>
-            
+
             <nav class="menu mb3">
                 <a href="#" class="is-active">Menu 1</a>
                 <a href="#">Menu 2</a>
                 <a href="#">Menu 3</a>
                 <a href="#">Menu 4</a>
             </nav>
-            
+
             <article class="box">
                 <header class="box__header">
                     <h2>Notifications</h2>
@@ -65,25 +65,25 @@
                     <button class="btn mr1" data-test-notif="info">Info</button>
                 </div>
             </article>
-            
+
             <!-- Alerts -->
             <div class="notif notif--success mb2">
                 Everything's just fine!
             </div>
-            
+
             <div class="notif notif--warning mb2">
                 Hey, this is a warning !
             </div>
-            
+
             <div class="notif notif--info mb2">
                 Hey, this is an info!
             </div>
-            
+
             <div class="notif notif--error mb3">
                 You should panic!
             </div>
             <!-- /Alerts -->
-            
+
             <article class="box">
                 <header class="box__header">
                     <h2>Cards (picture)</h2>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header"><h2>Text (autoflow)</h2></header>
                 <div class="box__content">
@@ -172,7 +172,7 @@
                     </p>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header"><h2>Tags</h2></header>
                 <div class="box__content">
@@ -210,35 +210,53 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class="box">
-                <header class="box__header"><h2>Thumbnails</h2></header>
+                <header class="box__header"><h2>Thumbnail</h2></header>
                 <div class="box__content">
-                    <div class="thumbnail thumbnail--small mr2">
-                        <img src="https://picsum.photos/300/300?image=10" alt="">
+                    <h3>Cover mode / small</h3>
+                    <div>
+                        <div class="thumbnail thumbnail--small mr2">
+                            <img src="https://picsum.photos/600/400?image=10" alt="">
+                        </div>
+                        <div class="thumbnail thumbnail--small mr2">
+                            <img src="https://picsum.photos/400/600?image=11" alt="">
+                        </div>
+                        <div class="thumbnail thumbnail--small mr2">
+                            <img src="https://picsum.photos/300/300?image=12" alt="">
+                        </div>
                     </div>
-                    <div class="thumbnail thumbnail--medium mr2">
-                        <img src="https://picsum.photos/300/300?image=11" alt="">
+                    <div class="mt2">
+                        <h3>Contain mode / medium</h3>
+                        <div class="thumbnail thumbnail--medium thumbnail--keepRatio mr2">
+                            <img src="https://picsum.photos/600/400?image=10" alt="">
+                        </div>
+                        <div class="thumbnail thumbnail--medium thumbnail--keepRatio mr2">
+                            <img src="https://picsum.photos/400/600?image=11" alt="">
+                        </div>
+                        <div class="thumbnail thumbnail--medium thumbnail--keepRatio mr2">
+                            <img src="https://picsum.photos/300/300?image=12" alt="">
+                        </div>
                     </div>
-                    <div class="thumbnail thumbnail--large mr2">
-                        <img src="https://picsum.photos/300/300?image=12" alt="">
-                    </div>
-                    <div class="thumbnail tumbnail--rounded thumbnail--small mr2">
-                        <img src="https://picsum.photos/300/300?image=13" alt="">
-                    </div>
-                    <div class="thumbnail tumbnail--rounded thumbnail--medium mr2">
-                        <img src="https://picsum.photos/300/300?image=14" alt="">
-                    </div>
-                    <div class="thumbnail tumbnail--rounded thumbnail--large">
-                        <img src="https://picsum.photos/300/300?image=15" alt="">
+                    <div class="mt2">
+                        <h3>Rounded mode / large</h3>
+                        <div class="thumbnail thumbnail--rounded thumbnail--large mr2">
+                            <img src="https://picsum.photos/300/300?image=13" alt="">
+                        </div>
+                        <div class="thumbnail thumbnail--rounded thumbnail--large mr2">
+                            <img src="https://picsum.photos/300/300?image=14" alt="">
+                        </div>
+                        <div class="thumbnail thumbnail--rounded thumbnail--large">
+                            <img src="https://picsum.photos/300/300?image=15" alt="">
+                        </div>
                     </div>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header"><h2>List item</h2></header>
                 <div class="box__content">
-                    
+
                     <div class="list is-draggable" data-level="1">
                         <div class="list__action dropmic" data-dropmic data-dropmic-direction="bottom-middle">
                             <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
@@ -255,7 +273,7 @@
                             Donec id elit non mi porta gravida at eget metus.
                         </div>
                     </div>
-                    
+
                     <div class="list is-draggable" data-level="2">
                         <div class="list__action dropmic" data-dropmic data-dropmic-direction="bottom-middle">
                             <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
@@ -272,7 +290,7 @@
                             Donec id elit non mi porta gravida at eget metus.
                         </div>
                     </div>
-                    
+
                     <div class="list is-draggable" data-level="3">
                         <div class="list__action dropmic" data-dropmic data-dropmic-direction="bottom-middle">
                             <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
@@ -291,7 +309,7 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class="box">
                 <header class="box__header"><h2>Helpers</h2></header>
                 <div class="box__content">
