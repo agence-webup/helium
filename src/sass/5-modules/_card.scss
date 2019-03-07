@@ -19,26 +19,24 @@
   display: block;
 }
 
-.card__action {
+.card .card__action {
+  display: block;
   background-color: $background-color;
 }
 
-.card__action > * {
-  width: 100%;
-}
-
-.card__action svg {
-  height: 2.5rem;
-  width: 2.5rem;
-  vertical-align: middle;
-}
-
-.card__action button {
+.card__action > button {
   display: block;
+  padding: .5rem 0;
   width: 100%;
   border: none;
   background-color: transparent;
   box-shadow: none;
+  text-align: center;
   cursor: pointer;
-  padding: .5rem 0;
+}
+
+.card__action > button > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  vertical-align: middle;
 }

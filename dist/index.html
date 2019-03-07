@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-
+    
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -42,14 +42,14 @@
             </div>
         </div>
     </nav>
-
+    
     <div class="container">
         <main class="content">
             <header class="title-wrapper">
                 <h1 class="title">Main title</h1>
                 <a href="#" class="btn btn--primary"><i data-feather="plus-circle"></i> Primary action</a>
             </header>
-
+            
             <article class="box">
                 <header class="box__header"><h2>Box module with header and footer</h2></header>
                 <div class="box__actions">
@@ -100,7 +100,7 @@
                 </div>
                 <footer class="box__footer txtcenter">Here's a footer</footer>
             </article>
-
+            
             <div>
                 <article class="box">
                     <header class="box__header">
@@ -149,7 +149,7 @@
                     </div>
                 </article>
             </div>
-
+            
             <div class="box box--actions">
                 <button class="btn btn--primary">Primary action</button>
                 <button class="btn btn--danger">Danger action</button>
@@ -158,13 +158,9 @@
     </div>
     <script src="js/helium-vendors.js"></script>
     <script src="js/helium-base.js"></script>
-
+    
     <script>
         $('.dataTable').DataTable();
-
-        $('.dataTable tbody').on( 'click', 'tr', function () {
-            $(this).toggleClass('selected');
-        } );
     </script>
 </body>
 </html>

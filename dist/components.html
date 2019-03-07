@@ -93,16 +93,18 @@
                     <div class="grid grid-5">
                         <div class="card is-draggable">
                             <div class="card__content"><img src="https://picsum.photos/300/200?image=10" alt="">                            </div>
-                            <div class="card__action">
-                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                            <div>
+                                <div class="dropmic card__action" data-dropmic data-dropmic-direction="bottom-middle">
                                     <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
                                     <div class="dropmic-menu" aria-hidden="true">
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
-                                        </li>
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
-                                        </li>
+                                        <ul class="dropmic-menu__list">
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                            </li>
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -110,15 +112,17 @@
                         <div class="card is-draggable">
                             <div class="card__content"><img src="https://picsum.photos/300/200?image=20" alt="">                            </div>
                             <div class="card__action">
-                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                <div class="dropmic card__action" data-dropmic data-dropmic-direction="bottom-middle">
                                     <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
                                     <div class="dropmic-menu" aria-hidden="true">
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
-                                        </li>
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
-                                        </li>
+                                        <ul class="dropmic-menu__list">
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                            </li>
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -126,15 +130,17 @@
                         <div class="card is-draggable">
                             <div class="card__content"><img src="https://picsum.photos/300/200?image=30" alt="">                            </div>
                             <div class="card__action">
-                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                <div class="dropmic card__action" data-dropmic data-dropmic-direction="bottom-middle">
                                     <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
                                     <div class="dropmic-menu" aria-hidden="true">
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
-                                        </li>
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
-                                        </li>
+                                        <ul class="dropmic-menu__list">
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                            </li>
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -142,15 +148,17 @@
                         <div class="card is-draggable">
                             <div class="card__content"><img src="https://picsum.photos/300/200?image=40" alt="">                            </div>
                             <div class="card__action">
-                                <div class="dropmic" data-dropmic data-dropmic-direction="bottom-middle">
+                                <div class="dropmic card__action" data-dropmic data-dropmic-direction="bottom-middle">
                                     <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
                                     <div class="dropmic-menu" aria-hidden="true">
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
-                                        </li>
-                                        <li class="dropmic-menu__listItem" role="menuitem">
-                                            <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
-                                        </li>
+                                        <ul class="dropmic-menu__list">
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
+                                            </li>
+                                            <li class="dropmic-menu__listItem" role="menuitem">
+                                                <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -212,43 +220,25 @@
             </article>
 
             <article class="box">
-                <header class="box__header"><h2>Thumbnail</h2></header>
+                <header class="box__header"><h2>Thumbnails</h2></header>
                 <div class="box__content">
-                    <h3>Cover mode / small</h3>
-                    <div>
-                        <div class="thumbnail thumbnail--small mr2">
-                            <img src="https://picsum.photos/600/400?image=10" alt="">
-                        </div>
-                        <div class="thumbnail thumbnail--small mr2">
-                            <img src="https://picsum.photos/400/600?image=11" alt="">
-                        </div>
-                        <div class="thumbnail thumbnail--small mr2">
-                            <img src="https://picsum.photos/300/300?image=12" alt="">
-                        </div>
+                    <div class="thumbnail thumbnail--small mr2">
+                        <img src="https://picsum.photos/300/300?image=10" alt="">
                     </div>
-                    <div class="mt2">
-                        <h3>Contain mode / medium</h3>
-                        <div class="thumbnail thumbnail--medium thumbnail--keepRatio mr2">
-                            <img src="https://picsum.photos/600/400?image=10" alt="">
-                        </div>
-                        <div class="thumbnail thumbnail--medium thumbnail--keepRatio mr2">
-                            <img src="https://picsum.photos/400/600?image=11" alt="">
-                        </div>
-                        <div class="thumbnail thumbnail--medium thumbnail--keepRatio mr2">
-                            <img src="https://picsum.photos/300/300?image=12" alt="">
-                        </div>
+                    <div class="thumbnail thumbnail--medium mr2">
+                        <img src="https://picsum.photos/300/300?image=11" alt="">
                     </div>
-                    <div class="mt2">
-                        <h3>Rounded mode / large</h3>
-                        <div class="thumbnail thumbnail--rounded thumbnail--large mr2">
-                            <img src="https://picsum.photos/300/300?image=13" alt="">
-                        </div>
-                        <div class="thumbnail thumbnail--rounded thumbnail--large mr2">
-                            <img src="https://picsum.photos/300/300?image=14" alt="">
-                        </div>
-                        <div class="thumbnail thumbnail--rounded thumbnail--large">
-                            <img src="https://picsum.photos/300/300?image=15" alt="">
-                        </div>
+                    <div class="thumbnail thumbnail--large mr2">
+                        <img src="https://picsum.photos/300/300?image=12" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--small mr2">
+                        <img src="https://picsum.photos/300/300?image=13" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--medium mr2">
+                        <img src="https://picsum.photos/300/300?image=14" alt="">
+                    </div>
+                    <div class="thumbnail tumbnail--rounded thumbnail--large">
+                        <img src="https://picsum.photos/300/300?image=15" alt="">
                     </div>
                 </div>
             </article>
