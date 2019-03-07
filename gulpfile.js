@@ -4,11 +4,12 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const bsync = require('browser-sync').create()
-const ghPages = require('gulp-gh-pages')
 const cleanCss = require('gulp-clean-css')
 const concat = require('gulp-concat')
 const babel = require('gulp-babel')
 const size = require('gulp-size')
+const ghpages = require('gh-pages')
+const path = require('path')
 
 function reload (done) {
   bsync.reload()
@@ -79,9 +80,8 @@ gulp.task('js:vendors', function () {
     .pipe(gulp.dest('./dist/js'))
 })
 
-gulp.task('deploy', function () {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages())
+gulp.task('deploy', function (cb) {
+  ghpages.publish(path.join(process.cwd(), 'dist'), cb)
 })
 
 gulp.task('watch', () => {
