@@ -107,8 +107,13 @@
                             <label for="thor">Thor</label>
                             <input name="hero" type="radio" id="spiderman" checked>
                             <label for="spiderman">Spiderman</label>
-                            <input name="hero" type="radio" id="ironman" >
+                            <input name="hero" type="radio" id="ironman">
                             <label for="ironman">Ironman</label>
+                            <input name="hero" type="radio" id="hulk">
+                            <label for="hulk">Hulk</label>
+                            <input name="hero" type="radio" id="captainmarvel">
+                            <label for="captainmarvel">Captain Marvel</label>
+                            <input name="hero" type="radio" id="captainmarvel">
                         </div>
                     </div>
                 </div>
@@ -116,27 +121,10 @@
 
             <article class="box">
                 <header class="box__header">
-                    <h2>Input mask (cleave.js)</h2>
+                    <h2>Input mask</h2>
                 </header>
                 <div class="box__content">
-                    <div class="f-grid">
-                        <div class="f-group">
-                            <label for="phoneNumber">Phone number (fr)</label>
-                            <input id="phoneNumber" name="phoneNumber">
-                        </div>
-                        <div class="f-group">
-                            <label for="date">Date</label>
-                            <input id="date" name="date">
-                        </div>
-                        <div class="f-group">
-                            <label for="time">Time</label>
-                            <input id="time" name="time">
-                        </div>
-                        <div class="f-group">
-                            <label for="creditCard">Credit card</label>
-                            <input id="creditCard" name="creditCard">
-                        </div>
-                    </div>
+                    plop
                 </div>
             </article>
 
@@ -220,30 +208,19 @@
 <script>
     // quill
     var quill = new Quill('#editor', {
-        theme: 'snow'
+      theme: 'snow'
     })
-
     // choices
     var choices = new Choices('.choices', {
-        removeItemButton : true
+      removeItemButton: true
     })
-
     // cleave
-    var cleave = new Cleave('#creditCard', {
-        creditCard: true,
+    var cleave = new Cleave('#credit-card', {
+      creditCard: true,
+      onCreditCardTypeChanged: function (type) {
+        // update UI ...
+      }
     })
-    var cleave = new Cleave('#phoneNumber', {
-        phone: true,
-        phoneRegionCode: 'fr'
-    })
-    var cleave = new Cleave('#date', {
-        date: true,
-        datePattern: ['d', 'm', 'Y']
-    })
-    var cleave = new Cleave('#time', {
-        time: true,
-        timePattern: ['h', 'm']
-    });
 </script>
 </body>
 </html>

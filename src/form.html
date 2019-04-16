@@ -107,8 +107,13 @@
                             <label for="thor">Thor</label>
                             <input name="hero" type="radio" id="spiderman" checked>
                             <label for="spiderman">Spiderman</label>
-                            <input name="hero" type="radio" id="ironman" >
+                            <input name="hero" type="radio" id="ironman">
                             <label for="ironman">Ironman</label>
+                            <input name="hero" type="radio" id="hulk">
+                            <label for="hulk">Hulk</label>
+                            <input name="hero" type="radio" id="captainmarvel">
+                            <label for="captainmarvel">Captain Marvel</label>
+                            <input name="hero" type="radio" id="captainmarvel">
                         </div>
                     </div>
                 </div>
@@ -203,19 +208,19 @@
 <script>
     // quill
     var quill = new Quill('#editor', {
-        theme: 'snow'
+      theme: 'snow'
     })
     // choices
     var choices = new Choices('.choices', {
-        removeItemButton : true
+      removeItemButton: true
     })
     // cleave
     var cleave = new Cleave('#credit-card', {
-        creditCard: true,
-        onCreditCardTypeChanged: function (type) {
-            // update UI ...
-        }
-    });
+      creditCard: true,
+      onCreditCardTypeChanged: function (type) {
+        // update UI ...
+      }
+    })
 </script>
 </body>
 </html>

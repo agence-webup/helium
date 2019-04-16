@@ -9,8 +9,6 @@
 
 .f-radiobox {
   display: inline-flex;
-  max-width: 32rem;
-  width: 100%;
   border: $input-border;
   border-radius: $input-border-radius;
 }
@@ -26,14 +24,13 @@
 }
 
 .f-radiobox input + label {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
   margin: 0;
   padding: 1rem 1.8rem;
   min-height: 4rem;
-  width: 50%;
   text-align: center;
   font-weight: normal;
   border-left: $input-border;
