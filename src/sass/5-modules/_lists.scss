@@ -11,8 +11,14 @@
 }
 
 .list__action {
-  background-color: $background-color;
+  padding: .8rem 1rem;
   border-right: $base-border-thin;
+  background-color: $background-color;
+  line-height: 0;
+}
+
+.list__action svg {
+  width: 1.5rem;
 }
 
 .list__action button {
@@ -20,13 +26,31 @@
   background-color: $background-color;
   box-shadow: none;
   vertical-align: middle;
-  padding: 1rem;
   line-height: 1;
 }
 
 .list__content {
-  align-self: center;
-  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  align-self: stretch;
+  padding: .5rem;
+  transition: background-color ease .3s;
+}
+
+.list__content > * {
+  padding-left: 1rem;
+}
+
+.list__content:link,
+.list__content:visited {
+  color: $color-dark-text;
+  text-decoration: none;
+}
+
+.list__content:hover {
+  background-color: $background-color;
 }
 
 /* level
@@ -55,4 +79,3 @@
 [data-level="6"] {
   margin-left: 25rem;
 }
-
