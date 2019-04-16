@@ -40,20 +40,20 @@
             </div>
         </div>
     </nav>
-
+    
     <div class="container">
         <main class="content">
             <header class="title-wrapper">
                 <h1 class="title">Components</h1>
             </header>
-
+            
             <nav class="menu mb3">
                 <a href="#" class="is-active">Menu 1</a>
                 <a href="#">Menu 2</a>
                 <a href="#">Menu 3</a>
                 <a href="#">Menu 4</a>
             </nav>
-
+            
             <article class="box">
                 <header class="box__header">
                     <h2>Notifications</h2>
@@ -65,25 +65,25 @@
                     <button class="btn mr1" data-test-notif="info">Info</button>
                 </div>
             </article>
-
+            
             <!-- Alerts -->
             <div class="notif notif--success mb2">
                 Everything's just fine!
             </div>
-
+            
             <div class="notif notif--warning mb2">
                 Hey, this is a warning !
             </div>
-
+            
             <div class="notif notif--info mb2">
                 Hey, this is an info!
             </div>
-
+            
             <div class="notif notif--error mb3">
                 You should panic!
             </div>
             <!-- /Alerts -->
-
+            
             <article class="box">
                 <header class="box__header">
                     <h2>Cards (picture)</h2>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header"><h2>Text (autoflow)</h2></header>
                 <div class="box__content">
@@ -180,7 +180,7 @@
                     </p>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header"><h2>Tags</h2></header>
                 <div class="box__content">
@@ -218,7 +218,7 @@
                     </div>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header"><h2>Thumbnails</h2></header>
                 <div class="box__content">
@@ -242,64 +242,54 @@
                     </div>
                 </div>
             </article>
-
+            
             <article class="box">
-                <header class="box__header"><h2>List item</h2></header>
+                <header class="box__header"><h2>List item (draggable)</h2></header>
                 <div class="box__content">
-
-                    <div class="list is-draggable" data-level="1">
-                        <div class="list__action dropmic" data-dropmic data-dropmic-direction="bottom-middle">
-                            <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
-                            <div class="dropmic-menu" aria-hidden="true">
-                                <li class="dropmic-menu__listItem" role="menuitem">
-                                    <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
-                                </li>
-                                <li class="dropmic-menu__listItem" role="menuitem">
-                                    <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
-                                </li>
-                            </div>
+                    <div class="list" data-level="1">
+                        <div class="list__action is-draggable">
+                            <i data-feather="move"></i>
                         </div>
-                        <div class="list__content">
-                            Donec id elit non mi porta gravida at eget metus.
-                        </div>
+                        <a class="list__content" href="#">
+                            <div>Donec id elit non mi porta gravida at eget metus.</div>
+                        </a>
                     </div>
-
-                    <div class="list is-draggable" data-level="2">
-                        <div class="list__action dropmic" data-dropmic data-dropmic-direction="bottom-middle">
-                            <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
-                            <div class="dropmic-menu" aria-hidden="true">
-                                <li class="dropmic-menu__listItem" role="menuitem">
-                                    <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
-                                </li>
-                                <li class="dropmic-menu__listItem" role="menuitem">
-                                    <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
-                                </li>
-                            </div>
+                    
+                    <div class="list" data-level="1">
+                        <div class="list__action is-draggable">
+                            <i data-feather="move"></i>
                         </div>
-                        <div class="list__content">
-                            Donec id elit non mi porta gravida at eget metus.
-                        </div>
-                    </div>
-
-                    <div class="list is-draggable" data-level="3">
-                        <div class="list__action dropmic" data-dropmic data-dropmic-direction="bottom-middle">
-                            <button data-dropmic-btn><i data-feather="more-horizontal"></i></button>
-                            <div class="dropmic-menu" aria-hidden="true">
-                                <li class="dropmic-menu__listItem" role="menuitem">
-                                    <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 1</a>
-                                </li>
-                                <li class="dropmic-menu__listItem" role="menuitem">
-                                    <a class="dropmic-menu__listContent" href="#" tabindex="-1">action 2</a>
-                                </li>
-                            </div>
-                        </div>
-                        <div class="list__content">
-                            Donec id elit non mi porta gravida at eget metus.
-                        </div>
+                        <a class="list__content" href="#">
+                            <div>Donec id elit non mi porta gravida at eget metus.</div>
+                        </a>
                     </div>
                 </div>
             </article>
-
+            
+            <article class="box">
+                <header class="box__header"><h2>Tree View</h2></header>
+                <div class="box__content">
+                    <div>
+                        <p>Menu</p>
+                        <ul class="tree">
+                            <li><a href="#">Menu 1</a>
+                                <ul>
+                                    <li><a href="#">Menu 1.1</a></li>
+                                    <li><a href="#">Menu 1.2</a>
+                                        <ul>
+                                            <li><a href="#">Menu 1.2.3</a></li>
+                                            <li><a href="#">Menu 1.2.4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Menu 1.3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            
             <article class="box">
                 <header class="box__header"><h2>Helpers</h2></header>
                 <div class="box__content">

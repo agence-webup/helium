@@ -1,50 +1,63 @@
 /* ----------------------------------------------------------- */
-/* == menu item */
+/* == tree view */
 /* ----------------------------------------------------------- */
 
-.tree > [data-level] {
-  display: flex;
-  margin-bottom: 1rem;
-  border: 1px solid #edf1f4;
-  background-color: #fafafa;
+$tree-indentation: 1em;
+$tree-line-height: 2em;
 
-  align-items: center;
+.tree,
+.tree ul {
+  position: relative;
+  margin: 0 0 0 $tree-indentation;
+  padding: 0;
+  list-style: none;
 }
 
-.tree--draggable .treeItem__label {
-  cursor: grab;
+.tree a,
+.tree a:hover,
+.tree a:visited {
+  color: $color-dark-text;
+  text-decoration: none;
 }
 
-.treeItem__label {
-  margin-left: 1.5rem;
-
-  flex: 1 1 auto;
+.tree ul {
+  margin-left: $tree-indentation / 2;
 }
 
-.treeItem__action {
-  padding: 1.2rem .5rem;
-  width: 5rem;
-  color: #fff;
-  text-align: center;
-  font-size: 1.8rem;
+.tree:before,
+.tree ul:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  border-left: 1px solid darken($color-border, 10%);
+  content: "";
 }
 
-
-/* level
--------------------------------------------------------------- */
-
-[data-level="1"] {
-  margin-left: 0;
+.tree li {
+  position: relative;
+  margin: 0;
+  padding: 0 $tree-indentation + .5em;
+  line-height: $tree-line-height;
 }
 
-[data-level="2"] {
-  margin-left: 5rem;
+.tree li:before {
+  position: absolute;
+  top: $tree-line-height / 2;
+  left: 0;
+  display: block;
+  margin-top: -1px; /* border top width */
+  width: $tree-indentation;
+  height: 0;
+  border-top: 1px solid darken($color-border, 10%);
+  content: "";
 }
 
-[data-level="3"] {
-  margin-left: 10rem;
-}
-
-[data-level="4"] {
-  margin-left: 15rem;
+.tree li:last-child:before {
+  top: $tree-line-height / 2;
+  bottom: 0;
+  height: auto;
+  background: #fff; /* same with body background */
 }
