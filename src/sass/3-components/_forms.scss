@@ -86,7 +86,6 @@ input + label {
 
 .f-inputGroup {
   display: flex;
-
   flex-wrap: wrap;
   align-items: stretch;
 }
@@ -172,7 +171,6 @@ input[type="checkbox"] {
 
 [class^="f-grid"] {
   display: flex;
-
   flex-wrap: nowrap;
   align-items: flex-end;
 }
@@ -180,9 +178,8 @@ input[type="checkbox"] {
 [class^="f-grid"] > * {
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
-
   flex: 1 0 0;
+  margin-left: 2rem;
 }
 
 [class^="f-grid"] > *:first-child {

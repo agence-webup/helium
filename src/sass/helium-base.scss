@@ -72,22 +72,23 @@
 @import "5-modules/_menu";
 @import "5-modules/_thumbnail";
 @import "5-modules/_lists";
+@import "5-modules/_breadcrumb";
 
 // --------------------------------------------------------------
 // == pages */
 // --------------------------------------------------------------
 
-@import '6-pages/login';
+@import "6-pages/login";
 
 
 // --------------------------------------------------------------
 // == vendors */
 // --------------------------------------------------------------
 
-@import '7-vendors/datatable';
-@import '7-vendors/slim';
-@import '7-vendors/choices';
-@import '7-vendors/quill';
+@import "7-vendors/datatable";
+@import "7-vendors/slim";
+@import "7-vendors/choices";
+@import "7-vendors/quill";
 
 
 // --------------------------------------------------------------
