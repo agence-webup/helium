@@ -3,7 +3,7 @@
 class Helium {
   constructor () {
     this.dropmics = []
-    this.version = '3.2.1'
+    this.version = '3.3.0'
   }
 
   init () {
