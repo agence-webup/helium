@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/helium-base.css" media="all">
 </head>
 <body>
-
+    
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -54,7 +54,7 @@
                             <label for="firstname">Firstname <i class="f-required">*</i></label>
                             <input type="text" id="firstname">
                         </div>
-
+                        
                         <div class="f-group">
                             <label for="lastname">Lastname <i class="f-required">*</i></label>
                             <input type="text" id="lastname">
@@ -66,18 +66,18 @@
                             <label for="field1">Field 1 <i class="f-required">*</i></label>
                             <input type="text" id="field1">
                         </div>
-
+                        
                         <div class="f-group">
                             <label for="field2">Field 2 <i class="f-required">*</i></label>
                             <input type="text" id="field2">
                         </div>
-
+                        
                         <div class="f-group">
                             <label for="field3">Field 3 <i class="f-required">*</i></label>
                             <input type="text" id="field3">
                         </div>
                     </div>
-
+                    
                     <div class="f-group f-error">
                         <label for="email">Email <i class="f-required">*</i></label>
                         <input type="text" id="email" placeholder="user@example.com">
@@ -118,16 +118,33 @@
                     </div>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header">
-                    <h2>Input mask</h2>
+                    <h2>Input mask (cleave.js)</h2>
                 </header>
                 <div class="box__content">
-                    plop
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="phoneNumber">Phone number (fr)</label>
+                            <input id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="f-group">
+                            <label for="date">Date</label>
+                            <input id="date" name="date">
+                        </div>
+                        <div class="f-group">
+                            <label for="time">Time</label>
+                            <input id="time" name="time">
+                        </div>
+                        <div class="f-group">
+                            <label for="creditCard">Credit card</label>
+                            <input id="creditCard" name="creditCard">
+                        </div>
+                    </div>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header">
                     <h2>Upload with slim</h2>
@@ -140,7 +157,7 @@
                     <button class="btn btn--disabled" disabled>btn btn--disabled</button>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header">
                     <h2>Upload with slim</h2>
@@ -162,7 +179,7 @@
                     </div>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header">
                     <h2>Submit helper</h2>
@@ -178,7 +195,7 @@
                     <button class="btn btn--secondary" data-submit="form2" data-confirm="Are you sure ?">Submit form 2</button>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header">
                     <h2>Quill</h2>
@@ -189,7 +206,7 @@
                     </div>
                 </div>
             </article>
-
+            
             <article class="box">
                 <header class="box__header">
                     <h2>Choices</h2>
@@ -208,19 +225,28 @@
 <script>
     // quill
     var quill = new Quill('#editor', {
-      theme: 'snow'
+        theme: 'snow'
     })
     // choices
     var choices = new Choices('.choices', {
-      removeItemButton: true
+        removeItemButton: true
     })
     // cleave
-    var cleave = new Cleave('#credit-card', {
-      creditCard: true,
-      onCreditCardTypeChanged: function (type) {
-        // update UI ...
-      }
+    var cleave = new Cleave('#creditCard', {
+        creditCard: true,
     })
+    var cleave = new Cleave('#phoneNumber', {
+        phone: true,
+        phoneRegionCode: 'fr'
+    })
+    var cleave = new Cleave('#date', {
+        date: true,
+        datePattern: ['d', 'm', 'Y']
+    })
+    var cleave = new Cleave('#time', {
+        time: true,
+        timePattern: ['h', 'm']
+    });
 </script>
 </body>
 </html>
