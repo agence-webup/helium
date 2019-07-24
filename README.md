@@ -8,6 +8,12 @@ A lightweight admin boilerplate
 
 ## Use
 
+Install using npm:
+
+```
+npm i -S helium-admin
+```
+
 Get started with the [index file](https://github.com/agence-webup/helium/blob/master/dist/index.html) too see how layout and modules work.
 
 You need to import two CSS files:
