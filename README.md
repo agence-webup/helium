@@ -29,7 +29,7 @@ helium-vendors.css and helium-vendors.js contain the following plugins:
 * [jQuery](https://jquery.com/)
 * [datatables](https://datatables.net/)
 * [dropmic (dropdown)](https://github.com/agence-webup/dropmic)
-* [slim (upload)](https://pqina.nl/slim/) ⚠️ You need to [buy a licence](https://codecanyon.net/item/slim-image-cropper-responsive-uploading-and-ratio-cropping-plugin/16364167?ref=pqina&clickthrough_id=1409428727&redirect_back=true) / Spoiler: it's worth it!
+* [slim (upload)](https://pqina.nl/slim/) ⚠️ You need to [buy a license](https://codecanyon.net/item/slim-image-cropper-responsive-uploading-and-ratio-cropping-plugin/16364167?ref=pqina&clickthrough_id=1409428727&redirect_back=true) / Spoiler: it's worth it!
 * [feather (icons)](https://feathericons.com/)
 * [tingle.js (modal)](http://robinparisi.github.io/tingle/)
 * [Quill (WYSYING)](https://quilljs.com/docs/quickstart/)
