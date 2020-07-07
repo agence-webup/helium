@@ -8,11 +8,11 @@ body {
 }
 
 .container {
+  width: 95%;
+  max-width: 120rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 10px;
-  max-width: 120rem;
-  width: 95%;
 }
 
 /* titles
@@ -68,9 +68,9 @@ ul {
 
 hr {
   display: block;
+  height: 1px;
   margin: 1em 0;
   padding: 0;
-  height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
 }

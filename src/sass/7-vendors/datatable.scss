@@ -18,6 +18,7 @@ table.dataTable {
 .dataTable tr {
   cursor: pointer;
 }
+
 .dataTable a,
 .dataTable a:hover,
 .dataTable a:visited {
@@ -27,8 +28,8 @@ table.dataTable {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   padding: .5rem 1rem;
-  border: 1px solid darken(#f9f9f9, 10%);
   background: #f9f9f9;
+  border: 1px solid darken(#f9f9f9, 10%);
   box-shadow: none;
 }
 
@@ -59,7 +60,7 @@ table.dataTable tbody tr.selected {
 
 table.dataTable tbody tr.selected td:first-of-type::before {
   display: inline-block;
-  vertical-align: middle;
   margin-right: .5rem;
-  content: "✔";
+  vertical-align: middle;
+  content: '✔';
 }

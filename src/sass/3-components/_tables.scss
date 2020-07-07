@@ -15,19 +15,19 @@
 /* ----------------------------------------------------------- */
 
 table {
-  max-width: 100%;
   width: 100%;
-  border: none;
-  border-spacing: 0;
-  border-collapse: collapse /* remove spacing between table cells */;
+  max-width: 100%;
   table-layout: fixed /* http://css-tricks.com/fixing-tables-long-strings */;
+  border: none;
+  border-collapse: collapse /* remove spacing between table cells */;
+  border-spacing: 0;
 }
 
 table caption {
   padding: 1em 0;
   color: #000;
+  font: italic 85%/1 'arial', sans-serif;
   text-align: center;
-  font: italic 85%/1 arial, sans-serif;
 }
 
 table tbody tr:nth-child(odd) {
@@ -36,13 +36,13 @@ table tbody tr:nth-child(odd) {
 
 table td,
 table th {
-  overflow: hidden;
   margin: 0;
   padding: .8em 1em;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: break-word;
+  overflow: hidden;
   font-size: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 table td:first-child,
@@ -51,19 +51,19 @@ table th:first-child {
 }
 
 table thead {
-  background: #fff;
   color: #000;
-  vertical-align: bottom;
   text-align: left;
+  vertical-align: bottom;
+  background: #fff;
 }
 
 /* helpers
 -------------------------------------------------------------- */
 
 .table-actions {
+  width: 8rem;
   overflow: visible;
   text-align: center;
-  width: 8rem;
 }
 
 .table-50p {

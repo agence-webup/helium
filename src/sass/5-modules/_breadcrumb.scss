@@ -31,8 +31,8 @@
 .breadcrumb ol li::after {
   display: inline-block;
   margin: 0 .5rem;
-  content: "›";
   text-decoration: none;
+  content: '›';
 }
 
 .breadcrumb ol li:last-of-type::after {

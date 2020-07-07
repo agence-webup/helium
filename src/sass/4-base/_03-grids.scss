@@ -78,6 +78,7 @@ $base-gutter: $default-gutter;
 -------------------------------------------------------------- */
 
 @media (max-width: $xsmall) {
+
   .grid-1-xs {
     @include grid(1);
   }
@@ -90,15 +91,15 @@ $base-gutter: $default-gutter;
 /* helpers
 -------------------------------------------------------------- */
 
-[class*="grid-top"] {
+[class*='grid-top'] {
   align-items: flex-start;
 }
 
-[class*="grid-bottom"] {
+[class*='grid-bottom'] {
   align-items: flex-end;
 }
 
-[class*="grid-center"] {
+[class*='grid-center'] {
   align-items: center;
 }
 

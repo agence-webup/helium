@@ -7,29 +7,28 @@
 /* == module */
 /* ----------------------------------------------------------- */
 
-.f-switch[type="checkbox"] {
+.f-switch[type='checkbox'] {
   position: relative;
-  margin-top: -.05em;
   width: 4rem;
   height: 2rem;
-  outline: none;
+  margin-top: -.05em;
+  background-color: #fff;
   border: $input-border;
   border-radius: 42rem;
-  background-color: white;
+  outline: none;
   box-shadow: inset -2rem 0 0 .1rem rgba(192, 192, 192, .5);
   transition: .2s;
-
   appearance: none;
 }
 
-.f-switch[type="checkbox"]::-ms-check {
+.f-switch[type='checkbox']::-ms-check {
   opacity: 0;
 }
 
 /* Checked state
 -------------------------------------------------------------- */
 
-.f-switch[type="checkbox"]:checked {
+.f-switch[type='checkbox']:checked {
   border-color: $color-secondary;
   box-shadow: inset 2rem 0 0 .1rem rgba($color-secondary, .7);
 }
@@ -37,12 +36,12 @@
 /* Focus state
 -------------------------------------------------------------- */
 
-.f-switch[type="checkbox"]:active,
-.f-switch[type="checkbox"]:focus {
+.f-switch[type='checkbox']:active,
+.f-switch[type='checkbox']:focus {
   box-shadow: inset -2rem 0 0 .1rem rgba(192, 192, 192, .5), $focus-ring;
 }
 
-.f-switch[type="checkbox"]:checked:active,
-.f-switch[type="checkbox"]:checked:focus {
+.f-switch[type='checkbox']:checked:active,
+.f-switch[type='checkbox']:checked:focus {
   box-shadow: inset 2rem 0 0 .1rem rgba($color-secondary, .7), $focus-ring;
 }

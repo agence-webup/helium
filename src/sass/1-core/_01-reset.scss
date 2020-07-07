@@ -7,8 +7,8 @@ html {
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -31,12 +31,13 @@ svg {
 
 img {
   height: auto;
-  border-style: none;
   vertical-align: middle;
+  border-style: none;
 }
 
 /* fix input no style on Safari */
-input[type="search"] {
+
+input[type='search'] {
   -webkit-appearance: textfield;
 }
 

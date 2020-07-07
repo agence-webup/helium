@@ -4,16 +4,16 @@
 
 .header {
   padding: .5rem 0;
-  border-bottom: $base-border-thin;
-  background-color: #fff;
   color: #fff;
+  background-color: #fff;
+  border-bottom: $base-border-thin;
 }
 
 .header > .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header a,

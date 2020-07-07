@@ -1,47 +1,31 @@
 /* eslint-env node */
 
 const gulp = require('gulp')
-const sass = require('gulp-sass')
-const autoprefixer = require('gulp-autoprefixer')
-const bsync = require('browser-sync').create()
-const cleanCss = require('gulp-clean-css')
-const concat = require('gulp-concat')
-const babel = require('gulp-babel')
-const size = require('gulp-size')
+const Gulpy = require('@agence-webup/gulpy')
 const ghpages = require('gh-pages')
 const path = require('path')
+const concat = require('gulp-concat')
+const size = require('gulp-size')
 
-function reload (done) {
-  bsync.reload()
-  done()
-}
-
-gulp.task('sass', () => {
-  return gulp.src('./src/sass/helium-base.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCss())
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions']
-    }))
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(bsync.stream())
+// config
+const gulpy = new Gulpy({
+  publicFolder: 'dist',
+  manifest: 'dist/rev-manifest.json',
+  npmManifest: 'dist/npm-manifest.json'
 })
 
-gulp.task('js', function () {
-  return gulp.src('./src/js/*.js')
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
-    .pipe(concat('helium-base.js'))
-    .pipe(gulp.dest('./dist/js'))
-})
+const clean = gulpy.clean(['dist/css', 'dist/js'])
 
-gulp.task('copy:html', function () {
-  return gulp.src('./src/*.html')
-    .pipe(gulp.dest('./dist'))
-})
+const sass = gulpy.sass('src/sass/helium-base.scss', 'dist/css')
+const js = gulpy.bundle('src/js/*.js', 'dist/js', 'helium-base.js')
 
-gulp.task('css:vendors', function () {
+const copyHtml = gulpy.copy('src/*.html', 'dist')
+
+const copyNpm = gulpy.copyNpm('dist/node_modules')
+
+const copyVendors = gulpy.copy('src/vendors/**/*', 'dist/vendors/')
+
+const cssVendorsBundle = function () {
   return gulp.src([
     'node_modules/datatables.net-dt/css/jquery.dataTables.min.css',
     'node_modules/dropmic/dist/dropmic.css',
@@ -56,9 +40,9 @@ gulp.task('css:vendors', function () {
     }))
     .pipe(concat('helium-vendors.css'))
     .pipe(gulp.dest('./dist/css'))
-})
+}
 
-gulp.task('js:vendors', function () {
+const jsVendorsBundle = function () {
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/datatables.net/js/jquery.dataTables.min.js',
@@ -78,26 +62,13 @@ gulp.task('js:vendors', function () {
     }))
     .pipe(concat('helium-vendors.js'))
     .pipe(gulp.dest('./dist/js'))
-})
+}
 
-gulp.task('deploy', function (cb) {
+// export
+exports.default = gulp.series(clean, gulp.series(sass, js, copyHtml, copyNpm, copyVendors, cssVendorsBundle, jsVendorsBundle))
+
+exports.watch = gulpy.watch()
+
+exports.deploy = function (cb) {
   ghpages.publish(path.join(process.cwd(), 'dist'), cb)
-})
-
-gulp.task('watch', () => {
-  bsync.init({
-    server: {
-      baseDir: 'dist',
-      directory: false,
-      index: 'index.html'
-    },
-    open: false
-  })
-
-  gulp.watch('./src/sass/**/*', gulp.series('sass'))
-  gulp.watch('./src/js/**/*', gulp.series('js'))
-  gulp.watch('./src/**/*.html', gulp.series('copy:html', reload))
-})
-
-gulp.task('default', gulp.series('sass', 'copy:html'))
-gulp.task('vendors', gulp.series('css:vendors', 'js:vendors'))
+}

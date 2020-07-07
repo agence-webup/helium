@@ -14,8 +14,8 @@
 }
 
 .f-radiobox--full {
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
 }
 
 .f-radiobox input {
@@ -25,14 +25,14 @@
 
 .f-radiobox input + label {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
   margin: 0;
   padding: 1rem 1.8rem;
-  min-height: 4rem;
-  text-align: center;
   font-weight: normal;
+  text-align: center;
   border-left: $input-border;
 }
 
@@ -52,8 +52,8 @@
 -------------------------------------------------------------- */
 
 .f-radiobox input:checked + label {
-  background-color: $color-secondary;
   color: #fff;
+  background-color: $color-secondary;
 }
 
 /* focus state

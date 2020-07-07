@@ -6,15 +6,15 @@
   display: flex;
   align-items: stretch;
   margin-bottom: 1rem;
-  border: $base-border-thin;
   background-color: #fff;
+  border: $base-border-thin;
 }
 
 .list__action {
   padding: .8rem 1rem;
-  border-right: $base-border-thin;
-  background-color: $background-color;
   line-height: 0;
+  background-color: $background-color;
+  border-right: $base-border-thin;
 }
 
 .list__action svg {
@@ -22,18 +22,18 @@
 }
 
 .list__action button {
-  border: none;
-  background-color: $background-color;
-  box-shadow: none;
-  vertical-align: middle;
   line-height: 1;
+  vertical-align: middle;
+  background-color: $background-color;
+  border: none;
+  box-shadow: none;
 }
 
 .list__content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-grow: 1;
+  align-items: center;
   align-self: stretch;
   padding: .5rem;
   transition: background-color ease .3s;
@@ -56,26 +56,26 @@
 /* level
 -------------------------------------------------------------- */
 
-[data-level="1"] {
+[data-level='1'] {
   margin-left: 0;
 }
 
-[data-level="2"] {
+[data-level='2'] {
   margin-left: 5rem;
 }
 
-[data-level="3"] {
+[data-level='3'] {
   margin-left: 10rem;
 }
 
-[data-level="4"] {
+[data-level='4'] {
   margin-left: 15rem;
 }
 
-[data-level="5"] {
+[data-level='5'] {
   margin-left: 20rem;
 }
 
-[data-level="6"] {
+[data-level='6'] {
   margin-left: 25rem;
 }

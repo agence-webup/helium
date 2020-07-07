@@ -5,9 +5,9 @@
 .thumbnail {
   display: inline-flex;
   padding: .5rem;
+  vertical-align: top;
   border: $base-border-thin;
   border-radius: 4px;
-  vertical-align: top;
 }
 
 .thumbnail img {

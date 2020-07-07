@@ -11,37 +11,37 @@
 }
 
 .noty_theme__helium  {
+  margin-bottom: .5rem;
   padding: 1em;
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: .5rem;
 }
 
 .notif--success,
 .noty_type__success.noty_theme__helium {
-  border-color: #d2ecb8;
-  background-color: #dff1cc;
   color: #316100;
+  background-color: #dff1cc;
+  border-color: #d2ecb8;
 }
 
 .notif--warning,
 .noty_type__warning.noty_theme__helium {
-  border-color: #fbeebc;
-  background-color: #fcf3cf;
   color: #7d6608;
+  background-color: #fcf3cf;
+  border-color: #fbeebc;
 }
 
 .notif--info,
 .noty_type__info.noty_theme__helium {
-  border-color: #cbe7fb;
-  background-color: #daeefc;
   color: #24587e;
+  background-color: #daeefc;
+  border-color: #cbe7fb;
 }
 
 .notif--error,
 .noty_type__error.noty_theme__helium {
-  border-color: #f1c1c0;
-  background-color: #f5d2d2;
   color: #6b1110;
+  background-color: #f5d2d2;
+  border-color: #f1c1c0;
 }
