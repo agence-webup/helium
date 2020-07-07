@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helium : admin boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/helium-vendors.css" media="all">
+    <link rel="stylesheet" href="css/helium-base.css" media="all">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <i data-feather="droplet"></i>
+                Helium
+            </div>
+            <div class="header__infos">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation-wrapper">
+        <div class="container">
+            <div class="navigation">
+                <a href="index.html"><i data-feather="home"></i> Home</a>
+                <a href="form.html" class="is-active"><i data-feather="edit"></i> Forms</a>
+                <a href="grid.html"><i data-feather="grid"></i> Grids</a>
+                <a href="components.html"><i data-feather="box"></i> Components</a>
+                <span>
+                    <i data-feather="book"></i> Documentation
+                    <span class="navigation__sub">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 4</a>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main class="content">
+            <h1 class="title">Forms</h1>
+            <article class="box">
+                <header class="box__header">
+                    <h2>Fields</h2>
+                </header>
+                <div class="box__content">
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="firstname">Firstname <i class="f-required">*</i></label>
+                            <input type="text" id="firstname">
+                        </div>
+                        
+                        <div class="f-group">
+                            <label for="lastname">Lastname <i class="f-required">*</i></label>
+                            <input type="text" id="lastname">
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="field1">Field 1 <i class="f-required">*</i></label>
+                            <input type="text" id="field1">
+                        </div>
+                        
+                        <div class="f-group">
+                            <label for="field2">Field 2 <i class="f-required">*</i></label>
+                            <input type="text" id="field2">
+                        </div>
+                        
+                        <div class="f-group">
+                            <label for="field3">Field 3 <i class="f-required">*</i></label>
+                            <input type="text" id="field3">
+                        </div>
+                    </div>
+                    
+                    <div class="f-group f-error">
+                        <label for="email">Email <i class="f-required">*</i></label>
+                        <input type="text" id="email" placeholder="user@example.com">
+                        <ul class="f-error-message">
+                            <li>Email is required</li>
+                        </ul>
+                    </div>
+                    <div class="f-group">
+                        <div class="f-inputGroup">
+                            <input type="text" id="email" placeholder="user@example.com">
+                            <button class="btn btn--primary">Action 2</button>
+                        </div>
+                    </div>
+                    <div class="f-group">
+                        <div>
+                            <input class="f-switch" type="checkbox" name="ketchup" id="ketchup" checked/>
+                            <label for="ketchup">Switch 1</label>
+                        </div>
+                        <div>
+                            <input class="f-switch" type="checkbox" name="frite_sup" id="frite_sup" />
+                            <label for="frite_sup">Switch 2</label>
+                        </div>
+                    </div>
+                    <div class="f-group">
+                        <div class="f-radiobox">
+                            <input name="hero" type="radio" id="thor">
+                            <label for="thor">Thor</label>
+                            <input name="hero" type="radio" id="spiderman" checked>
+                            <label for="spiderman">Spiderman</label>
+                            <input name="hero" type="radio" id="ironman">
+                            <label for="ironman">Ironman</label>
+                            <input name="hero" type="radio" id="hulk">
+                            <label for="hulk">Hulk</label>
+                            <input name="hero" type="radio" id="captainmarvel">
+                            <label for="captainmarvel">Captain Marvel</label>
+                            <input name="hero" type="radio" id="captainmarvel">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header">
+                    <h2>Input mask (cleave.js)</h2>
+                </header>
+                <div class="box__content">
+                    <div class="f-grid">
+                        <div class="f-group">
+                            <label for="phoneNumber">Phone number (fr)</label>
+                            <input id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="f-group">
+                            <label for="date">Date</label>
+                            <input id="date" name="date">
+                        </div>
+                        <div class="f-group">
+                            <label for="time">Time</label>
+                            <input id="time" name="time">
+                        </div>
+                        <div class="f-group">
+                            <label for="creditCard">Credit card</label>
+                            <input id="creditCard" name="creditCard">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header">
+                    <h2>Upload with slim</h2>
+                </header>
+                <div class="box__content">
+                    <a href="#" class="btn btn--primary">btn btn--primary</a>
+                    <button class="btn btn--secondary">btn btn--secondary</button>
+                    <button class="btn btn--secondary btn--icon"><i data-feather="edit"></i> btn icon</button>
+                    <button class="btn btn--danger">btn btn--danger</button>
+                    <button class="btn btn--disabled" disabled>btn btn--disabled</button>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header">
+                    <h2>Upload with slim</h2>
+                </header>
+                <div class="box__content">
+                    <div class="grid grid-4">
+                        <div class="slim" data-label="Drop a file here" data-ratio="4:3" data-service="async.php" data-fetcher="fetch.php" data-size="640,640">
+                            <input type="file" name="slim[]"/>
+                        </div>
+                        <div class="slim" data-label="Drop a file here" data-ratio="4:3" data-service="async.php" data-fetcher="fetch.php" data-size="640,640">
+                            <input type="file" name="slim[]"/>
+                        </div>
+                        <div class="slim" data-label="Drop a file here" data-ratio="4:3" data-service="async.php" data-fetcher="fetch.php" data-size="640,640">
+                            <input type="file" name="slim[]"/>
+                        </div>
+                        <div class="slim" data-label="Drop a file here" data-ratio="4:3" data-service="async.php" data-fetcher="fetch.php" data-size="640,640">
+                            <input type="file" name="slim[]"/>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header">
+                    <h2>Submit helper</h2>
+                </header>
+                <div class="box__content">
+                    <form action="" method="get" id="form1">
+                        <input type="hidden" name="form" value="1" />
+                    </form>
+                    <form action="" method="get" id="form2">
+                        <input type="hidden" name="form" value="2" />
+                    </form>
+                    <button class="btn btn--primary" data-submit="form1">Submit form 1</button>
+                    <button class="btn btn--secondary" data-submit="form2" data-confirm="Are you sure ?">Submit form 2</button>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header">
+                    <h2>Quill</h2>
+                </header>
+                <div class="box__content box__content--noPadding">
+                    <div id="editor">
+                        Maecenas sed <strong>diam eget risus varius blandit</strong> sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.
+                    </div>
+                </div>
+            </article>
+            
+            <article class="box">
+                <header class="box__header">
+                    <h2>Choices</h2>
+                </header>
+                <div class="box__content">
+                    <input type="text" class="choices">
+                </div>
+            </article>
+        </div>
+    </main>
+</div>
+
+<script src="js/helium-vendors.js"></script>
+<script src="js/helium-base.js"></script>
+
+<script>
+    // quill
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    })
+    // choices
+    var choices = new Choices('.choices', {
+        removeItemButton: true
+    })
+    // cleave
+    var cleave = new Cleave('#creditCard', {
+        creditCard: true,
+    })
+    var cleave = new Cleave('#phoneNumber', {
+        phone: true,
+        phoneRegionCode: 'fr'
+    })
+    var cleave = new Cleave('#date', {
+        date: true,
+        datePattern: ['d', 'm', 'Y']
+    })
+    var cleave = new Cleave('#time', {
+        time: true,
+        timePattern: ['h', 'm']
+    });
+</script>
+</body>
+</html>
