@@ -22,18 +22,23 @@
 .navigation > span {
   position: relative;
   display: inline-block;
-  padding: 1rem 1.5rem;
+  padding: 2.2rem 1.5rem;
   font-size: 1.4rem;
   border-right: $base-border-thin;
-  border-bottom: 2px solid transparent;
+  border-bottom: .2rem solid transparent;
 }
 
 .navigation > a:hover {
-  border-bottom: 2px solid $color-secondary;
+  border-bottom: .2rem solid $color-secondary;
 }
 
 .navigation > span {
+  padding-right: 3.7rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='7' viewBox='0 0 13 7'%3E%3Cpath fill='%234A5B69' d='M152.913243,34.0708781 L148.768845,29.8778642 C148.354272,29.4584276 148.358214,28.7823289 148.777651,28.3677555 C148.783713,28.3617638 148.789846,28.3558448 148.79605,28.35 C149.239526,27.9321782 149.934757,27.9423986 150.36576,28.3730759 L154.335679,32.34 L154.335679,32.34 L158.305598,28.3730759 C158.7366,27.9423986 159.431831,27.9321782 159.875307,28.35 C160.30455,28.7544118 160.324679,29.4302223 159.920267,29.859465 C159.914423,29.8656687 159.908504,29.8718022 159.902512,29.8778642 L155.758114,34.0708781 C154.981633,34.8564677 153.715325,34.8638517 152.929735,34.0873707 C152.924206,34.0819053 152.918708,34.0764077 152.913243,34.0708781 Z' transform='translate(-148 -28)'/%3E%3C/svg%3E%0A");  background-repeat: no-repeat;
+  background-position: calc(100% - 1.2rem) center;
+  background-size: 1.3rem .8rem;
   cursor: default;
+
 }
 
 .navigation .is-active {
@@ -50,7 +55,9 @@
 }
 
 .navigation .feather {
+  width: auto;
   height: 1.8rem;
+  margin-right: 1rem;
   vertical-align: sub;
 }
 
@@ -70,15 +77,15 @@
 
 .navigation__sub {
   position: absolute;
-  top: calc(100% + 2px);
-  left: -1px;
+  top: calc(100% + .1rem);
+  left: -.1rem;
   z-index: $z-index-menu;
   display: none;
   min-width: 20rem;
   background-color: #fff;
   border: $base-border-thin;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: .4rem;
+  border-bottom-left-radius: .4rem;
 }
 
 .navigation__sub > a,
@@ -86,7 +93,7 @@
   display: block;
   padding: 1rem 1.5rem;
   border-bottom: $base-border-thin;
-  border-left: 2px solid transparent;
+  border-left: .2rem solid transparent;
 }
 
 .navigation__sub > a:last-of-type,
