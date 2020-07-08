@@ -25,11 +25,10 @@
   padding: 2.2rem 1.5rem;
   font-size: 1.4rem;
   border-right: $base-border-thin;
-  border-bottom: .2rem solid transparent;
 }
 
 .navigation > a:hover {
-  border-bottom: .2rem solid $color-secondary;
+  box-shadow: inset 0 -4px 0 0 $color-secondary;
 }
 
 .navigation > span {
@@ -42,7 +41,7 @@
 }
 
 .navigation .is-active {
-  border-bottom-color: $color-primary;
+  box-shadow: inset 0 -4px 0 0 $color-primary;
 }
 
 .navigation > a:first-child,
