@@ -3,7 +3,7 @@
 /* ----------------------------------------------------------- */
 
 .breadcrumb {
-  padding: .8rem 0;
+  padding: 1rem 0;
 }
 
 .breadcrumb ol {
@@ -33,11 +33,10 @@
 
 .breadcrumb ol li::after {
   display: inline-block;
-  margin: 0 .5rem;
+  margin: 0 1rem;
   color: rgba($color-dark-text, .5);
   text-decoration: none;
-  content: '›';
-
+  content: '»';
 }
 
 .breadcrumb ol li:last-of-type::after {
