@@ -33,3 +33,19 @@
   border-color: $color-secondary;
   box-shadow: 0 5px 16px -12px rgba(34,138,230,.98), 0 8px 21px -9px rgba(34,138,230,.40), 0 1px 11px -7px rgba(34,138,230,.25), 0 0 4px -8px rgba(34,138,230,.10);
 }
+
+.menu a.is-badge {
+  position: relative;
+  padding-right: 2.7rem;
+}
+
+.menu a.is-badge::after {
+  position: absolute;
+  top: calc(50% - .4rem);
+  right: 1.3rem;
+  width: .8rem;
+  height: .8rem;
+  background: #ff4d4f;
+  border-radius: 1rem;
+  content: '';
+}
