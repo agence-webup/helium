@@ -19,8 +19,6 @@ const clean = gulpy.clean(['dist/css', 'dist/js'])
 const sass = gulpy.sass('src/sass/helium-base.scss', 'dist/css')
 const js = gulpy.bundle('src/js/*.js', 'dist/js', 'helium-base.js')
 
-const copyHtml = gulpy.copy('src/*.html', 'dist')
-
 const copyNpm = gulpy.copyNpm('dist/node_modules')
 
 const copyVendors = gulpy.copy('src/vendors/**/*', 'dist/vendors/')
@@ -65,7 +63,7 @@ const jsVendorsBundle = function () {
 }
 
 // export
-exports.default = gulp.series(clean, gulp.series(sass, js, copyHtml, copyNpm, copyVendors, cssVendorsBundle, jsVendorsBundle))
+exports.default = gulp.series(clean, gulp.series(sass, js, copyNpm, copyVendors, cssVendorsBundle, jsVendorsBundle))
 
 exports.watch = gulpy.watch()
 
