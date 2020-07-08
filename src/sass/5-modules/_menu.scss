@@ -14,12 +14,14 @@
 
 .menu a {
   display: inline-block;
-  margin-right: 1rem;
-  padding: 1rem 2rem;
+  margin-right: 1.6rem;
+  padding: .7rem 1.1rem;
+  color: $color-tertiary;
+  font-weight: bold;
   text-decoration: none;
   background: #fff;
-  border-radius: $base-border-radius;
-  box-shadow: $base-box-shadow;
+  border: .1rem solid #a5b4c0;
+  border-radius: .3rem;
 }
 
 .menu a:hover {
@@ -28,5 +30,6 @@
 
 .menu a.is-active {
   color: $color-secondary;
-  font-weight: bold;
+  border-color: $color-secondary;
+  box-shadow: 0 5px 16px -12px rgba(34,138,230,.98), 0 8px 21px -9px rgba(34,138,230,.40), 0 1px 11px -7px rgba(34,138,230,.25), 0 0 4px -8px rgba(34,138,230,.10);
 }
