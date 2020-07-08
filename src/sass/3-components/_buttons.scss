@@ -46,7 +46,7 @@ $btn-radius: .4rem;
 .btn--primary:visited {
   color: #fff;
   background-color: $btn-primary;
-  border: 1px solid darken($btn-primary, 1%);
+  border: .1rem solid transparent;
 }
 
 .btn--primary:hover,
@@ -60,7 +60,7 @@ $btn-radius: .4rem;
 .btn--secondary:visited {
   color: #fff;
   background-color: $btn-secondary;
-  border: 1px solid darken($btn-secondary, 1%);
+  border: .1rem solid transparent;
 }
 
 .btn--secondary:hover,
@@ -90,7 +90,7 @@ $btn-radius: .4rem;
 .btn--disabled:visited {
   color: $color-dark-text;
   background-color: $color-grey;
-  border: 1px solid darken($color-grey, 1%);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
