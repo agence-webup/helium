@@ -30,11 +30,11 @@ $focus-ring: 0 0 0 .1rem rgba($color-focus, .5);
 // Bases
 // --------------------------------------------------------------
 
-$base-border-radius: 8px;
-$base-border-thin: 1px solid #d4d8db;
-$base-border: 2px solid #d4d8db;
-$base-box-shadow: 0 2px 4px 0 rgba(0,0,0,.03), 0 3px 11px 0 rgba(37,41,82,.06);
-$base-box-shadow-hover: 0 4px 6px 0 rgba(0,0,0,.03), 0 5px 15px 0 rgba(37,41,82,.06);
+$base-border-radius: .8rem;
+$base-border-thin: .1rem solid $color-border;
+$base-border: .2rem solid $color-border;
+$base-box-shadow: 0 .2rem .4rem 0 rgba(0,0,0,.03), 0 3px 11px 0 rgba(37,41,82,.06);
+$base-box-shadow-hover: 0 .4rem .6rem 0 rgba(0,0,0,.03), 0 5px 15px 0 rgba(37,41,82,.06);
 
 // Forms
 // --------------------------------------------------------------
