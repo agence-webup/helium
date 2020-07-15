@@ -1,18 +1,18 @@
 /* ----------------------------------------------------------- */
-/* == menu */
+/* == filter */
 /* ----------------------------------------------------------- */
 
-.menu {
+.filter {
   display: inline-block;
 }
 
-.menu a,
-.menu a:hover,
-.menu a:visited {
+.filter button,
+.filter button:hover,
+.filter button:visited {
   color: $color-dark-text;
 }
 
-.menu a {
+.filter button {
   display: inline-block;
   margin-right: 1.6rem;
   padding: .7rem 1.1rem;
@@ -24,22 +24,22 @@
   border-radius: .3rem;
 }
 
-.menu a:hover {
+.filter button:hover {
   transform: scale(1.07);
 }
 
-.menu a.is-active {
+.filter button.is-active {
   color: $color-secondary;
   border-color: $color-secondary;
   box-shadow: 0 5px 16px -12px rgba(34,138,230,.98), 0 8px 21px -9px rgba(34,138,230,.40), 0 1px 11px -7px rgba(34,138,230,.25), 0 0 4px -8px rgba(34,138,230,.10);
 }
 
-.menu a.is-badge {
+.filter button.is-badge {
   position: relative;
   padding-right: 2.7rem;
 }
 
-.menu a.is-badge::after {
+.filter button.is-badge::after {
   position: absolute;
   top: calc(50% - .4rem);
   right: 1.3rem;

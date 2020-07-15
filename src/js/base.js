@@ -13,6 +13,7 @@ class Helium {
     this._dropmic()
     this._feather()
     this._notif()
+    this._filter()
     // eslint-disable-next-line no-console
     console.info('🎈 Helium ' + this.version)
     return this
@@ -94,6 +95,38 @@ class Helium {
     [].forEach.call(document.querySelectorAll('[data-notif]'), (el) => {
       this.notif(el.dataset.notif, el.innerHTML).show()
       el.style.display = 'none'
+    })
+  }
+
+  _filter () {
+    const activeClass = 'is-active'
+    const showAll = () => {
+      [].forEach.call(document.querySelectorAll('[data-helium-filter-target]'), section => {
+        section.style.display = null
+      });
+      [].forEach.call(document.querySelectorAll('[data-helium-filter]'), tab => {
+        tab.classList.remove(activeClass)
+      })
+      document.querySelector('[data-helium-filter="all"]').classList.add(activeClass)
+    }
+    const showTab = (tabId) => {
+      [].forEach.call(document.querySelectorAll('[data-helium-filter-target]'), section => {
+        section.style.display = 'none'
+      });
+      [].forEach.call(document.querySelectorAll('[data-helium-filter]'), tab => {
+        tab.classList.remove(activeClass)
+      })
+      document.querySelector('[data-helium-filter-target="' + tabId + '"]').style.display = null
+      document.querySelector('[data-helium-filter="' + tabId + '"]').classList.add(activeClass)
+    }
+    [].forEach.call(document.querySelectorAll('[data-helium-filter]'), (el) => {
+      el.addEventListener('click', () => {
+        if (el.getAttribute('data-helium-filter') === 'all') {
+          showAll()
+        } else {
+          showTab(el.getAttribute('data-helium-filter'))
+        }
+      })
     })
   }
 

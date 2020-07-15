@@ -50,14 +50,20 @@
     <div class="container">
         <main class="content">
 
-            <nav class="menu mb3">
-                <a href="#" class="is-active">Menu 1</a>
-                <a href="#">Menu 2</a>
-                <a href="#">Menu 3</a>
-                <a href="#" class="is-badge">Menu 4</a>
+            <nav class="filter mb3">
+                <button data-helium-filter="all" class="is-active">See all</button>
+                <button data-helium-filter="tab1" class="is-badge">Notifications</button>
+                <button data-helium-filter="tab2">Alerts</button>
+                <button data-helium-filter="tab3">Cards</button>
+                <button data-helium-filter="tab4">Text</button>
+                <button data-helium-filter="tab5">Tags</button>
+                <button data-helium-filter="tab6">Thumbnails</button>
+                <button data-helium-filter="tab7">List</button>
+                <button data-helium-filter="tab8">Tree View</button>
+                <button data-helium-filter="tab9">Helpers</button>
             </nav>
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab1">
                 <header class="box__header">
                     <h2>Notifications</h2>
                 </header>
@@ -70,24 +76,26 @@
             </article>
 
             <!-- Alerts -->
-            <div class="notif notif--success mb2">
-                Everything's just fine!
-            </div>
+            <div data-helium-filter-target="tab2">
+                <div class="notif notif--success mb2">
+                    Everything's just fine!
+                </div>
 
-            <div class="notif notif--warning mb2">
-                Hey, this is a warning !
-            </div>
+                <div class="notif notif--warning mb2">
+                    Hey, this is a warning !
+                </div>
 
-            <div class="notif notif--info mb2">
-                Hey, this is an info!
-            </div>
+                <div class="notif notif--info mb2">
+                    Hey, this is an info!
+                </div>
 
-            <div class="notif notif--error mb3">
-                You should panic!
+                <div class="notif notif--error mb3">
+                    You should panic!
+                </div>
             </div>
             <!-- /Alerts -->
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab3">
                 <header class="box__header">
                     <h2>Cards (picture)</h2>
                     <a href="#" class="btn btn--primary">Add new card</a>
@@ -170,7 +178,7 @@
                 </div>
             </article>
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab4">
                 <header class="box__header"><h2>Text (autoflow)</h2></header>
                 <div class="box__content">
                     <h1>Title 1</h1>
@@ -184,7 +192,7 @@
                 </div>
             </article>
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab5">
                 <header class="box__header"><h2>Tags</h2></header>
                 <div class="box__content">
                     <div class="mb1">
@@ -222,7 +230,7 @@
                 </div>
             </article>
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab6">
                 <header class="box__header"><h2>Thumbnails</h2></header>
                 <div class="box__content">
                     <div class="thumbnail thumbnail--small mr2">
@@ -246,7 +254,7 @@
                 </div>
             </article>
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab7">
                 <header class="box__header"><h2>List item (draggable)</h2></header>
                 <div class="box__content">
                     <div class="list" data-level="1">
@@ -269,7 +277,7 @@
                 </div>
             </article>
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab8">
                 <header class="box__header"><h2 id="treeview">Tree View</h2></header>
                 <div class="box__content">
                     <div>
@@ -293,7 +301,7 @@
                 </div>
             </article>
 
-            <article class="box">
+            <article class="box" data-helium-filter-target="tab9">
                 <header class="box__header"><h2>Helpers</h2></header>
                 <div class="box__content">
                     <p class="txtleft">Text with class .txtleft</p>
