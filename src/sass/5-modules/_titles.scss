@@ -10,11 +10,15 @@
 .title-wrapper {
   background-color: #f6f7f9;
   border-bottom: .1rem solid $color-border;
-
 }
 
 .title-wrapper > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.title-nav__item {
+  margin-left: 2rem;
+  vertical-align: middle;
 }

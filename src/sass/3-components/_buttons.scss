@@ -94,6 +94,13 @@ $btn-radius: .4rem;
   cursor: not-allowed;
 }
 
+.btn--bullet,
+.btn--bullet:link,
+.btn--bullet:visited {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
 /* icons
 -------------------------------------------------------------- */
 
