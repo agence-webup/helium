@@ -38,3 +38,46 @@
   display: inline-block;
   padding: 1rem 1rem;
 }
+
+/* Navigation
+-------------------------------------------------------------- */
+
+.header__nav {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  padding: 1rem 0;
+  color: $color-dark-text;
+}
+
+.header__navItem {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  border-left: .1rem solid $color-border;
+}
+
+.header__navItem:first-child {
+  border-left: none;
+}
+
+.header__navItem:last-child {
+  padding-right: 0;
+}
+
+.header__navBtnInvisible,
+.header__navBtnInvisible:visited {
+  padding: 0 .7rem;
+  color: $color-dark-text;
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.header__navBtnInvisible--ico {
+  display: flex;
+  align-self: center;
+  font-size: 0;
+}
+
