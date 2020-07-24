@@ -121,7 +121,28 @@
     <div class="container">
         <main class="content">
             <article class="box">
-                <header class="box__header"><h2>Box module with header and footer</h2></header>
+                <header class="box__header box__header--action">
+                    <h2>Box module with header and footer</h2>
+                    <div class="dropmic ActionsBtnContainer" data-dropmic="box-header-example" data-dropmic-direction="bottom-left"
+                        role="navigation">
+                        <button class="box__headerActionsBtn" title="Actions" aria-label="Menu" data-dropmic-btn>
+                            Actions
+                        </button>
+                        <div class="dropmic-menu dropmic-menu--noradius" aria-hidden="true">
+                            <ul class="dropmic-menu__list" role="menu">
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <a class="dropmic-menu__listContent" href="" tabindex="-1">Edit</a>
+                                </li>
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <button class="dropmic-menu__listContent dropmic-menu__listContent--orange" tabindex="-1">Destructive Action</button>
+                                </li>
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <button class="dropmic-menu__listContent dropmic-menu__listContent--red" tabindex="-1">Destructive Action</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
                 <div class="box__actions">
                     <div>
                         <a href="#" class="btn btn--primary">btn btn--primary</a>

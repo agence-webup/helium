@@ -63,6 +63,31 @@
   line-height: normal;
 }
 
+.ActionsBtnContainer {
+  align-self: stretch;
+  margin-top: -2.4rem;
+  margin-right: -2rem;
+  margin-bottom: -2rem;
+}
+
+.box__headerActionsBtn,
+.box__headerActionsBtn:visited {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+
+  padding: 2rem 2.5rem;
+  padding-right: 4.7rem;
+  color: #4a5b69;
+  font-weight: bold;
+  background: no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='12' viewBox='0 0 13 12'%3E%3Cpath fill='%234A5B69' d='M4.92315409,10.5010079 L0.796372352,6.38406629 C0.357418758,5.94615937 0.356570268,5.23532346 0.794477197,4.79636987 C0.795000945,4.79584487 0.795525213,4.79532039 0.79605,4.79479643 C1.23579771,4.35574121 1.94812186,4.35602186 2.38752346,4.79542346 L6.33567857,8.74357857 L6.33567857,8.74357857 L10.2838337,4.79542346 C10.7232353,4.35602186 11.4355594,4.35574121 11.8753071,4.79479643 C12.3140831,5.23288139 12.3146432,5.94371757 11.8765582,6.38249349 C11.8760343,6.38301828 11.8755098,6.38354255 11.8749848,6.38406629 L7.74820305,10.5010079 C6.96754244,11.2798071 5.7038147,11.2798071 4.92315409,10.5010079 Z'/%3E%3C/svg%3E%0A");
+  background-position: calc(100% - 2.5rem) center;
+  border: none;
+  border-left: .1rem solid $color-border;
+  cursor: pointer;
+}
+
+
 /* actions
 -------------------------------------------------------------- */
 
