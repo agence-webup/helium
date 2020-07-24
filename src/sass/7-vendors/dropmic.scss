@@ -59,7 +59,22 @@
   background-color: $color-orange;
 }
 
+.dropmic-menu__listContent--orange:hover,
+.dropmic-menu__listContent--orange:active,
+.dropmic-menu__listContent--orange:focus {
+  color: $color-light-text;
+  background-color: darken($color-orange, 5%);
+}
+
 .dropmic-menu__listContent--red {
   color: $color-light-text;
   background-color: $color-red;
 }
+
+.dropmic-menu__listContent--red:hover,
+.dropmic-menu__listContent--red:active,
+.dropmic-menu__listContent--red:focus {
+  color: $color-light-text;
+  background-color: darken($color-red, 5%);
+}
+
