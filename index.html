@@ -9,17 +9,46 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    
+
     <header class="header">
         <div class="container">
             <div class="header__logo">
                 <i data-feather="droplet"></i>
                 Helium
             </div>
-            <div class="header__infos">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="header__nav">
+                <div class="header__navItem">
+                    <button class="header__navBtnInvisible header__navBtnInvisible--ico" aria-label="Keyboard shortcuts" title="Keyboard shortcuts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26">
+                            <path fill="currentColor" d="M28.576 25.59H2.424A2.418 2.418 0 010 23.184v-8.648a2.418 2.418 0 012.424-2.406h26.152A2.418 2.418 0 0131 14.536v8.648a2.418 2.418 0 01-2.424 2.406zM2.424 14.052a.486.486 0 00-.486.483v8.647c0 .267.219.484.486.484h26.152a.486.486 0 00.486-.484v-8.647a.486.486 0 00-.486-.483H2.424zm16.367 7.692h-6.582a.582.582 0 01-.583-.58v-.763c0-.32.261-.579.583-.579h6.582c.322 0 .584.26.584.58v.763c0 .32-.262.579-.584.579zm-13.563 0h-.77a.582.582 0 01-.583-.58v-.763c0-.32.262-.579.584-.579h.769c.322 0 .584.26.584.58v.763c0 .32-.262.579-.584.579zm3.875 0h-.769a.582.582 0 01-.584-.58v-.763c0-.32.262-.579.584-.579h.769c.322 0 .584.26.584.58v.763c0 .32-.262.579-.584.579zm-3.875-3.846h-.77a.582.582 0 01-.583-.58v-.763c0-.32.262-.58.584-.58h.769c.322 0 .584.26.584.58v.763c0 .32-.262.58-.584.58zm3.875 0h-.769a.582.582 0 01-.584-.58v-.763c0-.32.262-.58.584-.58h.769c.322 0 .584.26.584.58v.763c0 .32-.262.58-.584.58zm3.875 0h-.769a.582.582 0 01-.583-.58v-.763c0-.32.261-.58.583-.58h.77c.321 0 .583.26.583.58v.763c0 .32-.262.58-.584.58zm3.875 0h-.769a.582.582 0 01-.583-.58v-.763c0-.32.261-.58.583-.58h.77c.321 0 .583.26.583.58v.763c0 .32-.262.58-.584.58zm3.876 0h-.77a.582.582 0 01-.583-.58v-.763c0-.32.261-.58.584-.58h.769c.322 0 .583.26.583.58v.763c0 .32-.261.58-.583.58zm5.812 0h-2.706a.582.582 0 01-.584-.58v-.763c0-.32.262-.58.584-.58h2.706c.322 0 .584.26.584.58v.763c0 .32-.262.58-.584.58zm0 3.846h-.769a.582.582 0 01-.583-.58v-.763c0-.32.261-.579.583-.579h.77c.321 0 .583.26.583.58v.763c0 .32-.262.579-.584.579zm-3.875 0h-.769a.582.582 0 01-.584-.58v-.763c0-.32.262-.579.584-.579h.77c.321 0 .583.26.583.58v.763c0 .32-.262.579-.584.579zM15.5 14.052a.965.965 0 01-.97-.962c0-5.662 3.194-6.45 5.758-7.084 2.367-.584 3.93-.97 3.93-4.454 0-.532.434-.962.97-.962.535 0 .968.43.968.962 0 4.986-2.993 5.725-5.398 6.32-2.397.59-4.29 1.058-4.29 5.218a.965.965 0 01-.968.962z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__navItem">
+                    <div class="dropmic" data-dropmic="header-nav-actions" data-dropmic-direction="bottom-left" role="navigation">
+                        <button class="btn--dropdown" data-dropmic-btn>Actions</button>
+                        <div class="dropmic-menu" aria-hidden="true">
+                            <ul class="dropmic-menu__list" role="menu">
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <a class="dropmic-menu__listContent" href="http://example.com" tabindex="-1">label link</a>
+                                </li>
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <button class="dropmic-menu__listContent" tabindex="-1">label button</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header__navItem">
+                    Hello, Jack!
+                    <button class="header__navBtnInvisible header__navBtnInvisible--ico" aria-label="Logout" title="Logout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32">
+                            <path fill="#4A5B69" d="M10.182.505C7 1.286 3.815 2.062.63 2.832c-.276.068-.29.23-.29.45C.333 6.612.325 9.94.314 13.27l-.028 14.46c0 .29.067.433.363.533 3.591 1.205 7.18 2.42 10.766 3.643.098.032.198.055.343.096.012-.232.032-.437.033-.64.034-3.454.068-6.906.1-10.36.062-5.864.124-11.726.188-17.59.012-1.137.035-2.272.052-3.41h-.062c-.628.166-1.254.348-1.886.504zM10.75 16.9c-.308.312-.756.292-1.03-.068-.318-.412-.36-.875-.156-1.35.128-.3.335-.526.793-.546.085.048.27.109.394.23.438.419.425 1.305 0 1.733h-.001zm7.105-13.217c.279 0 .379.066.375.363-.014 1.9-.005 3.798-.005 5.698v.641c.5 0 1.008.008 1.5-.014.048 0 .125-.192.125-.296.01-1.179.008-2.357.008-3.537V2.406c0-.187 0-.335-.272-.332-1.898.01-3.797.005-5.697.007a1.717 1.717 0 00-.16.014v1.593h.375c1.247 0 2.497.007 3.751-.005zm1.668 17.942c-.424.017-.858.005-1.295.005v5.683h-4.75v1.642c.124.005.19.015.282.015 1.917 0 3.835-.005 5.75.008.283 0 .349-.087.348-.353a845.471 845.471 0 010-6.662c.005-.26-.08-.345-.335-.338z" />
+                            <path fill="#4A5B69" d="M25.971 16l-6.476-3.74v2.49h-4.437v2.5h4.437v2.49z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -48,21 +77,72 @@
                         <li><a href="#">Item 1</a></li>
                         <li><a href="#">Item 2</a></li>
                         <li><a href="#">Item 3</a></li>
+                        <li><span>Current Item</span></li>
                     </ol>
                 </div>
             </div>
         </div>
     </nav>
-    
+
+    <div class="title-wrapper">
+        <div class="container">
+            <h1 class="title">Main title</h1>
+            <div class="title-nav">
+                <a href="#" class="btn btn--secondary title-nav__item">
+                    <i data-feather="save"></i>
+                    Save
+                </a>
+                <a href="#" class="btn btn--primary title-nav__item">
+                    <i data-feather="plus"></i>
+                    Add
+                </a>
+                <div class="dropmic title-nav__item" data-dropmic="title-nav-dropdown" data-dropmic-direction="bottom-left" role="navigation">
+                    <button class="btn btn--secondary btn--bullet" title="Menu" aria-label="Menu" data-dropmic-btn>
+                        <i data-feather="more-horizontal"></i>
+                    </button>
+                    <div class="dropmic-menu" aria-hidden="true">
+                        <ul class="dropmic-menu__list" role="menu">
+                            <li class="dropmic-menu__listItem" role="menuitem">
+                                <a class="dropmic-menu__listContent" href="" tabindex="-1">Edit</a>
+                            </li>
+                            <li class="dropmic-menu__listItem" role="menuitem">
+                                <button class="dropmic-menu__listContent dropmic-menu__listContent--orange" tabindex="-1">Destructive Action</button>
+                            </li>
+                            <li class="dropmic-menu__listItem" role="menuitem">
+                                <button class="dropmic-menu__listContent dropmic-menu__listContent--red" tabindex="-1">Destructive Action</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <main class="content">    
-            <header class="title-wrapper">
-                <h1 class="title">Main title</h1>
-                <a href="#" class="btn btn--primary"><i data-feather="plus-circle"></i> Primary action</a>
-            </header>
-            
+        <main class="content">
             <article class="box">
-                <header class="box__header"><h2>Box module with header and footer</h2></header>
+                <header class="box__header box__header--action">
+                    <h2>Box module with header and footer</h2>
+                    <div class="dropmic ActionsBtnContainer" data-dropmic="box-header-example" data-dropmic-direction="bottom-left"
+                        role="navigation">
+                        <button class="box__headerActionsBtn" title="Actions" aria-label="Menu" data-dropmic-btn>
+                            Actions
+                        </button>
+                        <div class="dropmic-menu dropmic-menu--noradius" aria-hidden="true">
+                            <ul class="dropmic-menu__list" role="menu">
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <a class="dropmic-menu__listContent" href="" tabindex="-1">Edit</a>
+                                </li>
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <button class="dropmic-menu__listContent dropmic-menu__listContent--orange" tabindex="-1">Destructive Action</button>
+                                </li>
+                                <li class="dropmic-menu__listItem" role="menuitem">
+                                    <button class="dropmic-menu__listContent dropmic-menu__listContent--red" tabindex="-1">Destructive Action</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
                 <div class="box__actions">
                     <div>
                         <a href="#" class="btn btn--primary">btn btn--primary</a>
@@ -111,7 +191,7 @@
                 </div>
                 <footer class="box__footer txtcenter">Here's a footer</footer>
             </article>
-            
+
             <div>
                 <article class="box">
                     <header class="box__header">
@@ -160,7 +240,7 @@
                     </div>
                 </article>
             </div>
-            
+
             <div class="box box--actions">
                 <button class="btn btn--primary">Primary action</button>
                 <button class="btn btn--danger">Danger action</button>
@@ -169,10 +249,38 @@
     </div>
     <script src="js/helium-vendors.js"></script>
     <script src="js/helium-base.js"></script>
-    
+
     <script>
-        $('.dataTable').DataTable();
-        
+        $('.dataTable').DataTable({
+            responsive: true,
+            initComplete: function () {
+                let collumnsDefs = datatable.fnSettings().aoColumns;
+                let newLine = document.createElement('tr')
+                newLine.classList.add('searchLine')
+                $(newLine).appendTo(this.api().table().header())
+                this.api().columns().every(function () {
+                    let cell = document.createElement('th')
+                    let column = this;
+                    let collumnDef = collumnsDefs[column[0]];
+                    let headerSearchable = !$(column.header()).hasClass('table-actions')
+                    if (headerSearchable) {
+                        let input = document.createElement("input");
+                        input.placeholder = "Search by " + column.header(column[0]).innerHTML.toLowerCase();
+                        input.classList.add("f-size-full");
+                        if (column.search()) {
+                            input.value = column.search();
+                        }
+                        var searchField = $(input).on('keyup change clear', function () {
+                            column.search($(this).val(), false, true, true).draw();
+                        })
+                        $(input).appendTo(cell)
+                    }
+                    $(cell).appendTo(newLine)
+                });
+            },
+            order: [[0, "desc"]]
+        });
+
         $('.dataTable tbody').on( 'click', 'tr', function () {
             $(this).toggleClass('selected');
         } );
