@@ -51,7 +51,7 @@
 .navigation .feather {
   width: auto;
   height: 1.8rem;
-  margin-right: 1rem;
+  margin-right: .2rem;
   vertical-align: sub;
 }
 
@@ -78,6 +78,7 @@
   min-width: 20rem;
   background-color: #fff;
   border: $base-border-thin;
+  border-top: none;
   border-bottom-right-radius: .4rem;
   border-bottom-left-radius: .4rem;
 }
