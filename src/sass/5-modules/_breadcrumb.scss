@@ -15,15 +15,12 @@
 
 .breadcrumb a,
 .breadcrumb a:visited {
+  color: $color-dark-text;
   text-decoration: none;
 }
 
 .breadcrumb a:hover {
   text-decoration: underline;
-}
-
-.breadcrumb span {
-  color: rgba($color-dark-text, .5);
 }
 
 .breadcrumb ol li {
@@ -34,7 +31,6 @@
 .breadcrumb ol li::after {
   display: inline-block;
   margin: 0 1rem;
-  color: rgba($color-dark-text, .5);
   text-decoration: none;
   content: '»';
 }

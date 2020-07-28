@@ -17,7 +17,7 @@ $btn-radius: .4rem;
 .btn {
   position: relative;
   display: inline-block;
-  padding: .5em 1.2em;
+  padding: .5em 1em;
   color: $color-dark-text;
   line-height: normal;
   line-height: 2rem;
@@ -99,6 +99,9 @@ $btn-radius: .4rem;
 .btn--bullet:visited {
   padding-right: .5rem;
   padding-left: .5rem;
+  color: $color-blue;
+  background-color: #fff;
+  border: 1px solid $color-blue;
 }
 
 .btn--dropdown,
