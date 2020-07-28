@@ -104,6 +104,10 @@ $btn-radius: .4rem;
   border: 1px solid $color-blue;
 }
 
+.btn--bullet:hover {
+  color: #fff;
+}
+
 .btn--dropdown,
 .btn--dropdown:link,
 .btn--dropdown:visited {
