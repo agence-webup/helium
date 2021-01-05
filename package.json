@@ -4,7 +4,7 @@
   "description": "A lightweight admin boilerplate",
   "main": "gulpfile.js",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "choices.js": "^4.1.4",
     "cleave.js": "^1.4.7",
     "datatables.net-dt": "^1.10.19",
