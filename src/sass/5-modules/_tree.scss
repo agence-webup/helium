@@ -1,3 +1,4 @@
+@use 'sass:math';
 /* ----------------------------------------------------------- */
 /* == tree view */
 /* ----------------------------------------------------------- */
@@ -21,11 +22,11 @@ $tree-line-height: 2em;
 }
 
 .tree ul {
-  margin-left: $tree-indentation / 2;
+  margin-left: math.div($tree-indentation, 2);
 }
 
-.tree:before,
-.tree ul:before {
+.tree::before,
+.tree ul::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -33,7 +34,7 @@ $tree-line-height: 2em;
   display: block;
   width: 0;
   border-left: 1px solid darken($color-border, 10%);
-  content: "";
+  content: '';
 }
 
 .tree li {
@@ -43,20 +44,20 @@ $tree-line-height: 2em;
   line-height: $tree-line-height;
 }
 
-.tree li:before {
+.tree li::before {
   position: absolute;
-  top: $tree-line-height / 2;
+  top: math.div($tree-line-height, 2);
   left: 0;
   display: block;
-  margin-top: -1px; /* border top width */
   width: $tree-indentation;
   height: 0;
+  margin-top: -1px; /* border top width */
   border-top: 1px solid darken($color-border, 10%);
-  content: "";
+  content: '';
 }
 
-.tree li:last-child:before {
-  top: $tree-line-height / 2;
+.tree li:last-child::before {
+  top: math.div($tree-line-height, 2);
   bottom: 0;
   height: auto;
   background: #fff; /* same with body background */
