@@ -31,6 +31,7 @@ const cssVendorsBundle = function () {
     'node_modules/choices.js/public/assets/styles/choices.min.css',
     'node_modules/quill/dist/quill.snow.css',
     'node_modules/noty/lib/noty.css',
+    'node_modules/feather-icons/dist/feather.min.js',
     'src/vendors/slim/slim.min.css'
   ])
     .pipe(size({
