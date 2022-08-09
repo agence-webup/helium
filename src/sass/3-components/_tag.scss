@@ -4,52 +4,83 @@
 
 .tag {
   display: inline-block;
-  padding: .2em .6em;
+  padding: .4rem 1rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
   vertical-align: middle;
   background-color: #808080;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .tag:empty {
-  width: 1.2em;
-  height: 1.2rem;
+  width: 1.5em;
+  height: 1.5rem;
   padding: 0;
   font-size: 1rem;
   border-radius: 50%;
 }
 
-.tag--medium:empty {
-  width: 2.4em;
-  height: 2.4rem;
+.tag--square:empty {
+  border-radius: 0;
 }
 
-.tag--medium {
-  font-size: 1.5rem;
+.tag--wide {
+  width: 100%;
+  text-align: center;
 }
 
 .tag--green {
-  background-color: $color-green;
+  color: $emerald-700;
+  background-color: $emerald-200;
+}
+
+.tag--green:empty {
+  background-color: $emerald-500;
 }
 
 .tag--red {
-  background-color: $color-red;
+  color: $red-700;
+  background-color: $red-200;
+}
+
+.tag--red:empty {
+  background-color: $red-500;
 }
 
 .tag--blue {
-  background-color: $color-blue;
+  color: $blue-700;
+  background-color: $blue-200;
+}
+
+.tag--blue:empty {
+  background-color: $blue-500;
 }
 
 .tag--orange {
-  background-color: $color-orange;
+  color: $orange-700;
+  background-color: $orange-200;
+}
+
+.tag--orange:empty {
+  background-color: $orange-500;
 }
 
 .tag--yellow {
-  background-color: $color-yellow;
+  color: $yellow-700;
+  background-color: $yellow-200;
 }
 
-.tag--grey {
-  color: #000;
-  background-color: $color-grey;
+.tag--yellow:empty {
+  background-color: $yellow-500;
+}
+
+.tag--gray {
+  color: $gray-700;
+  background-color: $gray-200;
+}
+
+.tag--gray:empty {
+  background-color: $gray-500;
 }
