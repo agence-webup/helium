@@ -71,14 +71,13 @@
 
 .navigation__sub {
   position: absolute;
-  top: calc(100% + .1rem);
+  top: calc(100%);
   left: -.1rem;
   z-index: $z-index-menu;
   display: none;
   min-width: 20rem;
   background-color: #fff;
   border: $base-border-thin;
-  border-top: none;
   border-bottom-right-radius: .4rem;
   border-bottom-left-radius: .4rem;
 }
