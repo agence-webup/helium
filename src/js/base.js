@@ -65,10 +65,10 @@ class Helium {
         event.stopPropagation()
 
         // if no confirmation
-        if (event.target.dataset.confirm && !confirm(event.target.dataset.confirm)) return
+        if (el.dataset.confirm && !confirm(el.dataset.confirm)) return
 
         // let's submit the form
-        let form = document.getElementById(event.target.dataset.submit)
+        let form = document.getElementById(el.dataset.submit)
         if (form) {
           form.submit()
         }
