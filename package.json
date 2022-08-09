@@ -7,7 +7,7 @@
     "axios": "^0.18.0",
     "choices.js": "^4.1.4",
     "cleave.js": "^1.4.7",
-    "datatables.net-dt": "^1.10.19",
+    "datatables.net-dt": "^1.12.1",
     "dropmic": "^0.3.3",
     "feather-icons": "^4.19.0",
     "jquery": "^3.3.1",
