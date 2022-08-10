@@ -1,6 +1,6 @@
 {
   "name": "helium-admin",
-  "version": "3.4.0",
+  "version": "4.0.0-alpha",
   "description": "A lightweight admin boilerplate",
   "main": "gulpfile.js",
   "dependencies": {
