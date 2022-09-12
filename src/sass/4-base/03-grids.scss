@@ -1,108 +1,36 @@
-/* ----------------------------------------------------------- */
-/* == grids */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// grids
+// -------------------------------------------------------------
 
-$base-gutter: $default-gutter;
+@include grid(1);
+@include grid(2);
+@include grid(3);
+@include grid(4);
+@include grid(5);
+@include grid(6);
+@include grid(7);
+@include grid(8);
+@include grid(9);
 
-/* equal grids
--------------------------------------------------------------- */
+// gap
+// --------------------------------------------------------------
 
-.grid-1 {
-  @include grid(1, $base-gutter);
-}
+.gap { gap: $gap; }
 
-.grid-2 {
-  @include grid(2, $base-gutter);
-}
+// grid columns
+// --------------------------------------------------------------
 
-.grid-3 {
-  @include grid(3, $base-gutter);
-}
-
-.grid-4 {
-  @include grid(4, $base-gutter);
-}
-
-.grid-5 {
-  @include grid(5, $base-gutter);
-}
-
-.grid-6 {
-  @include grid(6, $base-gutter);
-}
-
-.grid-7 {
-  @include grid(7, $base-gutter);
-}
-
-.grid-8 {
-  @include grid(8, $base-gutter);
-}
-
-/* unequal grid
--------------------------------------------------------------- */
-
-.grid-4-1 {
-  @include unequalGrid(4, 1, $base-gutter);
-}
-
-.grid-3-1 {
-  @include unequalGrid(3, 1, $base-gutter);
-}
-
-.grid-2-1 {
-  @include unequalGrid(2, 1, $base-gutter);
-}
-
-.grid-3-2 {
-  @include unequalGrid(3, 2, $base-gutter);
-}
-
-.grid-2-3 {
-  @include unequalGrid(2, 3, $base-gutter);
-}
-
-.grid-1-2 {
-  @include unequalGrid(1, 2, $base-gutter);
-}
-
-.grid-1-3 {
-  @include unequalGrid(1, 3, $base-gutter);
-}
-
-.grid-1-4 {
-  @include unequalGrid(1, 4, $base-gutter);
-}
-
-/* responsive
--------------------------------------------------------------- */
-
-@media (max-width: $xsmall) {
-
-  .grid-1-xs {
-    @include grid(1);
-  }
-
-  .grid-2-xs {
-    @include grid(2);
-  }
-}
-
-/* helpers
--------------------------------------------------------------- */
-
-[class*='grid-top'] {
-  align-items: flex-start;
-}
-
-[class*='grid-bottom'] {
-  align-items: flex-end;
-}
-
-[class*='grid-center'] {
-  align-items: center;
-}
-
-.grid--noMargin > *:nth-child(n) {
-  margin-bottom: auto;
-}
+.col-span-auto { grid-column: auto; }
+.col-span-1 { grid-column: span 1 / span 1; }
+.col-span-2 { grid-column: span 2 / span 2; }
+.col-span-3 { grid-column: span 3 / span 3; }
+.col-span-4 { grid-column: span 4 / span 4; }
+.col-span-5 { grid-column: span 5 / span 5; }
+.col-span-6 { grid-column: span 6 / span 6; }
+.col-span-7 { grid-column: span 7 / span 7; }
+.col-span-8 { grid-column: span 8 / span 8; }
+.col-span-9 { grid-column: span 9 / span 9; }
+.col-span-10 { grid-column: span 10 / span 10; }
+.col-span-11 { grid-column: span 11 / span 11; }
+.col-span-12 { grid-column: span 12 / span 12; }
+.col-span-full { grid-column: 1 / -1; }
