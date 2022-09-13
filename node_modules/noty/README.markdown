@@ -1,0 +1,151 @@
+# DEPRECATED
+
+<p>
+   This repository is no longer supported, please consider using alternatives.
+</p>
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+<p align="center">
+  <a href="https://ned.im/noty?ref=readme">
+    <img src="https://ned.im/noty/_media/noty-v3-logo.png" width=200 height=70>
+  </a>
+
+  <p align="center">
+    Dependency-free notification library.
+    <br>
+    <a href="https://ned.im/noty"><strong>Documentation &raquo;</strong></a>
+  </p>
+
+  <p align="center">
+    <a href="https://github.com/needim/noty/releases"><img src="https://img.shields.io/github/release/needim/noty.svg" alt="GitHub release"></a>
+    <a href="https://bower.io/"><img src="https://img.shields.io/bower/v/noty.svg" alt="Bower version"></a>
+    <a href="https://www.npmjs.com/package/noty"><img src="https://img.shields.io/npm/v/noty.svg" alt="NPM version"></a>
+    <a href="https://packagist.org/packages/needim/noty"><img src="https://img.shields.io/packagist/v/needim/noty.svg" alt="Packagist version"></a>
+    <a href="https://cdnjs.com/libraries/noty"><img src="https://img.shields.io/cdnjs/v/noty.svg" alt="CDNJS version"></a>
+    <br>
+    <img src="https://img.shields.io/david/needim/noty.svg" alt="Dependencies">
+    <img src="https://img.shields.io/david/dev/needim/noty.svg" alt="Dev Dependencies">
+    <br>
+    <a href="https://travis-ci.org/needim/noty"><img src="https://img.shields.io/travis/needim/noty/master.svg" alt="Travis"></a>
+    <a href="https://www.npmjs.com/package/noty"><img src="https://img.shields.io/npm/dm/noty.svg?label=npm%20downloads" alt="NPM Downloads"></a>
+    <a href="https://github.com/needim/noty/graphs/contributors"><img src="https://img.shields.io/github/contributors/needim/noty.svg" alt="Contributors"></a>
+  </p>
+</p>
+
+<br>
+
+## Hi
+
+**NOTY** is a notification library that makes it easy to create **alert** - **success** - **error** - **warning** - **information** - **confirmation** messages as an alternative the standard alert dialog.
+
+The notifications can be positioned at the;
+**top** - **topLeft** - **topCenter** - **topRight** - **center** - **centerLeft** - **centerRight** - **bottom** - **bottomLeft** - **bottomCenter** - **bottomRight**
+
+There are lots of other options in the API to customise the text, animation, buttons and much more.
+
+It also has various callbacks for the buttons, opening closing the notifications and queue control.
+
+### Sponsored By
+
+<table>
+  <tr>
+    <td vlign="center">
+      <a target="_blank" href="https://infatica.io/">
+        <img src="https://infatica.io/templates/digit-whm-white/images/Logo-black.svg" width="220" alt="">
+      </a>
+    </td>
+    <td vlign="center">
+      <a target="_blank" href="https://www.jetbrains.com?ref=notyjs">
+        <img src="https://ned.im/noty/_media/logo_JetBrains_4.svg" width="80" alt="">
+      </a>
+    </td>
+    <td vlign="center">
+      <a target="_blank" href="https://www.browserstack.com?ref=notyjs">
+        <img src="https://ned.im/noty/_media/browserstack.svg" width="220" alt="">
+      </a>
+    </td>
+    <td vlign="center">
+      <a target="_blank" href="https://www.norgescasino.com/">
+        <img src="https://ned.im/noty/_media/norges.png" width="235" alt="" style="background: #13092B; padding: 5px;">
+      </a>
+    </td>
+    <td vlign="center">
+      <a target="_blank" href="https://www.bonus.ca/fr/">
+        <img src="https://ned.im/noty/_media/bonusfinder.png" width="150" alt="">
+      </a>
+    </td>
+    <td vlign="center">
+      <a target="_blank" href="https://www.boostmmr.com/">
+        <img src="https://i.ibb.co/99682Vb/boostmmr.jpg" width="220" alt="">
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Features
+
+- [x] Dependency-free
+- [x] Web Push Notifications with Service Worker support
+- [x] UMD
+- [x] Named queue system
+- [x] Has 11 layouts, 5 notification styles, 5+ themes
+- [x] Custom container (inline notifications)
+- [x] Confirm notifications
+- [x] TTL
+- [x] Progress bar indicator for timed notifications
+- [x] Supports css animations, [animate.css](https://github.com/daneden/animate.css), [mojs](https://github.com/legomushroom/mojs), [bounce.js](https://github.com/tictail/bounce.js), [velocity](https://github.com/julianshapiro/velocity) and other animation libraries
+- [x] 2 close options: click, button
+- [x] API & Callbacks
+- [x] Custom templating
+- [x] Document visibility control (blur, focus)
+
+### Documentation
+
+Documentation and examples are here: <http://ned.im/noty>
+
+---
+
+##### Basic Usage
+
+```js
+import Noty from "noty";
+
+new Noty({
+  text: "Notification text"
+}).show();
+
+// or
+
+const Noty = require("noty");
+
+new Noty({
+  text: "Notification text"
+}).show();
+```
+
+##### Development
+
+```console
+$ npm run dev
+$ npm test
+$ npm run build
+$ npm run browserstack
+$ npm run serve-docs
+```
+
+##### Development environment
+
+- [x] Standard
+- [x] Prettier
+- [x] ES6 & Babel & Webpack
+- [x] Sass
+- [x] Autoprefixer
+- [x] QUnit
+- [x] BrowserStack
+- [x] Pre-commit tests
+- [x] Travis CI
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
