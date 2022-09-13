@@ -1,0 +1,44 @@
+// -------------------------------------------------------------
+// stat
+// -------------------------------------------------------------
+
+.stat {
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+}
+
+.stat__main {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.stat__info {
+  color: $gray-500;
+  font-size: 1.3rem;
+  line-height: normal;
+}
+
+.stat__indicator {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.stat__indicator-icon {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.stat__indicator--up {
+  color: $emerald-500;
+}
+
+.stat__indicator--down {
+  color: $red-500;
+}
+
+.stat__indicator--constant {
+  color: $gray-500;
+}
