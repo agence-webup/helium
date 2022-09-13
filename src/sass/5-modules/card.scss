@@ -1,10 +1,10 @@
-/* ----------------------------------------------------------- */
-/* == card */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// card
+// -------------------------------------------------------------
 
 .card {
-  background: $background-color;
   border: $base-border-thin;
+  background: $background-color;
 }
 
 .card__content {
@@ -27,12 +27,12 @@
 .card__action > button {
   display: block;
   width: 100%;
-  padding: .5rem 0;
-  text-align: center;
-  background-color: transparent;
+  padding: 0.5rem 0;
   border: none;
+  background-color: transparent;
   box-shadow: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .card__action > button > svg {

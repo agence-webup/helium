@@ -1,12 +1,12 @@
-/* ----------------------------------------------------------- */
-/* == header */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// header
+// -------------------------------------------------------------
 
 .header {
-  padding: .5rem 0;
-  color: #fff;
-  background-color: #fff;
+  padding: 0.5rem 0;
   border-bottom: $base-border-thin;
+  background-color: #fff;
+  color: #fff;
 }
 
 .header > .container {
@@ -14,6 +14,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__infos a {
+  display: inline-block;
+  padding: 1rem;
 }
 
 .header a,
@@ -34,19 +39,14 @@
   vertical-align: middle;
 }
 
-.header__infos a {
-  display: inline-block;
-  padding: 1rem 1rem;
-}
-
 /* Navigation
 -------------------------------------------------------------- */
 
 .header__nav {
   display: flex;
   align-self: center;
-  margin-left: auto;
   padding: 1rem 0;
+  margin-left: auto;
   color: $color-dark-text;
 }
 
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   padding: 0 3rem;
-  border-left: .1rem solid $color-border;
+  border-left: 0.1rem solid $color-border;
 }
 
 .header__navItem:first-child {
@@ -67,11 +67,11 @@
 
 .header__navBtnInvisible,
 .header__navBtnInvisible:visited {
-  padding: 0 .7rem;
-  color: $color-dark-text;
-  background: none;
+  padding: 0 0.7rem;
   border: none;
+  background: none;
   box-shadow: none;
+  color: $color-dark-text;
   cursor: pointer;
 }
 
@@ -80,4 +80,3 @@
   align-self: center;
   font-size: 0;
 }
-

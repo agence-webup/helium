@@ -1,6 +1,6 @@
-/* ----------------------------------------------------------- */
-/* == datatable */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// datatable
+// -------------------------------------------------------------
 
 table.dataTable {
   margin-bottom: 1rem;
@@ -27,9 +27,9 @@ table.dataTable {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  padding: .5rem 1rem;
-  background: #f9f9f9;
+  padding: 0.5rem 1rem;
   border: 1px solid darken(#f9f9f9, 10%);
+  background: #f9f9f9;
   box-shadow: none;
 }
 
@@ -45,17 +45,15 @@ table.dataTable tbody tr.selected {
   background-color: darken($background-color, 3%) !important;
 }
 
-
 table.dataTable tbody tr.selected td:first-of-type::before {
   display: inline-block;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
+  content: "✔";
   vertical-align: middle;
-  content: '✔';
 }
 
 /* search line
 -------------------------------------------------------------- */
-
 
 .dataTable thead tr:nth-child(n) th {
   border-bottom: 0;
@@ -63,5 +61,5 @@ table.dataTable tbody tr.selected td:first-of-type::before {
 
 .dataTable thead tr:last-child td,
 .dataTable thead tr:last-child th {
-  border-bottom: .2rem solid #4a5b69;
+  border-bottom: 0.2rem solid #4a5b69;
 }

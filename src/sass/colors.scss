@@ -2,24 +2,238 @@
 // == colors */
 // --------------------------------------------------------------
 
-// palette
+// tailwind colors
 // --------------------------------------------------------------
 
-$color-red: #e53734;
-$color-yellow: #fdd836;
-$color-green: #00a38c;
-$color-blue: #228ae6;
-$color-purple: #673ab7;
-$color-orange: #ff9801;
-$color-gray: #e6e6e6;
+/* stylelint-disable scss/dollar-variable-pattern */
+$color-blueGray-50: hsl(210deg 40% 98.04%);
+$color-blueGray-100: hsl(210deg 40% 96.08%);
+$color-blueGray-200: hsl(214.29deg 31.82% 91.37%);
+$color-blueGray-300: hsl(212.73deg 26.83% 83.92%);
+$color-blueGray-400: hsl(215deg 20.22% 65.1%);
+$color-blueGray-500: hsl(215.38deg 16.32% 46.86%);
+$color-blueGray-600: hsl(215.29deg 19.32% 34.51%);
+$color-blueGray-700: hsl(215.29deg 25% 26.67%);
+$color-blueGray-800: hsl(217.24deg 32.58% 17.45%);
+$color-blueGray-900: hsl(222.22deg 47.37% 11.18%);
+$color-coolGray-50: hsl(210deg 20% 98.04%);
+$color-coolGray-100: hsl(220deg 14.29% 95.88%);
+$color-coolGray-200: hsl(220deg 13.04% 90.98%);
+$color-coolGray-300: hsl(216deg 12.2% 83.92%);
+$color-coolGray-400: hsl(217.89deg 10.61% 64.9%);
+$color-coolGray-500: hsl(220deg 8.94% 46.08%);
+$color-coolGray-600: hsl(215deg 13.79% 34.12%);
+$color-coolGray-700: hsl(216.92deg 19.12% 26.67%);
+$color-coolGray-800: hsl(215deg 27.91% 16.86%);
+$color-coolGray-900: hsl(220.91deg 39.29% 10.98%);
+$color-gray-50: hsl(0deg 0% 98.04%);
+$color-gray-100: hsl(240deg 4.76% 95.88%);
+$color-gray-200: hsl(240deg 5.88% 90%);
+$color-gray-300: hsl(240deg 4.88% 83.92%);
+$color-gray-400: hsl(240deg 5.03% 64.9%);
+$color-gray-500: hsl(240deg 3.83% 46.08%);
+$color-gray-600: hsl(240deg 5.2% 33.92%);
+$color-gray-700: hsl(240deg 5.26% 26.08%);
+$color-gray-800: hsl(240deg 3.7% 15.88%);
+$color-gray-900: hsl(240deg 5.88% 10%);
+$color-trueGray-50: hsl(0deg 0% 98.04%);
+$color-trueGray-100: hsl(0deg 0% 96.08%);
+$color-trueGray-200: hsl(0deg 0% 89.8%);
+$color-trueGray-300: hsl(0deg 0% 83.14%);
+$color-trueGray-400: hsl(0deg 0% 63.92%);
+$color-trueGray-500: hsl(0deg 0% 45.1%);
+$color-trueGray-600: hsl(0deg 0% 32.16%);
+$color-trueGray-700: hsl(0deg 0% 25.1%);
+$color-trueGray-800: hsl(0deg 0% 14.9%);
+$color-trueGray-900: hsl(0deg 0% 9.02%);
+$color-warmGray-50: hsl(60deg 9.09% 97.84%);
+$color-warmGray-100: hsl(60deg 4.76% 95.88%);
+$color-warmGray-200: hsl(20deg 5.88% 90%);
+$color-warmGray-300: hsl(24deg 5.75% 82.94%);
+$color-warmGray-400: hsl(24deg 5.43% 63.92%);
+$color-warmGray-500: hsl(25deg 5.26% 44.71%);
+$color-warmGray-600: hsl(33.33deg 5.45% 32.35%);
+$color-warmGray-700: hsl(30deg 6.25% 25.1%);
+$color-warmGray-800: hsl(12deg 6.49% 15.1%);
+$color-warmGray-900: hsl(24deg 9.8% 10%);
+$color-red-50: hsl(0deg 85.71% 97.25%);
+$color-red-100: hsl(0deg 93.33% 94.12%);
+$color-red-200: hsl(0deg 96.3% 89.41%);
+$color-red-300: hsl(0deg 93.55% 81.76%);
+$color-red-400: hsl(0deg 90.6% 70.78%);
+$color-red-500: hsl(0deg 84.24% 60.2%);
+$color-red-600: hsl(0deg 72.22% 50.59%);
+$color-red-700: hsl(0deg 73.71% 41.76%);
+$color-red-800: hsl(0deg 70% 35.29%);
+$color-red-900: hsl(0deg 62.82% 30.59%);
+$color-orange-50: hsl(33.33deg 100% 96.47%);
+$color-orange-100: hsl(34.29deg 100% 91.76%);
+$color-orange-200: hsl(32.14deg 97.67% 83.14%);
+$color-orange-300: hsl(30.66deg 97.16% 72.35%);
+$color-orange-400: hsl(27.02deg 95.98% 60.98%);
+$color-orange-500: hsl(24.58deg 94.98% 53.14%);
+$color-orange-600: hsl(20.54deg 90.24% 48.24%);
+$color-orange-700: hsl(17.47deg 88.35% 40.39%);
+$color-orange-800: hsl(15deg 79.07% 33.73%);
+$color-orange-900: hsl(15.28deg 74.65% 27.84%);
+$color-amber-50: hsl(48deg 100% 96.08%);
+$color-amber-100: hsl(48deg 96.49% 88.82%);
+$color-amber-200: hsl(48deg 96.64% 76.67%);
+$color-amber-300: hsl(45.94deg 96.69% 64.51%);
+$color-amber-400: hsl(43.26deg 96.41% 56.27%);
+$color-amber-500: hsl(37.69deg 92.13% 50.2%);
+$color-amber-600: hsl(32.13deg 94.62% 43.73%);
+$color-amber-700: hsl(25.96deg 90.48% 37.06%);
+$color-amber-800: hsl(22.73deg 82.5% 31.37%);
+$color-amber-900: hsl(21.71deg 77.78% 26.47%);
+$color-yellow-50: hsl(54.55deg 91.67% 95.29%);
+$color-yellow-100: hsl(54.92deg 96.72% 88.04%);
+$color-yellow-200: hsl(52.76deg 98.31% 76.86%);
+$color-yellow-300: hsl(50.44deg 97.85% 63.53%);
+$color-yellow-400: hsl(47.95deg 95.82% 53.14%);
+$color-yellow-500: hsl(45.4deg 93.39% 47.45%);
+$color-yellow-600: hsl(40.61deg 96.12% 40.39%);
+$color-yellow-700: hsl(35.45deg 91.67% 32.94%);
+$color-yellow-800: hsl(31.76deg 80.95% 28.82%);
+$color-yellow-900: hsl(28.42deg 72.52% 25.69%);
+$color-lime-50: hsl(78.26deg 92% 95.1%);
+$color-lime-100: hsl(79.59deg 89.09% 89.22%);
+$color-lime-200: hsl(80.87deg 88.46% 79.61%);
+$color-lime-300: hsl(81.97deg 84.52% 67.06%);
+$color-lime-400: hsl(82.71deg 77.97% 55.49%);
+$color-lime-500: hsl(83.74deg 80.53% 44.31%);
+$color-lime-600: hsl(84.8deg 85.23% 34.51%);
+$color-lime-700: hsl(85.87deg 78.42% 27.25%);
+$color-lime-800: hsl(86.25deg 68.97% 22.75%);
+$color-lime-900: hsl(87.62deg 61.17% 20.2%);
+$color-green-50: hsl(138.46deg 76.47% 96.67%);
+$color-green-100: hsl(140.62deg 84.21% 92.55%);
+$color-green-200: hsl(141deg 78.95% 85.1%);
+$color-green-300: hsl(141.71deg 76.64% 73.14%);
+$color-green-400: hsl(141.89deg 69.16% 58.04%);
+$color-green-500: hsl(142.09deg 70.56% 45.29%);
+$color-green-600: hsl(142.13deg 76.22% 36.27%);
+$color-green-700: hsl(142.43deg 71.81% 29.22%);
+$color-green-800: hsl(142.78deg 64.23% 24.12%);
+$color-green-900: hsl(143.81deg 61.17% 20.2%);
+$color-emerald-50: hsl(151.76deg 80.95% 95.88%);
+$color-emerald-100: hsl(149.27deg 80.39% 90%);
+$color-emerald-200: hsl(152.37deg 76% 80.39%);
+$color-emerald-300: hsl(156.2deg 71.6% 66.86%);
+$color-emerald-400: hsl(158.11deg 64.37% 51.57%);
+$color-emerald-500: hsl(160.12deg 84.08% 39.41%);
+$color-emerald-600: hsl(161.38deg 93.55% 30.39%);
+$color-emerald-700: hsl(162.93deg 93.55% 24.31%);
+$color-emerald-800: hsl(163.15deg 88.12% 19.8%);
+$color-emerald-900: hsl(164.17deg 85.71% 16.47%);
+$color-teal-50: hsl(166.15deg 76.47% 96.67%);
+$color-teal-100: hsl(167.23deg 85.45% 89.22%);
+$color-teal-200: hsl(168.39deg 83.78% 78.24%);
+$color-teal-300: hsl(170.57deg 76.92% 64.31%);
+$color-teal-400: hsl(172.46deg 66.01% 50.39%);
+$color-teal-500: hsl(173.41deg 80.39% 40%);
+$color-teal-600: hsl(174.67deg 83.85% 31.57%);
+$color-teal-700: hsl(175.34deg 77.44% 26.08%);
+$color-teal-800: hsl(176.1deg 69.37% 21.76%);
+$color-teal-900: hsl(175.93deg 60.82% 19.02%);
+$color-cyan-50: hsl(183.16deg 100% 96.27%);
+$color-cyan-100: hsl(185.11deg 95.92% 90.39%);
+$color-cyan-200: hsl(186.21deg 93.55% 81.76%);
+$color-cyan-300: hsl(186.99deg 92.41% 69.02%);
+$color-cyan-400: hsl(187.94deg 85.71% 53.33%);
+$color-cyan-500: hsl(188.74deg 94.5% 42.75%);
+$color-cyan-600: hsl(191.65deg 91.4% 36.47%);
+$color-cyan-700: hsl(192.92deg 82.28% 30.98%);
+$color-cyan-800: hsl(194.38deg 69.57% 27.06%);
+$color-cyan-900: hsl(196.36deg 63.64% 23.73%);
+$color-sky-50: hsl(204deg 100% 97.06%);
+$color-sky-100: hsl(204deg 93.75% 93.73%);
+$color-sky-200: hsl(200.6deg 94.37% 86.08%);
+$color-sky-300: hsl(199.37deg 95.49% 73.92%);
+$color-sky-400: hsl(198.44deg 93.2% 59.61%);
+$color-sky-500: hsl(198.63deg 88.66% 48.43%);
+$color-sky-600: hsl(200.41deg 98.01% 39.41%);
+$color-sky-700: hsl(201.27deg 96.34% 32.16%);
+$color-sky-800: hsl(200.95deg 90% 27.45%);
+$color-sky-900: hsl(202.04deg 80.33% 23.92%);
+$color-blue-50: hsl(213.75deg 100% 96.86%);
+$color-blue-100: hsl(214.29deg 94.59% 92.75%);
+$color-blue-200: hsl(213.33deg 96.92% 87.25%);
+$color-blue-300: hsl(211.7deg 96.36% 78.43%);
+$color-blue-400: hsl(213.12deg 93.9% 67.84%);
+$color-blue-500: hsl(217.22deg 91.22% 59.8%);
+$color-blue-600: hsl(221.21deg 83.19% 53.33%);
+$color-blue-700: hsl(224.28deg 76.33% 48.04%);
+$color-blue-800: hsl(225.93deg 70.73% 40.2%);
+$color-blue-900: hsl(224.44deg 64.29% 32.94%);
+$color-indigo-50: hsl(225.88deg 100% 96.67%);
+$color-indigo-100: hsl(226.45deg 100% 93.92%);
+$color-indigo-200: hsl(228deg 96.49% 88.82%);
+$color-indigo-300: hsl(229.66deg 93.55% 81.76%);
+$color-indigo-400: hsl(234.45deg 89.47% 73.92%);
+$color-indigo-500: hsl(238.73deg 83.53% 66.67%);
+$color-indigo-600: hsl(243.4deg 75.36% 58.63%);
+$color-indigo-700: hsl(244.52deg 57.94% 50.59%);
+$color-indigo-800: hsl(243.65deg 54.5% 41.37%);
+$color-indigo-900: hsl(242.17deg 47.43% 34.31%);
+$color-violet-50: hsl(250deg 100% 97.65%);
+$color-violet-100: hsl(251.43deg 91.3% 95.49%);
+$color-violet-200: hsl(250.5deg 95.24% 91.76%);
+$color-violet-300: hsl(252.5deg 94.74% 85.1%);
+$color-violet-400: hsl(255.14deg 91.74% 76.27%);
+$color-violet-500: hsl(258.31deg 89.53% 66.27%);
+$color-violet-600: hsl(262.12deg 83.26% 57.84%);
+$color-violet-700: hsl(263.39deg 69.96% 50.39%);
+$color-violet-800: hsl(263.36deg 69.3% 42.16%);
+$color-violet-900: hsl(263.5deg 67.42% 34.9%);
+$color-purple-50: hsl(270deg 100% 98.04%);
+$color-purple-100: hsl(268.7deg 100% 95.49%);
+$color-purple-200: hsl(268.57deg 100% 91.76%);
+$color-purple-300: hsl(269.19deg 97.37% 85.1%);
+$color-purple-400: hsl(270deg 95.24% 75.29%);
+$color-purple-500: hsl(270.74deg 91.01% 65.1%);
+$color-purple-600: hsl(271.48deg 81.33% 55.88%);
+$color-purple-700: hsl(272.09deg 71.67% 47.06%);
+$color-purple-800: hsl(272.89deg 67.16% 39.41%);
+$color-purple-900: hsl(273.64deg 65.64% 31.96%);
+$color-fuchsia-50: hsl(289.09deg 100% 97.84%);
+$color-fuchsia-100: hsl(286.96deg 100% 95.49%);
+$color-fuchsia-200: hsl(288.26deg 95.83% 90.59%);
+$color-fuchsia-300: hsl(291.11deg 93.1% 82.94%);
+$color-fuchsia-400: hsl(292.03deg 91.43% 72.55%);
+$color-fuchsia-500: hsl(292.19deg 84.08% 60.59%);
+$color-fuchsia-600: hsl(293.41deg 69.48% 48.82%);
+$color-fuchsia-700: hsl(294.69deg 72.41% 39.8%);
+$color-fuchsia-800: hsl(295.42deg 70.24% 32.94%);
+$color-fuchsia-900: hsl(296.7deg 63.64% 28.04%);
+$color-pink-50: hsl(327.27deg 73.33% 97.06%);
+$color-pink-100: hsl(325.71deg 77.78% 94.71%);
+$color-pink-200: hsl(325.91deg 84.62% 89.8%);
+$color-pink-300: hsl(327.41deg 87.1% 81.76%);
+$color-pink-400: hsl(328.62deg 85.53% 70.2%);
+$color-pink-500: hsl(330.37deg 81.19% 60.39%);
+$color-pink-600: hsl(333.33deg 71.43% 50.59%);
+$color-pink-700: hsl(335.06deg 77.57% 41.96%);
+$color-pink-800: hsl(335.82deg 74.44% 35.29%);
+$color-pink-900: hsl(335.89deg 69.03% 30.39%);
+$color-rose-50: hsl(355.71deg 100% 97.25%);
+$color-rose-100: hsl(355.56deg 100% 94.71%);
+$color-rose-200: hsl(352.65deg 96.08% 90%);
+$color-rose-300: hsl(352.58deg 95.7% 81.76%);
+$color-rose-400: hsl(351.3deg 94.52% 71.37%);
+$color-rose-500: hsl(349.72deg 89.16% 60.2%);
+$color-rose-600: hsl(346.84deg 77.17% 49.8%);
+$color-rose-700: hsl(345.35deg 82.69% 40.78%);
+$color-rose-800: hsl(343.4deg 79.66% 34.71%);
+$color-rose-900: hsl(341.54deg 75.48% 30.39%);
 
 // base
 // --------------------------------------------------------------
 
-$color-primary: $color-green;
-$color-secondary: $color-blue;
+$color-primary: #00a38c;
+$color-secondary: #228ae6;
 $color-tertiary: #617384;
-$color-focus: $color-blue;
+$color-focus: #228ae6;
 $background-color: #f3f4f7;
 $separator-color: #d1d1d1;
 
@@ -28,33 +242,16 @@ $separator-color: #d1d1d1;
 
 $color-border: #e1e6ea;
 
-
 // texts
 // --------------------------------------------------------------
 
 $color-light-text: #fcfcfc;
 $color-dark-text: #091e42;
 
-
 // links
 // --------------------------------------------------------------
 
 $color-link: $color-secondary;
-
-
-// shades of grey
-// --------------------------------------------------------------
-
-$color-gray-10: rgba(0,0,0,.1);
-$color-gray-20: rgba(0,0,0,.2);
-$color-gray-30: rgba(0,0,0,.3);
-$color-gray-40: rgba(0,0,0,.4);
-$color-gray-50: rgba(0,0,0,.5);
-$color-gray-60: rgba(0,0,0,.6);
-$color-gray-70: rgba(0,0,0,.7);
-$color-gray-80: rgba(0,0,0,.8);
-$color-gray-90: rgba(0,0,0,.9);
-
 
 // brand
 // --------------------------------------------------------------

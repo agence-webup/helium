@@ -1,13 +1,13 @@
-/* ----------------------------------------------------------- */
-/* == thumbnail */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// thumbnail
+// -------------------------------------------------------------
 
 .thumbnail {
   display: inline-flex;
-  padding: .5rem;
-  vertical-align: top;
+  padding: 0.5rem;
   border: $base-border-thin;
   border-radius: 4px;
+  vertical-align: top;
 }
 
 .thumbnail img {

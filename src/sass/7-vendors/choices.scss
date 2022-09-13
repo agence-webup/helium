@@ -1,12 +1,12 @@
-/* ----------------------------------------------------------- */
-/* == choices */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// choices
+// -------------------------------------------------------------
 
 .choices__inner {
-  background: $input-background-color;
   border: $input-border;
+  background: $input-background-color;
   border-radius: $input-border-radius;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 5%);
 }
 
 .choices__input {
@@ -15,8 +15,8 @@
 }
 
 .choices__list--multiple .choices__item {
-  background-color: $color-secondary;
   border: 1px solid darken($color-secondary, 5%);
+  background-color: $color-secondary;
 }
 
 .choices__list--dropdown {

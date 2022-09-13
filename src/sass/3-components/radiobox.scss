@@ -1,11 +1,6 @@
-/**
- * Radiobox Module
- * Namespace : .f-radiobox
- */
-
-/* ----------------------------------------------------------- */
-/* == module */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// module
+// -------------------------------------------------------------
 
 .f-radiobox {
   display: inline-flex;
@@ -25,15 +20,15 @@
 
 .f-radiobox input + label {
   display: inline-flex;
+  min-height: 4rem;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
-  min-height: 4rem;
-  margin: 0;
   padding: 1rem 1.8rem;
+  border-left: $input-border;
+  margin: 0;
   font-weight: normal;
   text-align: center;
-  border-left: $input-border;
 }
 
 .f-radiobox label:first-of-type {
@@ -41,19 +36,19 @@
 }
 
 .f-radiobox input:first-child + label {
-  border-radius: ($input-border-radius - .2rem) 0 0 ($input-border-radius - .2rem);
+  border-radius: ($input-border-radius - 0.2rem) 0 0 ($input-border-radius - 0.2rem);
 }
 
 .f-radiobox label:last-child {
-  border-radius: 0 ($input-border-radius - .2rem) ($input-border-radius - .2rem) 0;
+  border-radius: 0 ($input-border-radius - 0.2rem) ($input-border-radius - 0.2rem) 0;
 }
 
 /* checked state
 -------------------------------------------------------------- */
 
 .f-radiobox input:checked + label {
-  color: #fff;
   background-color: $color-secondary;
+  color: #fff;
 }
 
 /* focus state

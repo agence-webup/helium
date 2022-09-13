@@ -1,7 +1,6 @@
-/* ----------------------------------------------------------- */
-/* == dropmic */
-/* ----------------------------------------------------------- */
-
+// -------------------------------------------------------------
+// dropmic
+// -------------------------------------------------------------
 
 .dropmic::before,
 .dropmic::after {
@@ -10,8 +9,8 @@
 
 .dropmic-menu {
   width: 26rem;
-  border: .1rem solid #a5b4c0;
-  border-radius: .4rem;
+  border: 0.1rem solid #a5b4c0;
+  border-radius: 0.4rem;
 }
 
 .dropmic-menu--noradius {
@@ -19,30 +18,29 @@
 }
 
 .dropmic-menu,
-[data-dropmic-direction='bottom-right'] .dropmic-menu {
-  transform: translateY(calc(100% + .1rem));
+[data-dropmic-direction="bottom-right"] .dropmic-menu {
+  transform: translateY(calc(100% + 0.1rem));
 }
 
-[data-dropmic-direction='bottom-left'] .dropmic-menu {
-  transform: translateY(calc(100% + .1rem));
+[data-dropmic-direction="bottom-left"] .dropmic-menu {
+  transform: translateY(calc(100% + 0.1rem));
 }
 
-[data-dropmic-direction='top-left'] .dropmic-menu {
-  transform: translateY(calc(-100% - .1rem));
+[data-dropmic-direction="top-left"] .dropmic-menu {
+  transform: translateY(calc(-100% - 0.1rem));
 }
 
-[data-dropmic-direction='top-right'] .dropmic-menu {
-  transform: translateY(calc(-100% - .1rem));
+[data-dropmic-direction="top-right"] .dropmic-menu {
+  transform: translateY(calc(-100% - 0.1rem));
 }
 
-[data-dropmic-direction='bottom-middle'] .dropmic-menu {
-  transform: translateX(-50%) translateY(calc(100% + .1rem));
+[data-dropmic-direction="bottom-middle"] .dropmic-menu {
+  transform: translateX(-50%) translateY(calc(100% + 0.1rem));
 }
 
-[data-dropmic-direction='top-middle'] .dropmic-menu {
-  transform: translateX(-50%) translateY(calc(-100% - .1rem));
+[data-dropmic-direction="top-middle"] .dropmic-menu {
+  transform: translateX(-50%) translateY(calc(-100% - 0.1rem));
 }
-
 
 .dropmic-menu__listContent {
   padding: 1rem 1.2rem;
@@ -55,26 +53,22 @@
 /* Buttons styles
 -------------------------------------------------------------- */
 
-.dropmic-menu__listContent--orange {
-  background-color: $color-orange;
+.dropmic-menu__listContent--orange, {
+  background-color: $color-orange-200;
+  color: $color-orange-600;
 }
 
-.dropmic-menu__listContent--orange:hover,
-.dropmic-menu__listContent--orange:active,
-.dropmic-menu__listContent--orange:focus {
-  color: $color-light-text;
-  background-color: darken($color-orange, 5%);
+.dropmic-menu__listContent--orange:hover, {
+  background-color: darken($color-orange-200, 3%);
+  color: darken($color-orange-600, 3%);
 }
 
 .dropmic-menu__listContent--red {
-  color: $color-light-text;
-  background-color: $color-red;
+  background-color: $color-red-200;
+  color: $color-red-600;
 }
 
-.dropmic-menu__listContent--red:hover,
-.dropmic-menu__listContent--red:active,
-.dropmic-menu__listContent--red:focus {
-  color: $color-light-text;
-  background-color: darken($color-red, 5%);
+.dropmic-menu__listContent--red:hover, {
+  background-color: darken($color-red-200, 3%);
+  color: darken($color-red-600, 3%);
 }
-

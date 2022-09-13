@@ -15,7 +15,7 @@
 }
 
 .stat__info {
-  color: $gray-500;
+  color: $color-gray-500;
   font-size: 1.3rem;
   line-height: normal;
 }
@@ -32,13 +32,13 @@
 }
 
 .stat__indicator--up {
-  color: $emerald-500;
+  color: $color-emerald-500;
 }
 
 .stat__indicator--down {
-  color: $red-500;
+  color: $color-red-500;
 }
 
 .stat__indicator--constant {
-  color: $gray-500;
+  color: $color-gray-500;
 }

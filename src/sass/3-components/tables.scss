@@ -1,32 +1,20 @@
-/**
- * Table Module
- * namespace : .table
- */
-
-
-/* ----------------------------------------------------------- */
-/* == configuration */
-/* ----------------------------------------------------------- */
-
-
-
-/* ----------------------------------------------------------- */
-/* == module */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// module
+// -------------------------------------------------------------
 
 table {
   width: 100%;
   max-width: 100%;
-  table-layout: fixed /* http://css-tricks.com/fixing-tables-long-strings */;
   border: none;
   border-collapse: collapse /* remove spacing between table cells */;
   border-spacing: 0;
+  table-layout: fixed /* http://css-tricks.com/fixing-tables-long-strings */;
 }
 
 table caption {
   padding: 1em 0;
   color: #000;
-  font: italic 85%/1 'arial', sans-serif;
+  font: italic 85%/1 arial, sans-serif;
   text-align: center;
 }
 
@@ -36,12 +24,12 @@ table tbody tr:nth-child(odd) {
 
 table td,
 table th {
-  margin: 0;
-  padding: .8em 1em;
   overflow: hidden;
+  padding: 0.8em 1em;
+  margin: 0;
   font-size: inherit;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
   word-wrap: break-word;
 }
 
@@ -51,18 +39,18 @@ table th:first-child {
 }
 
 table thead {
+  background: #fff;
   color: #000;
   text-align: left;
   vertical-align: bottom;
-  background: #fff;
 }
 
 /* helpers
 -------------------------------------------------------------- */
 
 .table-actions {
-  width: 8rem;
   overflow: visible;
+  width: 8rem;
   text-align: center;
 }
 

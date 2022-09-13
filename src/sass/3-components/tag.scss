@@ -1,25 +1,25 @@
-/* ----------------------------------------------------------- */
-/* == tag */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// module
+// -------------------------------------------------------------
 
 .tag {
   display: inline-block;
-  padding: .4rem 1rem;
-  color: #fff;
-  font-weight: 800;
-  font-size: 1rem;
-  text-transform: uppercase;
-  vertical-align: middle;
+  padding: 0.4rem 1rem;
   background-color: #808080;
   border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .tag:empty {
   width: 1.5em;
   height: 1.5rem;
   padding: 0;
-  font-size: 1rem;
   border-radius: 50%;
+  font-size: 1rem;
 }
 
 .tag--square:empty {
@@ -32,55 +32,55 @@
 }
 
 .tag--green {
-  color: $emerald-700;
-  background-color: $emerald-200;
+  background-color: $color-emerald-200;
+  color: $color-emerald-700;
 }
 
 .tag--green:empty {
-  background-color: $emerald-500;
+  background-color: $color-emerald-500;
 }
 
 .tag--red {
-  color: $red-700;
-  background-color: $red-200;
+  background-color: $color-red-200;
+  color: $color-red-700;
 }
 
 .tag--red:empty {
-  background-color: $red-500;
+  background-color: $color-red-500;
 }
 
 .tag--blue {
-  color: $blue-700;
-  background-color: $blue-200;
+  background-color: $color-blue-200;
+  color: $color-blue-700;
 }
 
 .tag--blue:empty {
-  background-color: $blue-500;
+  background-color: $color-blue-500;
 }
 
 .tag--orange {
-  color: $orange-700;
-  background-color: $orange-200;
+  background-color: $color-orange-200;
+  color: $color-orange-700;
 }
 
 .tag--orange:empty {
-  background-color: $orange-500;
+  background-color: $color-orange-500;
 }
 
 .tag--yellow {
-  color: $yellow-700;
-  background-color: $yellow-200;
+  background-color: $color-yellow-200;
+  color: $color-yellow-700;
 }
 
 .tag--yellow:empty {
-  background-color: $yellow-500;
+  background-color: $color-yellow-500;
 }
 
 .tag--gray {
-  color: $gray-700;
-  background-color: $gray-200;
+  background-color: $color-gray-200;
+  color: $color-gray-700;
 }
 
 .tag--gray:empty {
-  background-color: $gray-500;
+  background-color: $color-gray-500;
 }

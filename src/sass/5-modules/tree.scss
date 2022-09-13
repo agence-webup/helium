@@ -1,7 +1,8 @@
-@use 'sass:math';
-/* ----------------------------------------------------------- */
-/* == tree view */
-/* ----------------------------------------------------------- */
+@use "sass:math";
+
+// -------------------------------------------------------------
+// tree
+// -------------------------------------------------------------
 
 $tree-indentation: 1em;
 $tree-line-height: 2em;
@@ -9,8 +10,8 @@ $tree-line-height: 2em;
 .tree,
 .tree ul {
   position: relative;
-  margin: 0 0 0 $tree-indentation;
   padding: 0;
+  margin: 0 0 0 $tree-indentation;
   list-style: none;
 }
 
@@ -34,13 +35,13 @@ $tree-line-height: 2em;
   display: block;
   width: 0;
   border-left: 1px solid darken($color-border, 10%);
-  content: '';
+  content: "";
 }
 
 .tree li {
   position: relative;
+  padding: 0 $tree-indentation + 0.5em;
   margin: 0;
-  padding: 0 $tree-indentation + .5em;
   line-height: $tree-line-height;
 }
 
@@ -51,9 +52,9 @@ $tree-line-height: 2em;
   display: block;
   width: $tree-indentation;
   height: 0;
-  margin-top: -1px; /* border top width */
   border-top: 1px solid darken($color-border, 10%);
-  content: '';
+  margin-top: -1px; /* border top width */
+  content: "";
 }
 
 .tree li:last-child::before {

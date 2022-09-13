@@ -1,19 +1,10 @@
-/* ----------------------------------------------------------- */
-/* == layout */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// layout
+// -------------------------------------------------------------
 
 body {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  flex-direction: column;
   background-color: $background-color;
-}
-
-.content {
-  padding: 2rem 0 1rem;
-}
-
-.content > h1:first-child,
-.content header:first-child h1 {
-  margin-top: 0;
 }

@@ -1,41 +1,39 @@
-/* ----------------------------------------------------------- */
-/* == configuration */
-/* ----------------------------------------------------------- */
-
+// -------------------------------------------------------------
+// configuration
+// -------------------------------------------------------------
 
 $btn-primary: $color-primary;
 $btn-secondary: $color-secondary;
-$btn-danger: $color-red;
+$btn-danger: $color-red-500;
 $btn-hover: 5%;
-$btn-radius: .4rem;
+$btn-radius: 0.4rem;
 
-
-/* ----------------------------------------------------------- */
-/* == module */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// module
+// -------------------------------------------------------------
 
 .btn {
   position: relative;
   display: inline-block;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
+  border: 1px solid $color-dark-text;
+  background-color: transparent;
+  border-radius: $btn-radius;
+  box-shadow: none;
   color: $color-dark-text;
+  cursor: pointer;
   line-height: normal;
   line-height: 2rem;
   text-align: center;
   text-decoration: none !important;
+  transition: background-color 0.3s;
   vertical-align: middle;
-  background-color: transparent;
-  border: 1px solid $color-dark-text;
-  border-radius: $btn-radius;
-  box-shadow: none;
-  cursor: pointer;
-  transition: background-color .3s;
 }
 
 .btn:active,
 .btn:focus {
-  outline: none;
   box-shadow: $focus-ring;
+  outline: none;
 }
 
 /* colors
@@ -44,9 +42,9 @@ $btn-radius: .4rem;
 .btn--primary,
 .btn--primary:link,
 .btn--primary:visited {
-  color: #fff;
+  border: 0.1rem solid transparent;
   background-color: $btn-primary;
-  border: .1rem solid transparent;
+  color: #fff;
 }
 
 .btn--primary:hover,
@@ -58,9 +56,9 @@ $btn-radius: .4rem;
 .btn--secondary,
 .btn--secondary:link,
 .btn--secondary:visited {
-  color: #fff;
+  border: 0.1rem solid transparent;
   background-color: $btn-secondary;
-  border: .1rem solid transparent;
+  color: #fff;
 }
 
 .btn--secondary:hover,
@@ -72,55 +70,56 @@ $btn-radius: .4rem;
 .btn--danger,
 .btn--danger:link,
 .btn--danger:visited {
-  color: $btn-danger;
-  background-color: #fff;
   border: 1px solid $btn-danger;
+  background-color: #fff;
+  color: $btn-danger;
 }
-
 
 .btn--danger:hover,
 .btn--danger:active,
 .btn--danger:focus {
-  color: #fff;
   background-color: darken($btn-danger, $btn-hover);
+  color: #fff;
 }
 
 .btn--disabled,
 .btn--disabled:link,
 .btn--disabled:visited {
-  color: $color-dark-text;
-  background-color: $color-gray;
   border: 1px solid transparent;
+  background-color: $color-gray-400;
+  color: $color-dark-text;
   cursor: not-allowed;
 }
 
 .btn--bullet,
 .btn--bullet:link,
 .btn--bullet:visited {
-  padding-right: .5rem;
-  padding-left: .5rem;
-  color: $color-blue;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid $color-blue-500;
   background-color: #fff;
-  border: 1px solid $color-blue;
+  color: $color-blue-500;
 }
 
-.btn--bullet:hover {
+.btn--bullet:hover,
+.btn--bullet:active,
+.btn--bullet:focus {
   color: #fff;
 }
 
 .btn--dropdown,
 .btn--dropdown:link,
 .btn--dropdown:visited {
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   padding-right: 3.6rem;
-  color: #4a5b69;
-  font-weight: bold;
+  border: 0.1rem solid #a5b4c0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='10' viewBox='0 0 13 10'%3E%3Cpath fill='%234A5B69' d='M5.01604695,9.04570077 L0.889265209,4.92875915 C0.450311615,4.49085222 0.449463125,3.78001632 0.887370054,3.34106273 C0.887893802,3.34053773 0.88841807,3.34001325 0.888942857,3.33948929 C1.32869056,2.90043407 2.04101472,2.90071472 2.48041632,3.34011632 L6.42857143,7.28827143 L6.42857143,7.28827143 L10.3767265,3.34011632 C10.8161281,2.90071472 11.5284523,2.90043407 11.9682,3.33948929 C12.4069759,3.77757424 12.407536,4.48841043 11.9694511,4.92718635 C11.9689271,4.92771114 11.9684026,4.9282354 11.9678776,4.92875915 L7.84109591,9.04570077 C7.0604353,9.82449992 5.79670756,9.82449992 5.01604695,9.04570077 Z'/%3E%3C/svg%3E%0A"), linear-gradient(180deg, #fff 0%, #f0f2f4 100%);
+  background-position: calc(100% - 1.1rem) center, 0 0;
   background-repeat: no-repeat;
-  background-position: calc(100% - 1.1rem) center, 0 0 ;
-  border: .1rem solid #a5b4c0;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
+  color: #4a5b69;
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* icons
@@ -129,7 +128,7 @@ $btn-radius: .4rem;
 .btn .feather {
   width: 2rem;
   height: 2rem;
-  margin: 0 .1rem;
+  margin: 0 0.1rem;
   vertical-align: bottom;
 }
 

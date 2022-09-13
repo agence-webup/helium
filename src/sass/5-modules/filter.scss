@@ -1,6 +1,6 @@
-/* ----------------------------------------------------------- */
-/* == filter */
-/* ----------------------------------------------------------- */
+// -------------------------------------------------------------
+// filter
+// -------------------------------------------------------------
 
 .filter {
   display: inline-block;
@@ -14,14 +14,14 @@
 
 .filter button {
   display: inline-block;
+  padding: 0.7rem 1.1rem;
+  border: 0.1rem solid #a5b4c0;
   margin-right: 1.6rem;
-  padding: .7rem 1.1rem;
+  background: #fff;
+  border-radius: 0.3rem;
   color: $color-tertiary;
   font-weight: bold;
   text-decoration: none;
-  background: #fff;
-  border: .1rem solid #a5b4c0;
-  border-radius: .3rem;
 }
 
 .filter button:hover {
@@ -29,9 +29,9 @@
 }
 
 .filter button.is-active {
-  color: $color-secondary;
   border-color: $color-secondary;
-  box-shadow: 0 5px 16px -12px rgba(34,138,230,.98), 0 8px 21px -9px rgba(34,138,230,.40), 0 1px 11px -7px rgba(34,138,230,.25), 0 0 4px -8px rgba(34,138,230,.10);
+  box-shadow: 0 5px 16px -12px rgb(34 138 230 / 98%), 0 8px 21px -9px rgb(34 138 230 / 40%), 0 1px 11px -7px rgb(34 138 230 / 25%), 0 0 4px -8px rgb(34 138 230 / 10%);
+  color: $color-secondary;
 }
 
 .filter button.is-badge {
@@ -41,11 +41,11 @@
 
 .filter button.is-badge::after {
   position: absolute;
-  top: calc(50% - .4rem);
+  top: calc(50% - 0.4rem);
   right: 1.3rem;
-  width: .8rem;
-  height: .8rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background: #ff4d4f;
   border-radius: 1rem;
-  content: '';
+  content: "";
 }
